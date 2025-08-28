@@ -1,0 +1,13 @@
+<resources>
+    <color name="colorPrimary">#215BA0</color> <!-- Blue old -->
+    <color name="colorSurface">#FEFEFE</color> <!-- background-->
+    <color name="cardBackground">#ECECEC</color> <!-- Containers -->
+    <color name="textColorPrimary">#000000</color> <!-- Dark text -->
+    <color name="textColorSecondary">#2B2D30</color> <!-- text above cards-->
+    <!-- Black text inside cards -->
+    <color name="tvTextColor">#215BA0</color> <!-- Blue tv text -->
+    <color name="dividerColor">#FEFEFE</color> <!-- divider line-->
+    <!-- back arrow -->
+    <color name="ripple_color">#33000000</color> <!-- ripple -->
+
+</resources>

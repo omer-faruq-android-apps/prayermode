@@ -1,0 +1,343 @@
+<resources>
+    <string name="app_name">Mode Sholat</string>
+    <string name="Off">Nonaktif</string>
+    <string name="On">Aktif</string>
+    <string name="select_option">Pilih Opsi</string>
+
+    <!-- Daily Schedule Card view -->
+    <string name="daily_schedule">Jadwal Sholat Harian</string>
+
+    <string name="calculation_method">Metode Perhitungan</string>
+    <string name="select_calculation_method">Pilih Metode Perhitungan</string>
+    <string-array name="calculation_methods">
+        <item>Universitas Umm Al-Qura, Mekah</item>
+        <item>Liga Dunia Muslim</item>
+        <item>Masyarakat Islam Amerika Utara</item>
+        <item>Otoritas Survei Umum Mesir</item>
+        <item>Jamia Islamia, Karachi</item>
+        <item>Wilayah Teluk</item>
+        <item>Kuwait</item>
+        <item>Qatar</item>
+        <item>Majlis Ugama Islam Singapura, Singapura</item>
+        <item>Organisasi Persatuan Islam Prancis</item>
+        <item>Diyanet İşleri Başkanlığı, Turki</item>
+        <item>Administrasi Spiritual Muslim Rusia</item>
+        <item>Komite Ru\'yatul Hilal</item>
+        <item>Dubai, UEA</item>
+        <item>Jabatan Kemajuan Islam Malaysia (JAKIM)</item>
+        <item>Tunisia</item>
+        <item>Aljazair</item>
+        <item>Kementerian Agama Republik Indonesia</item>
+        <item>Maroko</item>
+        <item>Komunitas Islam Lisbon, Portugal</item>
+        <item>Kementerian Wakaf, Urusan Islam dan Tempat Suci, Yordania</item>
+        <item>Institut Geofisika, Universitas Tehran</item>
+        <item>Syiah Itsna Asyari, Institut Leva, Qom</item>
+    </string-array>
+
+    <string name="daily_silent_duration_after_adhan">Mode Tenang Setelah Adzan</string>
+    <string name="daily_silent_duration">Durasi Tenang Harian</string>
+    <string name="select_silent_duration">Pilih Durasi Tenang</string>
+    <string-array name="silent_durations">
+        <item>15 menit</item>
+        <item>20 menit</item>
+        <item>25 menit</item>
+        <item>30 menit</item>
+        <item>35 menit</item>
+        <item>40 menit</item>
+        <item>45 menit</item>
+    </string-array>
+
+    <!-- Joumoua Card view -->
+    <string name="joumoua">Sholat Jumat</string>
+    <!-- Black fix text -->
+    <string name="before_dhuhr">Durasi Tenang Sebelum Adzan</string>
+    <!-- TV variable text -->
+    <string name="duration_before_dhuhr">Durasi Sebelum Adzan</string>
+    <!-- Select menu -->
+    <string name="select_before_dhuhr_duration">Pilih Durasi Sebelum Adzan</string>
+    <string-array name="before_dhuhr_duration">
+        <item>15 menit</item>
+        <item>20 menit</item>
+        <item>25 menit</item>
+        <item>30 menit</item>
+        <item>35 menit</item>
+        <item>40 menit</item>
+        <item>45 menit</item>
+        <item>50 menit</item>
+        <item>55 menit</item>
+        <item>60 menit</item>
+    </string-array>
+
+    <string name="after_dhuhr">Durasi Tenang Setelah Adzan</string>
+    <string name="duration_after_dhuhr">Durasi Setelah Adzan</string>
+    <string name="select_after_dhuhr_duration">Pilih Durasi Setelah Adzan</string>
+    <string-array name="after_dhuhr_duration">
+        <item>15 menit</item>
+        <item>20 menit</item>
+        <item>25 menit</item>
+        <item>30 menit</item>
+        <item>35 menit</item>
+        <item>40 menit</item>
+        <item>45 menit</item>
+        <item>50 menit</item>
+        <item>55 menit</item>
+        <item>60 menit</item>
+    </string-array>
+
+    <!-- Ramadan Card view -->
+    <string name="ramadan">Ramadan</string>
+
+    <string name="tarawih_silent_duration">Durasi Tenang Sholat Isya dan Tarawih</string>
+    <string name="tarawih_duration">Durasi Tarawih</string>
+    <string name="select_tarawih_duration">Pilih Durasi Isya dan Tarawih</string>
+    <string-array name="tarawih_duration">
+        <item>20 menit</item>
+        <item>30 menit</item>
+        <item>40 menit</item>
+        <item>50 menit</item>
+        <item>1 jam</item>
+        <item>1 jam 30 menit</item>
+        <item>2 jam</item>
+        <item>2 jam 30 menit</item>
+        <item>3 jam</item>
+    </string-array>
+
+    <string name="tahajjud_silent_duration">Durasi Tenang Tahajud</string>
+    <string name="tahajjud_duration">Durasi Tahajud</string>
+    <string name="select_tahajjud_duration">Pilih Durasi Tahajud</string>
+    <string-array name="tahajjud_duration">
+        <item>20 menit</item>
+        <item>30 menit</item>
+        <item>40 menit</item>
+        <item>50 menit</item>
+        <item>1 jam</item>
+        <item>1 jam 30 menit</item>
+        <item>2 jam</item>
+        <item>2 jam 30 menit</item>
+        <item>3 jam</item>
+    </string-array>
+
+    <!-- Eid Card view -->
+    <string name="eid_alfitr_and_eid_aladha">Idul Fitri - Idul Adha</string>
+
+    <string name="eid_time_prayer">Waktu Sholat Id</string>
+    <string name="eid_time">Waktu Id</string>
+    <string name="select_eid_time">Pilih Waktu Sholat Id</string>
+    <string-array name="eid_time">
+        <item>20 menit setelah matahari terbit</item>
+        <item>06:00</item>
+        <item>06:30</item>
+        <item>07:00</item>
+        <item>07:30</item>
+        <item>08:00</item>
+        <item>08:30</item>
+        <item>09:00</item>
+        <item>10:00</item>
+    </string-array>
+
+    <string name="eid_silent_duration">Durasi Tenang Sholat Id</string>
+    <string name="eid_duration">Durasi Sholat Id</string>
+    <string name="select_eid_duration">Pilih Durasi Sholat Id</string>
+    <string-array name="eid_duration">
+        <item>20 menit</item>
+        <item>30 menit</item>
+        <item>40 menit</item>
+        <item>50 menit</item>
+        <item>60 menit</item>
+    </string-array>
+
+    <!-- Privacy Card view -->
+    <string name="privacy">Privasi</string>
+    <string name="privacy_notice">Pemberitahuan Privasi</string>
+    <string name="privacy_content">"Kebijakan Privasi Waktu Sholat"</string>
+    <string name="privacy_policy_link_text">tautan ini</string>
+
+    <string name="privacy_description"><![CDATA[
+Aplikasi ini menggunakan lokasi perangkat Anda untuk menghitung jadwal salat secara akurat sesuai dengan area geografis Anda.<br/><br/>
+Untuk memastikan pembaruan waktu salat yang berkelanjutan dan mengaktifkan mode Jangan Ganggu (DND) secara otomatis pada waktu yang tepat, aplikasi ini memerlukan akses lokasi di latar belakang (meskipun aplikasi ditutup atau tidak digunakan).<br/><br/>
+
+Kami ingin meyakinkan Anda bahwa kami tidak:<br/>
+<ul>
+  <li>Mengumpulkan data lokasi presisi atau perkiraan Anda secara terus-menerus.</li>
+  <li>Menyimpan data lokasi Anda di server kami.</li>
+  <li>Membagikan data lokasi Anda dengan pihak ketiga mana pun.</li>
+  <li>Mengumpulkan informasi pribadi lainnya.</li>
+</ul>
+
+<b>Apa yang Kami Simpan Secara Lokal (Di Perangkat Anda):</b><br/><br/>
+Untuk memastikan pembaruan waktu salat yang berkelanjutan dan akurat, aplikasi hanya menyimpan <b>lokasi terakhir Anda yang diketahui (lintang dan bujur) secara lokal di perangkat Anda</b>. Ini diperlukan agar fungsionalitas inti aplikasi dapat bekerja sebagaimana mestinya dan data ini digunakan <b>semata-mata untuk tujuan mendeteksi perubahan lokasi</b>. Data lokasi ini ditimpa setiap kali lokasi perangkat Anda berubah, tidak ada riwayat data lokasi yang disimpan di perangkat Anda, dan tidak ada data yang dikirim ke server kami atau dibagikan secara eksternal.<br/>
+Aplikasi ini akan meminta izin untuk mengakses lokasi perangkat Anda. Anda dapat memilih untuk memberikan atau menolak izin ini. Jika Anda menolak izin lokasi di latar belakang, aplikasi tidak akan dapat memberikan pembaruan waktu salat yang berkelanjutan atau mengelola mode Jangan Ganggu secara otomatis.<br/><br/>
+
+<b>Mode Jangan Ganggu</b><br/><br/>
+Aplikasi ini juga dapat meminta izin untuk mengaktifkan mode Jangan Ganggu (DND) di perangkat Anda. Izin ini diperlukan agar aplikasi berfungsi dengan baik dengan mengaktifkan mode DND sementara untuk meminimalkan gangguan selama waktu salat.<br/><br/>
+Meskipun izin ini memungkinkan aplikasi untuk mengontrol pengaturan suara dan getar perangkat Anda, kami ingin secara eksplisit mengklarifikasi bahwa aplikasi TIDAK mengakses, membaca, atau mengumpulkan notifikasi, pesan, konten panggilan, atau data pribadi lainnya yang ditampilkan oleh notifikasi Anda. Izin ini semata-mata untuk tujuan mengaktifkan dan menonaktifkan mode DND.<br/><br/>
+Anda memahami bahwa saat mode DND aktif, <b>Anda mungkin tidak menerima notifikasi standar, termasuk panggilan darurat</b>. Perusahaan kami tidak akan bertanggung jawab atas konsekuensi apa pun yang diakibatkan oleh notifikasi dan panggilan darurat yang terlewat, selama periode aplikasi telah mengaktifkan mode DND.<br/><br/>
+Adalah tanggung jawab Anda untuk mengatur preferensi DND dan pengecualian sesuai dengan kebutuhan Anda.<br/><br/>
+Kami berkomitmen untuk melindungi privasi Anda. Jika Anda memiliki pertanyaan atau kekhawatiran mengenai praktik privasi kami, silakan hubungi kami di <a href="mailto:prayer.mode@outlook.com">prayer.mode@outlook.com</a><br/><br/>
+Untuk detail lengkap Kebijakan Privasi kami, silakan ikuti [PRIVACY_LINK].<br/><br/>
+Terima kasih atas kepercayaan Anda pada aplikasi kami.<br/><br/>
+]]></string>
+    <string name="terms">Ketentuan Layanan</string>
+
+    <string name="permission">Izin</string>
+    <string name="permissions_content">Izin yang Diperlukan</string>
+    <string name="location_permission">Izin Lokasi</string>
+
+    <string name="location">Lokasi</string>
+    <string name="location_description">Digunakan untuk mengakses lokasi perangkat guna mendapatkan waktu sholat yang akurat dan memastikan pembaruan otomatis, bahkan saat aplikasi tidak aktif dibuka.</string>
+
+    <string name="notifications">Notifikasi</string>
+    <string name="notifications_description">Digunakan untuk memberikan informasi tentang pengingat, peringatan, dan informasi penting lainnya, memastikan Anda menerimanya tepat waktu.</string>
+
+    <string name="dnd">Mode Jangan Ganggu</string>
+    <string name="dnd_description">Digunakan untuk mengaktifkan Mode Jangan Ganggu otomatis saat waktu sholat.</string>
+
+    <string name="alarm">Alarm &amp; Pengingat</string>
+    <string name="alarm_description">Digunakan untuk menjadwalkan Mode Jangan Ganggu untuk waktu sholat.</string>
+
+    <string name="help">Membantu</string>
+    <string name="bulb">Sebelum Menggunakan Aplikasi</string>
+    <string name="bulb_content">Panduan Cepat</string>
+    <string name="bulb_description">Untuk pertama kali menggunakan aplikasi ini, silakan ikuti panduan di bawah untuk mengatur pengaturan.</string>
+
+    <string name="important_note">Pembaruan Bulanan dan Deteksi Perubahan Lokasi</string>
+    <string name="important_note_description">"Aplikasi ini mengambil data waktu sholat dari API aladhan.com setiap awal bulan dan memerlukan lokasi perangkat serta koneksi internet aktif untuk memastikan akurasi waktu sholat dan fungsi Mode Jangan Ganggu. Untuk deteksi perubahan lokasi saat bepergian jauh (fungsi penting aplikasi), layanan lokasi harus selalu aktif dengan koneksi internet stabil."</string>
+
+    <string name="volume">Mode Jangan Ganggu</string>
+    <string name="volume_description">Selama mode Jangan Ganggu, aplikasi membisukan semua suara dan menonaktifkan getaran untuk panggilan dan notifikasi. Namun, alarm dari speaker utama dan audio dari panggilan Anda melalui speaker telinga akan tetap terdengar. Setelah mode Jangan Ganggu dinonaktifkan, tingkat suara dipulihkan ke nilai terakhir yang disimpan.</string>
+
+    <string name="calculation">Metode Perhitungan</string>
+    <string name="calculation_description">Pilih metode perhitungan sebelum mengaktifkan aplikasi. Catatan: Aplikasi menggunakan API aladhan.com untuk waktu sholat.</string>
+
+    <string name="durations">Durasi</string>
+    <string name="durations_description">Atur durasi sesuai preferensi Anda. Setiap sholat (5 waktu, Jumat, Tarawih, Tahajud, dan Id) memiliki durasi tersendiri.</string>
+
+    <string name="time">Waktu</string>
+    <string name="time_description">Pilih waktu Sholat Idul Fitri dan Idul Adha.</string>
+
+    <string name="tile">Tile Mode Sholat</string>
+    <string name="tile_description">Tambahkan tile waktu sholat ke Pengaturan Cepat untuk akses lebih cepat.</string>
+
+    <string name="wearable">Perangkat Wearable</string>
+    <string name="wearable_description">Jam tangan Anda bisa menerima notifikasi dan mengikuti mode suara ponsel. Aktifkan melalui pengaturan aplikasi jam tangan.</string>
+
+    <string name="donation">Donasi</string>
+    <string name="donation_link_text">PayPal</string>
+    <string name="donation_content">Dukung Kami</string>
+    <string name="donation_description"><![CDATA[
+Prayer mode adalah perangkat lunak gratis dan sumber terbuka. Pengembangan dan pemeliharaan membutuhkan waktu dan usaha.<br/><br/>
+Jika Anda merasa aplikasi ini berharga dan ingin mendukung pengembangannya yang berkelanjutan, Anda dapat memberikan donasi sukarela.<br/><br/>
+Donasi bersifat <b>sukarela dan tidak dapat dikembalikan</b>, dan tidak memberikan Anda hak atas layanan atau fitur premium apa pun.<br/><br/>
+Donasi hanyalah cara untuk menunjukkan apresiasi Anda dan membantu memastikan aplikasi tetap gratis dan diperbarui untuk semua orang.<br/><br/>
+Anda dapat menyumbang menggunakan [DONATION_LINK].<br/><br/>
+]]></string>
+
+    <string name="back_button">Kembali</string>
+
+    <!-- MainActivity SnackBar -->
+    <string name="cannot_change_settings">Tidak bisa mengubah pengaturan saat aplikasi aktif.</string>
+    <string name="permissions_granted">Semua izin telah diberikan, sakelar bisa dihidupkan.</string>
+    <string name="alarm_permission_granted">Izin alarm diberikan.</string>
+    <string name="grant_location_permission">Harap berikan izin lokasi.</string>
+    <string name="grant_alarm_permission">Harap berikan izin alarm.</string>
+    <string name="grant_dnd_permission">Izin Jangan Ganggu diperlukan untuk mode senyap otomatis.</string>
+    <string name="background_location_denied_message">Akses lokasi latar belakang diperlukan untuk memperbarui waktu salat secara otomatis.</string>
+    <string name="no_location_internet">Gagal mengaktifkan Waktu Sholat. Periksa koneksi internet dan layanan lokasi.</string>
+    <string name="app_disabled">Mode Sholat nonaktif.</string>
+    <string name="app_enabled">Mode Sholat aktif.</string>
+    <string name="alarm_permission_denied_message">Aplikasi memerlukan izin alarm untuk pengingat sholat.</string>
+    <string name="notification_disabled">Notifikasi dimatikan tetapi bisa diaktifkan melalui pengaturan</string>
+
+    <!-- PermissionHelper Dialogs -->
+    <string name="background_location_permission_title">Izin Lokasi Latar Belakang Diperlukan</string>
+    <string name="background_location_permission_message">Aplikasi ini memerlukan akses berkelanjutan ke lokasi perangkat Anda saat aplikasi tidak digunakan untuk menyesuaikan waktu salat. Harap pilih &lt;b&gt;Selalu izinkan&lt;/b&gt; di Izin/Lokasi.</string>
+
+    <string name="alarm_permission_title">Izin Alarm Diperlukan</string>
+    <string name="alarm_permission_message">Aplikasi ini memerlukan izin alarm untuk mengaktifkan/menonaktifkan mode Jangan Ganggu pada waktu yang tepat dan juga untuk menjadwalkan salat hari berikutnya. Harap berikan izin di pengaturan.</string>
+
+    <string name="dnd_permission_title">Izin Mode Jangan Ganggu Diperlukan</string>
+    <string name="dnd_permission_message">Mohon berikan akses Jangan Ganggu untuk pembisuan otomatis selama waktu salat, karena akses ini diperlukan agar aplikasi dapat berfungsi sebagaimana mestinya.</string>
+
+    <!-- mainActivity -->
+    <string name="location_permission_denied_title">Izin Lokasi Ditolak</string>
+    <string name="location_permission_denied_message">Aplikasi memerlukan akses lokasi terus-menerus saat digunakan untuk akurasi waktu sholat.</string>
+
+    <string name="location_permanently_denied_title">Lokasi ditolak secara permanen</string>
+    <string name="location_permanently_denied_message">Izin lokasi masih dapat diberikan di pengaturan aplikasi</string>
+
+    <string name="notification_recommended_title">Notifikasi Disarankan</string>
+    <string name="notification_recommended_message">Peringatan dan pengingat mode salat bisa terlewat tanpa notifikasi</string>
+
+    <string name="try_again">Coba lagi</string>
+    <string name="exit">Keluar</string>
+    <string name="enable">Aktifkan</string>
+    <string name="skip">Lewati</string>
+
+    <string name="open_settings">Buka Pengaturan</string>
+    <string name="cancel">Batal</string>
+    <string name="ok">OK</string>
+
+    <string name="app_disabled_after_reboot">Layanan lokasi berhenti setelah reboot perangkat. Buka aplikasi untuk memulai kembali.</string>
+
+    <string name="terms_dialog_title">Pemberitahuan Penting</string>
+    <string name="terms_dialog_message">Silakan baca Ketentuan Layanan dan Kebijakan Privasi kami dengan saksama melalui tautan di bawah. Anda harus menyetujuinya untuk menggunakan aplikasi ini.</string>
+    <string name="terms_dialog_link">Ketentuan Layanan</string>
+    <string name="privacy_link">Pemberitahuan Privasi</string>
+    <string name="decline">Tolak</string>
+    <string name="accept">Terima</string>
+
+    <string name="today_fajr_time_is">Waktu salat Subuh hari ini %1$s.</string>
+    <string name="today_dhuhr_time_is">Waktu Sholat Jumat hari ini pukul %1$s.</string>
+    <string name="silent_mode_activated_for">Mode Jangan Ganggu diaktifkan selama %1$s.</string>
+    <string name="today_imsak_time_is">Waktu Imsak hari ini pukul %1$s.</string>
+    <string name="back_to_normal_mode">Mode Jangan Ganggu telah dimatikan.</string>
+    <string name="location_title">Layanan Lokasi</string>
+    <string name="getting_location_update">Memperbarui lokasi.</string>
+    <string name="happy_eid_alfitr">Selamat Hari Raya Idul Fitri, semoga amal ibadah kita diterima Allah.</string>
+    <string name="happy_eid_aladha">Selamat Hari Raya Idul Adha, semoga amal ibadah kita diterima Allah.</string>
+    <string name="dnd_already_on">Mode Jangan Ganggu sudah aktif (oleh pengguna/sistem) saat mencoba mengaktifkannya untuk %1$s, sehingga akan tetap menyala untuk menghormati pengaturan Anda saat ini.</string>
+
+    <string name="location_service_disabled">Aktifkan layanan lokasi untuk memastikan aplikasi bekerja optimal.</string>
+    <string name="travelled_distance">Anda telah menempuh %1$s km. Menyesuaikan jadwal waktu salat dengan posisi baru Anda.</string>
+    <string name="location_name">Sedang memuat waktu salat untuk %1$s. Lokasi tidak tepat? Anda mungkin perlu menyesuaikan pengaturan lokasi perangkat.</string>
+
+    <string name="open_prayer">Buka Aplikasi</string><string name="eid">Id</string>
+
+    <string name="imsak">Imsak</string>
+    <string name="fajr">Subuh</string>
+    <string name="sunrise">Terbit Matahari</string>
+    <string name="dhuhr">Dzuhur</string>
+    <string name="asr">Ashar</string>
+    <string name="maghrib">Maghrib</string>
+    <string name="isha">Isya</string>
+    <string name="tarawih">Tarawih</string>
+    <string name="tahajjud">Tahajud</string>
+    <string name="prayer_name_unknown">Sholat</string>
+
+    <string name="fetch_title">Pembaruan Jadwal Sholat</string>
+    <string name="fetch_failed_no_internet">Tidak ada koneksi Internet. Harap sambungkan perangkat ke Internet, lalu matikan dan nyalakan kembali saklar.</string>
+    <string name="fetch_failed">Terjadi kesalahan tak terduga. Harap matikan dan nyalakan kembali saklar.</string>
+    <string name="schedule_title">Jadwal waktu sholat</string>
+
+    <!-- Catch & else blocks -->
+    <string name="failed_writing">Pastikan ruang penyimpanan mencukupi.</string>
+    <string name="permission_denied_writing">Terjadi kesalahan tak terduga saat menyimpan file jadwal shalat. Silakan mulai ulang aplikasi dan periksa pembaruan.</string>
+
+    <!-- For debugging only -->
+    <string name="silent_schedule_success">Penjadwalan hari ini berhasil.</string>
+    <string name="monthly_update">Memperbarui waktu sholat bulan %1$s.</string>
+    <string name="monthly_update_default_method">Memperbarui waktu sholat bulan %1$s menggunakan metode default.</string>
+    <string name="speed">You travelled at %1$s km/h.</string>
+
+    <string name="worker_failed">Worker failed.</string>
+    <string name="process_prayer">Process prayer times</string>
+    <string name="fail_read_file">Failed to read from file %1$s</string>
+    <string name="error_parsing_time">Error parsing time %1$s</string>
+    <string name="invalid_time_format">Invalid time format %1$s</string>
+    <string name="unexpected_error">Unexpected error while getting prayer calendar %1$s</string>
+
+    <string name="error">Error</string>
+    <string name="error_getting_hijri_date">Error getting hijri date %1$s</string>
+    <string name="failed_schedule_silent_mode">Failed to schedule silent mode for %1$s</string>
+</resources>

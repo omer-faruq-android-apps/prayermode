@@ -1,0 +1,279 @@
+<resources>
+    <string name="app_name">وضع الصلاة</string>
+    <string name="Off">إيقاف</string>
+    <string name="On">تشغيل</string>
+    <string name="select_option">حدد خيارًا</string>
+
+    <!-- Daily Schedule Cardview -->
+    <string name="daily_schedule">جدول الصلاة اليومي</string>
+
+    <string name="calculation_method">طريقة الحساب</string>
+    <string name="select_calculation_method">اختيار طريقة الحساب</string>
+    <string-array name="calculation_methods">
+        <item>جامعة أم القرى بمكة المكرمة</item>
+        <item>رابطة العالم الإسلامي</item>
+        <item>الجمعية الإسلامية لأمريكا الشمالية</item>
+        <item>الهيئة المصرية العامة للمساحة</item>
+        <item>جامعة العلوم الإسلامية بكراتشي</item>
+        <item>منطقة الخليج</item>
+        <item>الكويت</item>
+        <item>قطر</item>
+        <item>المجلس الديني الإسلامي في سنغافورة</item>
+        <item>منظمة الاتحاد الاسلامي في فرنسا</item>
+        <item>رئاسة الشؤون الدينية التركية</item>
+        <item>الإدارة الروحية لمسلمي روسيا</item>
+        <item>لجنة رؤية الهلال</item>
+        <item>دبي، الإمارات العربية المتحدة</item>
+        <item>إدارة التنمية الإسلامية الماليزية</item>
+        <item>تونس</item>
+        <item>الجزائر</item>
+        <item>وزارة الشؤون الدينية الإندونيسية</item>
+        <item>المغرب</item>
+        <item>المجتمع الإسلامي في لشبونة البرتغال</item>
+        <item>وزارة الأوقاف والشؤون والمقدسات الإسلامية، الأردن</item>
+        <item>معهد الجيوفيزياء، جامعة طهران</item>
+        <item>معهد الشيعة الإثني عشرية، مؤسسة ليفا، قم</item>
+    </string-array>
+
+    <string name="daily_silent_duration_after_adhan">مدة الصمت اليومية بعد الأذان</string>
+    <string name="daily_silent_duration">مدة الصمت اليومية</string>
+    <string name="select_silent_duration">اختيار مدة الصمت اليومية</string>
+
+    <!-- Joumouaa Cardview -->
+    <string name="joumoua">الجمعة</string>
+    <!-- Black fix text -->
+    <string name="before_dhuhr">مدة الصمت قبل الأذان</string>
+    <!-- TV variable text -->
+    <string name="duration_before_dhuhr">المدة قبل الأذان</string>
+    <!-- Select menu -->
+    <string name="select_before_dhuhr_duration">اختيار المدة قبل الأذان</string>
+
+    <string name="after_dhuhr">مدة الصمت بعد الأذان</string>
+    <string name="duration_after_dhuhr">المدة بعد الأذان</string>
+    <string name="select_after_dhuhr_duration">اختيار المدة بعد الأذان</string>
+
+    <!-- Ramadan Cardview -->
+    <string name="ramadan">رمضان</string>
+
+    <string name="tarawih_silent_duration">مدة الصمت أثناء صلاة العشاء و التراويح</string>
+    <string name="tarawih_duration">مدة التراويح</string>
+    <string name="select_tarawih_duration">اختيار المدة لصلاة العشاء و التراويح</string>
+
+    <string name="tahajjud_silent_duration">مدة الصمت أثناء صلاة التهجد</string>
+    <string name="tahajjud_duration">مدة التهجد</string>
+    <string name="select_tahajjud_duration">اختيار المدة لصلاة التهجد</string>
+
+    <!-- Eid Cardview -->
+    <string name="eid_alfitr_and_eid_aladha">عيد الفطر - عيد الأضحى</string>
+
+    <string name="eid_time_prayer">موعد صلاة العيد</string>
+    <string name="eid_time">موعد العيد</string>
+    <string name="select_eid_time">اختيار وقت صلاة العيد</string>
+
+    <string name="eid_silent_duration">مدة الصمت أثناء صلاة العيد</string>
+    <string name="eid_duration">مدة العيد</string>
+    <string name="select_eid_duration">اختيار المدة لصلاة العيد</string>
+
+    <!-- Privacy Cardview -->
+    <string name="privacy">الخصوصية</string>
+    <string name="privacy_notice">إشعار الخصوصية</string>
+    <string name="privacy_content">إشعار خصوصية وضع الصلاة</string>
+    <string name="privacy_policy_link_text">هذا الرابط</string>
+
+    <string name="privacy_description"><![CDATA[
+يستخدم هذا التطبيق موقع جهازك فقط لحساب أوقات الصلاة الدقيقة المتعلقة بمنطقتك الجغرافية.<br/><br/>
+
+لضمان تحديثات أوقات الصلاة المستمرة وتفعيل وضع عدم الإزعاج تلقائيًا في الأوقات الصحيحة، يتطلب التطبيق الوصول إلى الموقع في الخلفية (حتى عندما يكون التطبيق مغلقًا أو غير مستخدم).<br/><br/>
+
+نود أن نؤكد لكم أننا لا نقوم بما يلي:<br/>
+<ul>
+  <li>جمع بيانات موقعك الدقيقة أو التقريبية بشكل دائم.</li>
+  <li>تخزين بيانات موقعك على خوادمنا.</li>
+  <li>مشاركة بيانات موقعك مع أي طرف ثالث.</li>
+  <li>جمع أي معلومات شخصية أخرى.</li>
+</ul>
+
+<b>ما نقوم بتخزينه محليًا (على جهازك):</b><br/><br/>
+لضمان تحديثات أوقات الصلاة المستمرة والدقيقة، يقوم التطبيق بتخزين <b>موقعك الأخير المعروف فقط (خط العرض وخط الطول) محليًا على جهازك</b>. هذا ضروري لعمل الوظائف الأساسية للتطبيق كما هو مصمم، ويتم استخدام هذه البيانات <b>فقط لغرض اكتشاف تغييرات الموقع</b>. يتم استبدال بيانات الموقع هذه كلما تغير موقع جهازك، ولا يتم الإحتفاظ بأي سجل لبيانات الموقع على جهازك، كما لا يتم إرسال أي بيانات إلى خوادمنا أو مشاركتها خارجيًا.<br/>
+
+سيطلب التطبيق الإذن للوصول إلى موقع جهازك. يمكنك اختيار منح هذا الإذن أو رفضه. إذا رفضت إذن الموقع في الخلفية، فلن يتمكن التطبيق من توفير تحديثات مستمرة لأوقات الصلاة أو إدارة وضع عدم الإزعاج تلقائيًا.<br/><br/>
+
+<b>وضع عدم الإزعاج</b><br/><br/>
+
+قد يطلب هذا التطبيق أيضًا إذنًا لتفعيل وضع عدم الإزعاج على جهازك. هذا الإذن ضروري لكي يعمل التطبيق بشكل صحيح، حيث يقوم بتفعيل وضع عدم الإزعاج مؤقتًا لتقليل المقاطعات أثناء أوقات الصلاة.<br/><br/>
+مع أن هذا الإذن يسمح للتطبيق بالتحكم في إعدادات الصوت والإهتزاز بجهازك، نود أن نوضح أن التطبيق لا يقوم بالوصول إلى، أو قراءة، أو جمع أي من إشعاراتك، أو رسائلك، أو محتوى مكالماتك، أو أي بيانات شخصية أخرى معروضة بواسطة إشعاراتك. هذا الإذن مخصص فقط لتشغيل وإيقاف وضع عدم الإزعاج.<br/><br/>
+أنت تقر بأنه أثناء تفعيل وضع عدم الإزعاج، <b>قد لا تتلقى الإشعارات المعتادة، بما في ذلك المكالمات الطارئة</b>. شركتنا ليست مسؤولة عن أي عواقب ناتجة عن عدم تلقي الإشعارات والمكالمات الطارئة، خلال الفترات التي يتم فيها تفعيل وضع عدم الإزعاج بواسطة التطبيق.<br/><br/>
+
+تقع على عاتقك مسؤولية تكوين إعدادات وضع عدم الإزعاج والإستثناءات وفقًا لاحتياجاتك.<br/><br/>
+
+نحن ملتزمون بحماية خصوصيتك. إذا كانت لديك أي أسئلة أو مخاوف بشأن ممارسات الخصوصية لدينا، فيرجى التواصل معنا عبر <a href="mailto:prayer.mode@outlook.com">prayer.mode@outlook.com</a><br/><br/>
+للاطلاع على التفاصيل الكاملة لسياسة الخصوصية الخاصة بنا، يرجى اتباع [PRIVACY_LINK].<br/><br/>
+
+شكراً لثقتكم بتطبيقنا.<br/><br/>
+]]></string>
+
+    <string name="terms">شروط الخدمة</string>
+
+    <string name="permission">الأذونات</string>
+    <string name="permissions_content">الأذونات المطلوبة</string>
+    <string name="location_permission">أيقونة إذن الموقع</string>
+
+    <string name="location">الموقع</string>
+    <string name="location_description">يُستخدم للوصول إلى موقع جهازك لجلب أوقات الصلاة الدقيقة وضمان التحديثات التلقائية، حتى عندما لا يكون التطبيق مفتوحًا.</string>
+
+    <string name="notifications">إشعارات</string>
+    <string name="notifications_description">تُستخدم لتقديم معلومات حول التذكيرات والتنبيهات والمعلومات المهمة الأخرى، مما يضمن وصولها إليك في الوقت المناسب.</string>
+
+    <string name="dnd">وضع عدم الإزعاج</string>
+    <string name="dnd_description">يُستخدم لتفعيل وضع عدم الإزعاج تلقائيًا أثناء أوقات الصلاة.</string>
+
+    <string name="alarm">المنبه والتذكيرات</string>
+    <string name="alarm_description">يُستخدم لجدولة وضع عدم الإزعاج لأوقات الصلاة.</string>
+
+    <string name="help">مساعدة</string>
+    <string name="bulb">قبل الشروع في استخدام التطبيق</string>
+    <string name="bulb_content">دليل البدء السريع</string>
+    <string name="bulb_description">عند استخدام هذا التطبيق للمرة الأولى، يرجى اتباع النصائح أدناه لتكوين الإعدادات.</string>
+
+    <string name="important_note">تحديثات أوقات الصلاة الشهرية وتتبع تغيير الموقع</string>
+    <string name="important_note_description">"يجلب هذا التطبيق أوقات الصلاة من واجهة برمجة تطبيقات aladhan.com في اليوم الأول من كل شهر ويعتمد على موقع جهازك واتصال نشط بالإنترنت وذلك لضمان دقة أوقات الصلاة ووظيفة وضع عدم الإزعاج بشكل صحيح. لتتبع تغيير الموقع المستمر أثناء السفر لمسافات طويلة، وهي وظيفة مهمة للتطبيق، يلزم تفعيل خدمات الموقع الدائم وكذا الإتصال الدائم بالإنترنت."</string>
+
+    <string name="volume">وضع عدم الإزعاج</string>
+    <string name="volume_description">أثناء وضع عدم الإزعاج، يقوم التطبيق بكتم جميع الأصوات وإيقاف اهتزازات المكالمات والإشعارات. باسثناء أصوات التنبيهات من السماعة الرئيسية والصوت من مكالماتك عبر سماعة الأذن التي ستبقى مسموعة. بمجرد إيقاف وضع عدم الإزعاج، تتم استعادة مستويات الصوت إلى قيمها الأخيرة المحفوظة.</string>
+
+    <string name="calculation">طرق الحساب</string>
+    <string name="calculation_description">قم باختيار طريقة الحساب المفضلة قبل تفعيل زر التبديل. يرجى ملاحظة أن التطبيق يستخدم واجهة برمجة التطبيقات الخاصة بـ aladhan.com للحصول على أوقات الصلاة الدقيقة.</string>
+
+    <string name="durations">المدة</string>
+    <string name="durations_description">اختر المدد الزمنية بناءً على تفضيلاتك. لاحظ أن الصلوات الخمس اليومية وصلاة الجمعة وصلاة التراويح وصلاة التهجد وصلاة العيدين لهم مدتهم الخاصة بهم.</string>
+
+    <string name="time">الوقت</string>
+    <string name="time_description">اختر وقت صلاة عيد الفطر وعيد الأضحى.</string>
+
+    <string name="tile">بلاطة وضع الصلاة</string>
+    <string name="tile_description">بإمكانك إضافة بلاط وضع الصلاة في الإعدادات السريعة لتتمكن من الوصول إلى التطبيق بشكل أسرع.</string>
+
+    <string name="wearable">الساعة الذكية</string>
+    <string name="wearable_description">يمكن لساعتك المتصلة أيضًا تلقي الإشعارات ومتابعة وضع الصوت في هاتفك، لتحقيق ذلك، تحقق من إعدادات تطبيق الساعة الذكية لديك.</string>
+
+    <string name="donation">تبرعات</string>
+    <string name="donation_link_text">بايبال</string>
+    <string name="donation_content">ادعمنا</string>
+    <string name="donation_description"><![CDATA[
+تطبيق وضع الصلاة مجاني ومفتوح المصدر. التطوير والصيانة يتطلبان وقتًا وجهدًا.<br/><br/>
+إذا وجدت هذا التطبيق مفيدًا وترغب في دعم استمرار تطويره، يمكنك تقديم تبرع طوعي.<br/><br/>
+التبرعات <b>طوعية وغير قابلة للاسترداد</b>، ولا تؤهلك للحصول على أي خدمات أو ميزات مميزة.<br/><br/>
+هي فقط طريقة لإظهار تقديرك والمساعدة في ضمان بقاء التطبيق مجانيًا ومحدثًا للجميع.<br/><br/>
+يمكنك التبرع باستخدام [DONATION_LINK].<br/><br/>
+]]></string>
+
+    <string name="back_button">رجوع</string>
+
+    <!-- MainActivity SnackBar -->
+    <string name="cannot_change_settings">لا يمكن تغيير الإعدادات عندما يكون زر التبديل مفعلا.</string>
+غغ    <string name="permissions_granted">كل الأذونات ممنوحة، يمكن الآن تشغيل المفتاح.</string>
+
+    <string name="alarm_permission_granted">تم منح إذن المنبه.</string>
+    <string name="grant_location_permission">يرجى منح إذن الموقع.</string>
+    <string name="grant_alarm_permission">يرجى منح إذن المنبه.</string>
+    <string name="grant_dnd_permission">يلزم إذن عدم الإزعاج للكتم التلقائي للصوت.</string>
+    <string name="background_location_denied_message">يلزم الوصول إلى الموقع في الخلفية لتحديث أوقات الصلاة تلقائيًا.</string>
+    <string name="no_location_internet">لا يمكن تفعيل وضع الصلاة. فضلًا تأكد من تفعيل خدمة الموقع والاتصال بالإنترنت.</string>
+    <string name="app_disabled">تم إيقاف وضع الصلاة.</string>
+    <string name="app_enabled">تم تفعيل وضع الصلاة.</string>
+    <string name="alarm_permission_denied_message">يحتاج هذا التطبيق إلى إذن المنبه لتذكيرات دقيقة. يرجى منح الإذن في الإعدادات.</string>
+    <string name="notification_disabled">تم تعطيل الإشعارات، لكن يمكن منحها في الإعدادات.</string>
+
+    <!-- PermissionHelper Dialogs -->
+    <string name="background_location_permission_title">يلزم إذن الموقع في الخلفية</string>
+    <string name="background_location_permission_message"> في الأذونات/الموقع الجغرافي.&lt;b&gt;السماح طوال الوقت&lt;/b&gt;يتطلب هذا التطبيق الوصول المستمر إلى موقع جهازك بينما التطبيق ليس قيد الاستخدام لتكييف أوقات الصلاة. الرجاء اختيار </string>
+
+    <string name="alarm_permission_title">إذن المنبه مطلوب</string>
+    <string name="alarm_permission_message">يتطلب هذا التطبيق إذن التنبيه لتفعيل/تعطيل وضع عدم الإزعاج في وقت محدد وكذلك جدولة صلوات اليوم التالي. الرجاء منح الإذن في الإعدادات.</string>
+
+    <string name="dnd_permission_title">مطلوب الوصول إلى وضع عدم الإزعاج</string>
+    <string name="dnd_permission_message">يرجى منح إذن عدم الإزعاج لتفعيل الوضع الصامت التلقائي أثناء أوقات الصلاة. يعد هذا الإذن ضروري لكي يعمل التطبيق كما هو متوقع.</string>
+
+    <!-- mainActivity -->
+    <string name="location_permission_denied_title">تم رفض إذن الموقع</string>
+    <string name="location_permission_denied_message">يتطلب هذا التطبيق الوصول المستمر إلى موقع جهازك أثناء استخدام التطبيق لجلب أوقات الصلاة بدقة. يرجى منح هذا الإذن في إعدادات التطبيق.</string>
+
+    <string name="location_permanently_denied_title">تم رفض الموقع بشكل دائم</string>
+    <string name="location_permanently_denied_message">لا يزال من الممكن منح إذن الموقع في إعدادات التطبيق.</string>
+
+    <string name="notification_recommended_title">الإشعارات موصى بها</string>
+    <string name="notification_recommended_message">قد تفوتك تنبيهات وتذكيرات وضع الصلاة بدون منح إذن الإشعارات.</string>
+
+    <string name="try_again">حاول مرة أخرى</string>
+    <string name="exit">خروج</string>
+    <string name="enable">تفعيل</string>
+    <string name="skip">تخطي</string>
+
+    <string name="ok">موافق</string>
+    <string name="open_settings">فتح الإعدادات</string>
+    <string name="cancel">إلغاء</string>
+
+    <string name="app_disabled_after_reboot">توقفت خدمة الموقع بعد إعادة تشغيل الجهاز. يُرجى فتح التطبيق لتشغيل خدمة الموقع.</string>
+
+    <string name="terms_dialog_title">إشعار هام</string>
+    <string name="terms_dialog_message">الرجاء الإطلاع على شروط الخدمة وسياسة الخصوصية الخاصة بنا بعناية باستخدام الروابط أدناه. يجب عليك قبولها لاستخدام هذا التطبيق.</string>
+    <string name="terms_dialog_link">شروط الخدمة</string>
+    <string name="privacy_link">إشعار الخصوصية</string>
+    <string name="decline">رفض</string>
+    <string name="accept">قبول</string>
+
+    <string name="today_fajr_time_is">موعد صلاة الفجر اليوم على الساعة %1$s</string>
+    <string name="today_dhuhr_time_is">موعد صلاة الجمعة اليوم على الساعة %1$s</string>
+    <string name="silent_mode_activated_for">تم تفعيل وضع عدم الإزعاج لـصلاة %1$s</string>
+    <string name="today_imsak_time_is">وقت الإمساك اليوم على الساعة %1$s</string>
+    <string name="back_to_normal_mode">تم استعادة مستوى الصوت.</string>
+    <string name="location_title">خدمة الموقع</string>
+    <string name="getting_location_update">جارٍ الحصول على تحديثات الموقع.</string>
+    <string name="happy_eid_alfitr">عيد الفطر مبارك سعيد، تقبل الله منا ومنكم صالح الأعمال.</string>
+    <string name="happy_eid_aladha">عيد الأضحى مبارك سعيد، تقبل الله منا ومنكم صالح الأعمال.</string>
+    <string name="dnd_already_on">كان وضع عدم الإزعاج مفعلاً بواسطة المستخدم/النظام عند محاولة تفعيله لصلاة %1$s، ولذلك سيبقى كذلك احترامًا لإعداداتك الحالية.</string>
+
+    <string name="location_service_disabled">يرجى تفعيل خدمة الموقع لكي يعمل التطبيق على النحو المطلوب.</string>
+    <string name="travelled_distance">لقد سافرت مسافة %1$s كم. نقوم بتعديل جدول أوقات الصلاة ليتناسب مع موقعك الجديد.</string>
+    <string name="location_name">يتم جلب أوقات الصلاة لـ%1$s. هل الموقع غير صحيح؟ قد تحتاج إلى تعديل إعدادات الموقع لجهازك.</string>
+
+    <string name="open_prayer">افتح التطبيق</string>
+
+    <string name="eid">العيد</string>
+    <string name="imsak">إمساك</string>
+    <string name="fajr">الفجر</string>
+    <string name="sunrise">الشروق</string>
+    <string name="dhuhr">الظهر</string>
+    <string name="asr">العصر</string>
+    <string name="maghrib">المغرب</string>
+    <string name="isha">العشاء</string>
+    <string name="tarawih">التراويح</string>
+    <string name="tahajjud">التهجد</string>
+    <string name="prayer_name_unknown">الصلاة</string>
+
+    <string name="fetch_title">تحديثات أوقات الصلاة</string>
+    <string name="fetch_failed_no_internet">لا يوجد اتصال بالإنترنت. يرجى الاتصال بالإنترنت، ثم إيقاف زر التبديل وإعادة تشغيله.</string>
+    <string name="fetch_failed">حدث خطأ غير متوقع أثناء جلب أوقات الصلاة. يرجى إيقاف زر التبديل وإعادة تشغيله.</string>
+    <string name="schedule_title">جدول مواقيت الصلاة</string>
+
+    <!-- Catch & else blocks -->
+    <string name="failed_writing">يرجى التأكد من وجود مساحة تخزين كافية.</string>
+    <string name="permission_denied_writing">حدث خطأ غير متوقع أثناء حفظ ملف أوقات الصلاة، يرجى إعادة تشغيل التطبيق والتحقق من وجود تحديثات.</string>
+
+    <!-- For debugging only -->
+    <string name="silent_schedule_success">تمت الجدولة اليومية بنجاح.</string>
+    <string name="monthly_update">تحديث أوقات الصلاة لهذا الشهر %1$s.</string>
+    <string name="monthly_update_default_method">تحديث أوقات الصلاة لهذا الشهر %1$s باستخدام الطريقة الافتراضية.</string>
+    <string name="speed">You travelled at %1$s km/h.</string>
+
+    <string name="worker_failed">Worker failed.</string>
+    <string name="process_prayer">Process prayer times</string>
+    <string name="fail_read_file">Failed to read from file %1$s</string>
+    <string name="error_parsing_time">Error parsing time %1$s</string>
+    <string name="invalid_time_format">Invalid time format %1$s</string>
+    <string name="unexpected_error">Unexpected error while getting prayer calendar %1$s</string>
+
+    <string name="error">Error</string>
+    <string name="error_getting_hijri_date">Error getting hijri date %1$s</string>
+    <string name="failed_schedule_silent_mode">Failed to schedule silent mode for %1$s</string>
+ </resources>

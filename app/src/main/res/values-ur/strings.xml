@@ -1,0 +1,346 @@
+<resources>
+    <string name="app_name">نماز موڈ</string>
+    <string name="Off">بند</string>
+    <string name="On">چالو</string>
+    <string name="select_option">ایک اختیار منتخب کریں</string>
+
+    <!-- Daily Schedule Card view -->
+    <string name="daily_schedule">روزانہ کے نماز کا شیڈول</string>
+
+    <string name="calculation_method">حساب کا طریقہ</string>
+    <string name="select_calculation_method">حساب کا طریقہ منتخب کریں</string>
+    <string-array name="calculation_methods">
+        <item>جامعہ ام القریٰ، مکہ</item>
+        <item>رابطہ عالم اسلامی</item>
+        <item>اسلامک سوسائٹی آف نارتھ امریکہ</item>
+        <item>مصری جنرل اتھارٹی آف سروے</item>
+        <item>جامعہ اسلامیہ، کراچی</item>
+        <item>خلیجی علاقہ</item>
+        <item>کویت</item>
+        <item>قطر</item>
+        <item>مجلس اگاما اسلام سنگاپور، سنگاپور</item>
+        <item>یونین آرگنائزیشن اسلامک ڈی فرانس</item>
+        <item>دیانت İşleri Başkanlığı، ترکی</item>
+        <item>روحانی انتظامیہ برائے مسلمانان روس</item>
+        <item>چاند دیکھنے کی کمیٹی</item> <!-- Moonsighting Committee -->
+        <item>دبئی، متحدہ عرب امارات</item>
+        <item>جاباتن کیمجان اسلام ملائیشیا (JAKIM)</item>
+        <item>تیونس</item>
+        <item>الجزائر</item>
+        <item>وزارت مذہبی امور جمہوریہ انڈونیشیا</item>
+        <item>مراکش</item>
+        <item>کومونیداد اسلامیکا دی لزبوا، پرتگال</item>
+        <item>وزارت اوقاف، اسلامی امور اور مقدس مقامات، اردن</item>
+        <item>جیو فزکس انسٹی ٹیوٹ، تہران یونیورسٹی</item>
+        <item>شیعہ اثناء عشری، لیوا انسٹی ٹیوٹ، قم</item>
+    </string-array>
+
+    <string name="daily_silent_duration_after_adhan">اذان کے بعد خاموشی کا دورانیہ</string>
+    <string name="daily_silent_duration">روزانہ خاموشی کا دورانیہ</string>
+    <string name="select_silent_duration">دورانیہ منتخب کریں</string>
+    <string-array name="silent_durations">
+        <item>15 منٹ</item>
+        <item>20 منٹ</item>
+        <item>25 منٹ</item>
+        <item>30 منٹ</item>
+        <item>35 منٹ</item>
+        <item>40 منٹ</item>
+        <item>45 منٹ</item>
+    </string-array>
+
+    <!-- Joumoua Card view -->
+    <string name="joumoua">جمعہ</string>
+    <!-- Black fix text -->
+    <string name="before_dhuhr">اذان سے پہلے خاموشی کا دورانیہ</string>
+    <!-- TV variable text -->
+    <string name="duration_before_dhuhr">اذان سے پہلے کا دورانیہ</string>
+    <!-- Select menu -->
+    <string name="select_before_dhuhr_duration">اذان سے پہلے کا دورانیہ منتخب کریں</string>
+    <string-array name="before_dhuhr_duration">
+        <item>15 منٹ</item>
+        <item>20 منٹ</item>
+        <item>25 منٹ</item>
+        <item>30 منٹ</item>
+        <item>35 منٹ</item>
+        <item>40 منٹ</item>
+        <item>45 منٹ</item>
+        <item>50 منٹ</item>
+        <item>55 منٹ</item>
+        <item>60 منٹ</item>
+    </string-array>
+
+    <string name="after_dhuhr">اذان کے بعد خاموشی کا دورانیہ</string>
+    <string name="duration_after_dhuhr">اذان کے بعد کا دورانیہ</string>
+    <string name="select_after_dhuhr_duration">اذان کے بعد کا دورانیہ منتخب کریں</string>
+    <string-array name="after_dhuhr_duration">
+        <item>15 منٹ</item>
+        <item>20 منٹ</item>
+        <item>25 منٹ</item>
+        <item>30 منٹ</item>
+        <item>35 منٹ</item>
+        <item>40 منٹ</item>
+        <item>45 منٹ</item>
+        <item>50 منٹ</item>
+        <item>55 منٹ</item>
+        <item>60 منٹ</item>
+    </string-array>
+
+    <!-- Ramadan Card view -->
+    <string name="ramadan">رمضان</string>
+
+    <string name="tarawih_silent_duration">عشاء اور تراویح کی خاموشی کا دورانیہ</string>
+    <string name="tarawih_duration">تراویح کا دورانیہ</string>
+    <string name="select_tarawih_duration">عشاء اور تراویح کا دورانیہ منتخب کریں</string>
+    <string-array name="tarawih_duration">
+        <item>20 منٹ</item>
+        <item>30 منٹ</item>
+        <item>40 منٹ</item>
+        <item>50 منٹ</item>
+        <item>1 گھنٹہ</item>
+        <item>1 گھنٹہ 30 منٹ</item>
+        <item>2 گھنٹے</item>
+        <item>2 گھنٹے 30 منٹ</item>
+        <item>3 گھنٹے</item>
+    </string-array>
+
+    <string name="tahajjud_silent_duration">تہجد کی خاموشی کا دورانیہ</string>
+    <string name="tahajjud_duration">تہجد کا دورانیہ</string>
+    <string name="select_tahajjud_duration">تہجد کا دورانیہ منتخب کریں</string>
+    <string-array name="tahajjud_duration">
+        <item>20 منٹ</item>
+        <item>30 منٹ</item>
+        <item>40 منٹ</item>
+        <item>50 منٹ</item>
+        <item>1 گھنٹہ</item>
+        <item>1 گھنٹہ 30 منٹ</item>
+        <item>2 گھنٹے</item>
+        <item>2 گھنٹے 30 منٹ</item>
+        <item>3 گھنٹے</item>
+    </string-array>
+
+    <!-- Eid Card view -->
+    <string name="eid_alfitr_and_eid_aladha">عید الفطر - عید الاضحی</string>
+
+    <string name="eid_time_prayer">عید کی نماز کا وقت</string>
+    <string name="eid_time">عید کا وقت</string>
+    <string name="select_eid_time">عید کی نماز کا وقت منتخب کریں</string>
+    <string-array name="eid_time">
+        <item>طلوع آفتاب کے 20 منٹ بعد</item>
+        <item>06:00</item>
+        <item>06:30</item>
+        <item>07:00</item>
+        <item>07:30</item>
+        <item>08:00</item>
+        <item>08:30</item>
+        <item>09:00</item>
+        <item>10:00</item>
+    </string-array>
+
+    <string name="eid_duration">عید کا دورانیہ</string>
+    <string name="select_eid_duration">عید کی نماز کا دورانیہ منتخب کریں</string>
+    <string name="eid_silent_duration">عید کی خاموشی کا دورانیہ</string>
+    <string-array name="eid_duration">
+        <item>20 منٹ</item>
+        <item>30 منٹ</item>
+        <item>40 منٹ</item>
+        <item>50 منٹ</item>
+        <item>60 منٹ</item>
+    </string-array>
+
+    <!-- Privacy Card view -->
+    <string name="privacy">رازداری</string>
+    <string name="privacy_notice">رازداری کا نوٹس</string>
+    <string name="privacy_content">نماز کے اوقات رازداری نوٹس</string>
+    <string name="privacy_policy_link_text">اس لنک کو</string>
+
+    <string name="privacy_description"><![CDATA[
+یہ ایپ آپ کے ڈیوائس کا مقام درست نماز کے اوقات کے تعین کے لیے استعمال کرتی ہے۔<br/><br/>
+نماز کے اوقات کی بروقت تجدید اور خودکار طریقے سے پریشان نہ کریں موڈ کی فعالیت کو یقینی بنانے کے لیے، ایپ کو پس منظر میں مقام تک رسائی درکار ہے (حتیٰ کہ جب ایپ بند ہو)۔<br/><br/>
+
+ہم آپ کو یقین دلاتے ہیں کہ:<br/>
+<ul>
+  <li>ہم آپ کے درست یا تقریبی مقام کا ڈیٹا مستقل طور پر جمع نہیں کرتے</li>
+<li>ہم آپ کے مقام کی معلومات کو ہمارے سرورز پر ذخیرہ نہیں کرتے</li>
+  <li>ہم آپ کا مقامی ڈیٹا کسی تیسری پارٹی کے ساتھ شیئر نہیں کرتے</li>
+  <li>ہم کوئی دیگر ذاتی معلومات جمع نہیں کرتے</li>
+</ul>
+
+<b>ہم مقامی طور پر کیا محفوظ کرتے ہیں (آپ کے ڈیوائس پر):</b><br/><br/>
+نماز کے اوقات کی مسلسل اور درست معلومات کو یقینی بنانے کے لیے، ایپ صرف آپ کا <b>آخری معلوم مقام (عرض البلد اور طول البلد) آپ کے ڈیوائس پر مقامی طور پر ذخیرہ کرتی ہے</b>۔ یہ ایپ کی بنیادی کارکردگی کے لیے ضروری ہے اور یہ معلومات <b>صرف مقام کی تبدیلیوں کا پتہ لگانے کے لیے</b> استعمال ہوتی ہے۔ جب بھی آپ کے ڈیوائس کا مقام تبدیل ہوتا ہے، یہ معلومات تبدیل ہو جاتی ہے۔ آپ کے ڈیوائس پر مقام کی معلومات کا کوئی ریکارڈ محفوظ نہیں رکھا جاتا، اور نہ ہی کوئی معلومات ہمارے سرورز پر بھیجی جاتی ہے یا بیرونی طور پر شیئر کی جاتی ہے۔<br/>
+ایپ آپ کے ڈیوائس کے مقام تک رسائی کی اجازت طلب کرے گی۔ آپ اس کی اجازت دے یا انکار کر سکتے ہیں۔ اگر آپ پس منظر میں مقام تک رسائی کی اجازت نہیں دیتے، تو ایپ نماز کے اوقات کی خودکار تجدید یا پریشان نہ کریں موڈ کی خودکار فعالیت فراہم نہیں کر سکے گی۔<br/><br/>
+
+<b>پریشان نہ کریں موڈ</b><br/><br/>
+یہ ایپ آپ کے ڈیوائس پر پریشان نہ کریں (DND) موڈ فعال کرنے کی اجازت بھی طلب کر سکتی ہے۔ یہ اجازت ایپ کی صحیح فعالیت کے لیے ضروری ہے تاکہ نماز کے اوقات میں خلل کو کم کیا جا سکے۔<br/><br/>
+ہم اس بات کی واضح وضاحت کرتے ہیں کہ یہ اجازت صرف آپ کے ڈیوائس کی صوتی اور ارتعاشی ترتیبات کو کنٹرول کرنے کے لیے ہے۔ ایپ آپ کی اطلاعات، پیغامات، کالز یا دیگر ذاتی ڈیٹا تک رسائی حاصل نہیں کرتی۔<br/><br/>
+آپ تسلیم کرتے ہیں کہ جب DND موڈ فعال ہو، <b>عام اطلاعات اور ہنگامی کالز موصول نہیں ہو سکتیں۔</b> ہماری کمپنی DND موڈ کی فعالیت کے دوران چھوٹی ہوئی اطلاعات یا ہنگامی کالز کے کسی بھی نتیجے کی ذمہ دار نہیں ہوگی۔<br/><br/>
+اپنی ضروریات کے مطابق DND کی ترتیبات اور استثنیٰ طے کرنا آپ کی ذمہ داری ہے۔<br/><br/>
+ہم آپ کی رازداری کے تحفظ کے لیے پرعزم ہیں۔ اگر آپ کے کوئی سوالات یا خدشات ہیں، براہ کرم ہم سے <a href="mailto:prayer.mode@outlook.com">prayer.mode@outlook.com</a> پر رابطہ کریں۔<br/><br/>
+ہماری پرائیویسی پالیسی کی مکمل تفصیلات کے لیے، براہ کرم [PRIVACY_LINK]<br/><br/>
+ہماری ایپ پر اعتماد کرنے کا شکریہ۔<br/><br/>
+]]></string>
+    <string name="terms">سروس کی شرائط</string>
+
+    <string name="permission">اجازتیں</string>
+    <string name="permissions_content">ضروری اجازتیں</string>
+    <string name="location_permission">مقام کی اجازت آئیکن</string>
+
+    <string name="location">مقام</string>
+    <string name="location_description">آپ کے ڈیوائس کا مقام تک رسائی کے لیے استعمال ہوتا ہے تاکہ درست نماز کے اوقات حاصل کیے جا سکیں اور خودکار اپ ڈیٹس یقینی بنائی جا سکیں، حتیٰ کہ جب ایپ فعال طور پر کھلی نہ ہو۔</string>
+
+    <string name="notifications">اطلاعات</string>
+    <string name="notifications_description">یاد دہانیوں، انتباہات اور دیگر اہم معلومات فراہم کرنے کے لیے استعمال ہوتا ہے، تاکہ آپ کو بروقت موصول ہوں۔</string>
+
+    <string name="dnd">ڈو ناٹ ڈسٹرب</string>
+    <string name="dnd_description">نماز کے اوقات میں خودبخود ڈو ناٹ ڈسٹرب موڈ چالو کرنے کے لیے۔</string>
+
+    <string name="alarm">الارم اور یاد دہانیاں</string>
+    <string name="alarm_description">نماز کے اوقات کے لیے ڈو ناٹ ڈسٹرب موڈ شیڈول کرنے کے لیے۔</string>
+
+    <string name="help">مدد</string>
+    <string name="bulb">ایپ استعمال کرنے سے پہلے</string>
+    <string name="bulb_content">فوری آغاز گائیڈ</string>
+    <string name="bulb_description">پہلی بار استعمال کرتے وقت ان ہدایات پر عمل کریں۔</string>
+
+    <string name="important_note">ماہانہ اپڈیٹ اور مقام کی تبدیلی</string>
+    <string name="important_note_description">"یہ ایپ ہر مہینے کے پہلے دن aladhan.com API سے نماز کے اوقات لیتی ہے۔ درست اوقات کیلئے مسلسل انٹرنیٹ کنکشن اور مقام کی خدمات چالو رکھیں۔"</string>
+
+    <string name="volume">پریشان نہ کریں موڈ</string>
+    <string name="volume_description">پریشان نہ کریں موڈ کے دوران، ایپ تمام آوازیں خاموش کر دیتی ہے اور کالز اور اطلاعات کے لیے وائبریشنز کو غیر فعال کر دیتی ہے۔ تاہم، مرکزی اسپیکر سے الارم کی آوازیں اور ایئر پیس اسپیکر کے ذریعے آپ کی کالوں کی آواز سنائی دیتی رہے گی۔ پریشان نہ کریں موڈ کے بند ہونے پر، آواز کی سطح اپنی آخری محفوظ شدہ اقدار پر بحال ہو جاتی ہے۔</string>
+
+    <string name="calculation">حساب کے طریقے</string>
+    <string name="calculation_description">aladhan.com API کا استعمال کرتے ہوئے درست نماز اوقات۔</string>
+
+    <string name="durations">دورانیے</string>
+    <string name="durations_description">ہر نماز (5 وقتہ، جمعہ، تراویح، تہجد، عید) کا الگ دورانیہ منتخب کریں۔</string>
+
+    <string name="time">وقت</string>
+    <string name="time_description">عید الفطر اور عید الاضحی کی نماز کا وقت منتخب کریں۔</string>
+
+    <string name="tile">ٹائل</string>
+    <string name="tile_description">کوئک سیٹنگز میں نماز ٹائل شامل کریں۔</string>
+
+    <string name="wearable">پہننے کے قابل ڈیوائس</string>
+    <string name="wearable_description">آپ کا اسمارٹ واچ بھی اطلاعات وصول کر سکتا ہے۔</string>
+
+    <string name="donation">عطیات</string>
+    <string name="donation_link_text">پے پال</string>
+    <string name="donation_content">ہماری حمایت کریں</string>
+    <string name="donation_description"><![CDATA[
+Prayer mode ایک مفت اور اوپن سورس سافٹ ویئر ہے۔ اس کی ترقی اور دیکھ بھال میں وقت اور محنت درکار ہوتی ہے۔<br/><br/>
+اگر آپ کو یہ ایپ قابل قدر لگتی ہے اور اس کی مسلسل ترقی کو سپورٹ کرنا چاہتے ہیں، تو آپ ایک رضاکارانہ عطیہ دے سکتے ہیں۔<br/><br/>
+عطیات <b>رضاکارانہ اور غیر قابل واپسی</b> ہیں، اور آپ کو کسی بھی پریمیم سروس یا خصوصیات کا حق نہیں دیتے۔<br/><br/>
+یہ صرف آپ کی تعریف ظاہر کرنے اور اس بات کو یقینی بنانے میں مدد کرنے کا ایک طریقہ ہے کہ ایپ سب کے لیے مفت اور اپ ڈیٹڈ رہے۔<br/><br/>
+آپ [DONATION_LINK] کا استعمال کر کے عطیہ دے سکتے ہیں۔<br/><br/>
+]]></string>
+
+    <string name="back_button">پیچھے کا بٹن</string>
+
+    <!-- MainActivity SnackBar -->
+    <string name="cannot_change_settings">سوئچ چالو ہونے پر ترتیبات تبدیل نہیں کی جا سکتیں</string>
+    <string name="permissions_granted">تمام اجازتیں دے دی گئی ہیں، سوئچ آن کیا جا سکتا ہے۔</string>
+
+    <string name="alarm_permission_granted">الارم کی اجازت دی گئی</string>
+    <string name="grant_location_permission">براہ کرم مقام کی اجازت دیں</string>
+    <string name="grant_alarm_permission">براہ کرم الارم کی اجازت دیں</string>
+    <string name="grant_dnd_permission">خودکار خاموشی کے لیے ڈو ناٹ ڈسٹرب کی اجازت درکار ہے۔</string>
+    <string name="background_location_denied_message">نماز کے اوقات کو خودکار طریقے سے اپ ڈیٹ کرنے کے لیے پس منظر میں مقام تک رسائی ضروری ہے۔</string>
+    <string name="no_location_internet">نماز موڈ چالو نہیں کیا جا سکا۔ مقام کی خدمات اور انٹرنیٹ کنکشن چیک کریں۔</string>
+    <string name="app_disabled">نماز موڈ بند ہے۔</string>
+    <string name="app_enabled">نماز موڈ چالو ہے۔</string>
+    <string name="alarm_permission_denied_message">درست یاد دہانیوں کیلئے الارم کی اجازت درکار ہے۔ براہ کرم ترتیبات میں اجازت دیں۔</string>
+    <string name="notification_disabled">نوٹیفکیشنز بند ہیں، لیکن سیٹنگز میں انہیں آن کیا جا سکتا ہے</string>
+
+    <!-- PermissionHelper Dialogs -->
+    <string name="background_location_permission_title">پس منظر میں مقام کی اجازت درکار ہے</string>
+    <string name="background_location_permission_message">نماز کے اوقات کو ایڈجسٹ کرنے کے لیے اس ایپ کو آپ کے آلے کے مقام تک مسلسل رسائی کی ضرورت ہے جب ایپ استعمال میں نہ ہو۔ براہ کرم مقام کی اجازت کی ترتیبات میں &lt;b&gt;ہر وقت اجازت دیں&lt;/b&gt; کو منتخب کریں۔</string>
+
+    <string name="alarm_permission_title">الارم کی اجازت درکار</string>
+    <string name="alarm_permission_message">اس ایپ کو مقررہ وقت پر ڈو ناٹ ڈسٹرب موڈ کو فعال/غیر فعال کرنے اور اگلے دن کی نمازوں کو شیڈول کرنے کے لیے الارم کی اجازت درکار ہے۔ براہ کرم ترتیبات میں اجازت دیں۔</string>
+
+    <string name="dnd_permission_title">پریشان نہ کریں تک رسائی درکار</string>
+    <string name="dnd_permission_message">براہ کرم نماز کے اوقات میں خودکار خاموشی کے لیے مزعج مت کریں کی رسائی دیں، کیونکہ ایپ کے صحیح طریقے سے کام کرنے کے لیے یہ رسائی ضروری ہے۔</string>
+
+    <!-- mainActivity -->
+    <string name="location_permission_denied_title">مقام کی اجازت مسترد</string>
+    <string name="location_permission_denied_message">نماز کے درست اوقات کیلئے ایپ کو مسلسل مقام تک رسائی درکار ہے۔ براہ کرم ترتیبات میں اجازت دیں۔</string>
+
+    <string name="location_permanently_denied_title">مقام کی اجازت مستقل طور پر مسترد کر دی گئی</string>
+    <string name="location_permanently_denied_message">آپ ایپ کی سیٹنگز میں جا کر لوکیشن کی اجازت دے سکتے ہیں</string>
+
+    <string name="notification_recommended_title">نوٹیفکیشنز ضروری ہیں</string>
+    <string name="notification_recommended_message">نوٹیفکیشنز کے بغیر نماز کے وقت کی اطلاع اور یاد دہانیاں نہیں ملیں گی</string>
+
+    <string name="try_again">دوبارہ کوشش کریں</string>
+    <string name="exit">باہر نکلیں</string>
+    <string name="enable">فعال کریں</string>
+    <string name="skip">چھوڑ دیں</string>
+
+    <string name="open_settings">ترتیبات کھولیں</string>
+    <string name="cancel">منسوخ کریں</string>
+    <string name="ok">ٹھیک ہے</string>
+
+    <string name="app_disabled_after_reboot">ڈیوائس ریبوٹ کے بعد مقام کی خدمات بند ہو گئی ہیں۔ ایپ کھول کر خدمات دوبارہ چالو کریں۔</string>
+
+    <string name="terms_dialog_title">اہم اطلاع</string>
+    <string name="terms_dialog_message">براہ کرم نیچے دیے گئے لنکس کا استعمال کرتے ہوئے ہماری سروس کی شرائط اور رازداری کی پالیسی کو بغور پڑھیں۔ اس ایپلی کیشن کو استعمال کرنے کے لیے آپ کو انہیں قبول کرنا ہوگا۔</string>
+    <string name="terms_dialog_link">سروس کی شرائط</string>
+    <string name="privacy_link">رازداری کا نوٹس</string>
+    <string name="decline">انکار</string>
+    <string name="accept">قبول کریں</string>
+
+    <string name="today_fajr_time_is">آج فجر کی نماز کا وقت %1$s ہے۔</string>
+
+    <string name="today_dhuhr_time_is">آج جمعہ کی نماز کا وقت %1$s ہے۔</string>
+    <string name="silent_mode_activated_for">نماز کے اوقات کیلئے پریشان نہ کریں موڈ چالو کیا گیا %1$s۔</string>
+    <string name="today_imsak_time_is">آج کے امساک کا وقت %1$s ہے۔</string>
+    <string name="back_to_normal_mode">پریشان نہ کریں کا موڈ بند کر دیا گیا.</string>
+    <string name="location_title">مقام کی خدمات</string>
+    <string name="getting_location_update">مقام کی معلومات کو اپ ڈیٹ کیا جا رہا ہے۔</string>
+    <string name="happy_eid_alfitr">عید الفطر مبارک ہو، اللہ ہمارے اور آپ کے نیک اعمال قبول فرمائے۔</string>
+    <string name="happy_eid_aladha">عید الاضحی مبارک ہو، اللہ ہمارے اور آپ کے نیک اعمال قبول فرمائے۔</string>
+    <string name="dnd_already_on">%1$s کے لیے DND موڈ چالو کرنے کی کوشش کے وقت یہ پہلے ہی صارف/سسٹم کی جانب سے فعال تھا، لہٰذا آپ کی موجودہ ترتیبات کے احترام میں اسے چالو رہنے دیا جائے گا۔</string>
+
+    <string name="location_service_disabled">ایپ کی صحیح کارکردگی کیلئے مقام کی خدمات چالو کریں۔</string>
+    <string name="travelled_distance">آپ %1$s کلومیٹر کا سفر طے کر چکے ہیں۔ نماز کے اوقات آپ کی نئی جگہ کے مطابق تبدیل کیے جا رہے ہیں۔</string>
+    <string name="location_name">%1$s کے لیے نماز کے اوقات مل رہے ہیں۔ کیا لوکیشن درست نہیں؟ آپ کو اپنے ڈیوائس کی لوکیشن سیٹنگز درست کرنے کی ضرورت ہو سکتی ہے۔</string>
+
+    <string name="open_prayer">ایپ کھولیں</string>
+
+    <string name="eid">عید</string>
+    <string name="imsak">امساک</string>
+    <string name="fajr">فجر</string>
+    <string name="sunrise">طلوع آفتاب</string>
+    <string name="dhuhr">ظہر</string>
+    <string name="asr">عصر</string>
+    <string name="maghrib">مغرب</string>
+    <string name="isha">عشاء</string>
+    <string name="tarawih">تراویح</string>
+    <string name="tahajjud">تہجد</string>
+    <string name="prayer_name_unknown">نماز</string>
+
+    <string name="fetch_title">نماز کے اوقات کی تازہ کاریاں</string>
+    <string name="fetch_failed_no_internet">انٹرنیٹ کنکشن دستیاب نہیں۔ براہ کرم انٹرنیٹ سے جڑیں، پھر سوئچ کو بند اور دوبارہ چالو کریں۔</string>
+    <string name="fetch_failed">نماز کے اوقات حاصل کرتے وقت ایک غیر متوقع خرابی پیش آئی۔ براہ کرم سوئچ کو بند اور دوبارہ چالو کریں۔</string>
+    <string name="schedule_title">نماز کے اوقات کا جدول</string>
+
+    <!-- Catch & else blocks -->
+    <string name="failed_writing">براہ کرم یقینی بنائیں کہ آپ کے پاس کافی اسٹوریج جگہ ہے۔</string>
+    <string name="permission_denied_writing">نماز کے اوقات کی فائل کو محفوظ کرتے وقت ایک غیر متوقع خرابی پیش آگئی ہے۔ براہ کرم ایپ کو دوبارہ شروع کریں اور اپ ڈیٹس چیک کریں۔</string>
+
+    <!-- For debugging only -->
+    <string name="silent_schedule_success">آج کا شیڈول کامیابی سے سیٹ ہو گیا۔</string>
+    <string name="monthly_update">اس مہینے کے نماز کے اوقات کو اپ ڈیٹ کیا جا رہا ہے: %1$s۔</string>
+    <string name="monthly_update_default_method">اس مہینے کے نماز کے اوقات (%1$s) ڈیفالٹ طریقے سے اپ ڈیٹ کیے جا رہے ہیں۔</string>
+    <string name="speed">You travelled at %1$s km/h.</string>
+
+    <string name="worker_failed">Worker failed.</string>
+    <string name="process_prayer">Process prayer times</string>
+    <string name="fail_read_file">Failed to read from file %1$s</string>
+    <string name="error_parsing_time">Error parsing time %1$s</string>
+    <string name="invalid_time_format">Invalid time format %1$s</string>
+    <string name="unexpected_error">Unexpected error while getting prayer calendar %1$s</string>
+
+    <string name="error">Error</string>
+    <string name="error_getting_hijri_date">Error getting hijri date %1$s</string>
+    <string name="failed_schedule_silent_mode">Failed to schedule silent mode for %1$s</string>
+</resources>

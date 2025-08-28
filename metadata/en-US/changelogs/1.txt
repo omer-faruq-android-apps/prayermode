@@ -1,0 +1,1 @@
+Initial release of Prayer mode. Features include accurate prayer time calculations based on location and automatic Do Not Disturb mode.

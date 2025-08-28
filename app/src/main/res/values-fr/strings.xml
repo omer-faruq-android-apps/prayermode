@@ -1,0 +1,349 @@
+<resources>
+    <string name="app_name">Mode Prière</string>
+    <string name="Off">Désactivé</string>
+    <string name="On">Activé</string>
+    <string name="select_option">Selectionner une option</string>
+
+    <!-- Daily Schedule Cardview -->
+    <string name="daily_schedule">Programmation Quotidienne</string>
+
+    <string name="calculation_method">Méthode de calcul</string>
+    <string name="select_calculation_method">Choix de la méthode de calcul</string>
+    <string-array name="calculation_methods">
+        <item>Université Umm Al-Qura, La Mecque</item>
+        <item>Ligue Musulmane Mondiale</item>
+        <item>Société Islamique d\'Amérique du Nord</item>
+        <item>Autorité Générale Égyptienne des Levés Topographiques</item>
+        <item>Université des Sciences Islamiques, Karachi</item>
+        <item>Région du Golfe</item>
+        <item>Koweït</item>
+        <item>Qatar</item>
+        <item>Majlis Ugama Islam Singapura, Singapour</item>
+        <item>Union des Organisations Islamiques de France</item>
+        <item>Direction des Affaires Religieuses de Turquie</item>
+        <item>Administration Spirituelle des Musulmans de Russie</item>
+        <item>Comité d\'Observation de la Lune</item>
+        <item>Dubaï, ÉAU</item>
+        <item>Département du Développement Islamique de Malaisie (JAKIM)</item>
+        <item>Tunisie</item>
+        <item>Algérie</item>
+        <item>Ministère des Affaires Religieuses de la République d\'Indonésie</item>
+        <item>Maroc</item>
+        <item>Communauté Islamique de Lisbonne, Portugal</item>
+        <item>Ministère des Awqaf, Jordanie</item>
+        <item>Institut de géophysique, Université de Téhéran</item>
+        <item>Shia Ithna-Ashari, Institut Leva, Qum</item>
+    </string-array>
+
+    <string name="daily_silent_duration_after_adhan">Durée du mode silencieux après al adhan</string>
+    <string name="daily_silent_duration">Durée quotidienne mode silencieux</string>
+    <string name="select_silent_duration">Choix de la durée quotidienne du mode silencieux</string>
+    <string-array name="silent_durations">
+        <item>15 minutes</item>
+        <item>20 minutes</item>
+        <item>25 minutes</item>
+        <item>30 minutes</item>
+        <item>35 minutes</item>
+        <item>40 minutes</item>
+        <item>45 minutes</item>
+    </string-array>
+
+    <!-- Joumouaa Cardview -->
+    <string name="joumoua">Al Joumoua</string><!-- Cardview Up text -->
+    <!-- Black fix text -->
+    <string name="before_dhuhr">Durée du mode silencieux avant al adhan</string>
+    <!-- TV variable text -->
+    <string name="duration_before_dhuhr">Durée avant adhan</string>
+    <!-- Select menu -->
+    <string name="select_before_dhuhr_duration">Choix de la durée avant al adhan</string>
+    <string-array name="before_dhuhr_duration">
+        <item>15 minutes</item>
+        <item>20 minutes</item>
+        <item>25 minutes</item>
+        <item>30 minutes</item>
+        <item>35 minutes</item>
+        <item>40 minutes</item>
+        <item>45 minutes</item>
+        <item>50 minutes</item>
+        <item>55 minutes</item>
+        <item>60 minutes</item>
+    </string-array>
+
+    <string name="after_dhuhr">Durée du mode silencieux après al adhan</string>
+    <string name="duration_after_dhuhr">Durée après adhan</string>
+    <string name="select_after_dhuhr_duration">Choix de la durée après al adhan</string>
+    <string-array name="after_dhuhr_duration">
+        <item>15 minutes</item>
+        <item>20 minutes</item>
+        <item>25 minutes</item>
+        <item>30 minutes</item>
+        <item>35 minutes</item>
+        <item>40 minutes</item>
+        <item>45 minutes</item>
+        <item>50 minutes</item>
+        <item>55 minutes</item>
+        <item>60 minutes</item>
+    </string-array>
+
+    <!-- Ramadan Cardview -->
+    <string name="ramadan">Ramadan</string>
+
+    <string name="tarawih_silent_duration">Durée du mode silencieux Isha et Tarawih</string>
+    <string name="tarawih_duration">Durée Tarawih</string>
+    <string name="select_tarawih_duration">Choix de la durée de la prière d\'Isha et des Tarawih</string>
+    <string-array name="tarawih_duration">
+        <item>20 minutes</item>
+        <item>30 minutes</item>
+        <item>40 minutes</item>
+        <item>50 minutes</item>
+        <item>1 heure</item>
+        <item>1 heure 30 minutes</item>
+        <item>2 heures</item>
+        <item>2 heures 30 minutes</item>
+        <item>3 heures</item>
+    </string-array>
+
+    <string name="tahajjud_silent_duration">Durée du mode silencieux de Tahajjoud</string>
+    <string name="tahajjud_duration">Durée Tahajjoud</string>
+    <string name="select_tahajjud_duration">Choix de la durée du Tahajjoud</string>
+    <string-array name="tahajjud_duration">
+        <item>20 minutes</item>
+        <item>30 minutes</item>
+        <item>40 minutes</item>
+        <item>50 minutes</item>
+        <item>1 heure</item>
+        <item>1 heure 30 minutes</item>
+        <item>2 heures</item>
+        <item>2 heures 30 minutes</item>
+        <item>3 heures</item>
+    </string-array>
+
+    <!-- Eid Cardview -->
+    <string name="eid_alfitr_and_eid_aladha">Aïd Al Fitr - Aïd Al Adha</string>
+
+    <string name="eid_time_prayer">Heure de la prière de l\'Aïd</string>
+    <string name="eid_time">Heure Aïd</string>
+    <string name="select_eid_time">Choix de l\'heure de la prière de l\'Aïd</string>
+    <string-array name="eid_time">
+        <item>20 minutes après le lever du soleil</item>
+        <item>06:00</item>
+        <item>06:30</item>
+        <item>07:00</item>
+        <item>07:30</item>
+        <item>08:00</item>
+        <item>08:30</item>
+        <item>09:00</item>
+        <item>10:00</item>
+    </string-array>
+
+    <string name="eid_silent_duration">Durée du mode silencieux de l\'Aïd</string>
+    <string name="eid_duration">Durée Aïd</string>
+    <string name="select_eid_duration">Choix de la durée de la prière de l\'Aïd</string>
+    <string-array name="eid_duration">
+        <item>20 minutes</item>
+        <item>30 minutes</item>
+        <item>40 minutes</item>
+        <item>50 minutes</item>
+        <item>60 minutes</item>
+    </string-array>
+
+    <!-- Privacy Cardview -->
+    <string name="privacy">Confidentialité</string>
+    <string name="privacy_notice">Avis de confidentialité</string>
+    <string name="privacy_content">Avis de confidentialité Mode Prière</string>
+    <string name="privacy_policy_link_text">ce lien</string>
+
+    <string name="privacy_description"><![CDATA[
+Cette appli utilise la localisation de votre appareil uniquement pour calculer les heures de prière précises en fonction de votre zone géographique.<br/><br/>
+
+Pour garantir des mises à jour continues des heures de prière et activer automatiquement le mode Ne Pas Déranger lors des heures de prières, l\'appli nécessite un accès à la localisation en arrière-plan (même lorsque l\'appli est fermée ou non utilisée).<br/><br/>
+
+Nous tenons à vous assurer que nous ne faisons pas ce qui suit:<br/>
+<ul>
+<li>Collecter vos données de localisation précises ou approximatives de manière persistante.</li>
+<li>Stocker vos données de localisation sur nos serveurs.</li>
+<li>Partager vos données de localisation avec des tiers.</li>
+<li>Collecter d\'autres informations personnelles.</li>
+</ul>
+
+<b>Ce que nous stockons localement (sur votre appareil) :</b><br/><br/>
+Pour assurer des mises à jour continues et précises des heures de prière, l\'application ne stocke que votre <b>dernière position connue (latitude et longitude) localement sur votre appareil</b>. Ceci est nécessaire pour que la fonctionnalité principale de l\'application fonctionne comme prévu, ces données sont utilisées <b>uniquement dans le but de détecter les changements de position</b>. Ces données de localisation sont écrasées chaque fois que la position de votre appareil change, aucun historique des données de localisation n\'est conservé sur votre appareil, et aucune donnée n\'est envoyée à nos serveurs ni partagée en externe.<br/><br/>
+L\'appli demandera l\'autorisation d\'accéder à la localisation de votre appareil. Vous pouvez choisir d\'accorder ou de refuser cette autorisation. Si vous refusez l\'autorisation de localisation, l\'appli pourrait ne pas être en mesure de fournir des heures de prière précises.<br/><br/>
+
+<b>Mode Ne Pas Déranger</b><br/><br/>
+Cette appli peut également demander l\'autorisation d\'activer le mode Ne Pas Déranger (NPD) sur votre appareil. Cette autorisation est nécessaire au bon fonctionnement de l\'appli, car elle active temporairement le mode NPD afin de minimiser les interruptions pendant les heures de prière.<br/><br/>
+Bien que cette autorisation permette à l\'appli de contrôler les paramètres de son et de vibration de votre appareil, nous tenons à préciser explicitement que l\'appli N\'ACCÈDE PAS, NE LIT PAS et NE COLLECTE PAS vos notifications, messages, contenu d\'appels, ou toute autre donnée personnelle affichée par vos notifications. Cette autorisation est uniquement destinée à activer et désactiver le mode NPD.<br/><br/>
+Vous reconnaissez que lorsque le mode NPD est activé, <b>vous pourriez ne pas recevoir les notifications standard et les appels d\'urgence</b>. Notre entreprise ne saurait être tenue responsable des conséquences résultants de notifications et d\'appels d\'urgence manqués, pendant les périodes où l\'appli a activé le mode Ne Pas Déranger.<br/><br/>
+Il est de votre responsabilité de configurer les paramètres du mode NPD et les exceptions en fonction de vos besoins.<br/><br/>
+
+Nous nous engageons à protéger votre vie privée. Si vous avez des questions ou des préoccupations concernant nos pratiques de confidentialité, veuillez nous contacter par e-mail <a href="mailto:prayer.mode@outlook.com">prayer.mode@outlook.com</a><br/><br/>
+
+Pour plus de détails sur notre Politique de Confidentialité, veuillez suivre [PRIVACY_LINK].<br/><br/>
+
+Nous vous remercions pour la confiance que vous accordez à notre application.<br/><br/>
+]]></string>
+    <string name="terms">Terms of Service</string>
+
+    <string name="permission">Permissions</string>
+    <string name="permissions_content">Autorisations requises</string>
+    <string name="location_permission">Icône d\'autorisation de localisation</string>
+
+    <string name="location">Location</string>
+    <string name="location_description">Utilisé pour accéder à la position de votre appareil afin d\'obtenir des heures de prière précises et garantir des mises à jour automatiques, même lorsque l\'appli n\'est pas active.</string>
+
+    <string name="notifications">Notifications</string>
+    <string name="notifications_description">Utilisé pour fournir des informations sur les rappels, alertes et autres informations importantes, en assurant leur réception en temps voulu.</string>
+
+    <string name="dnd">Mode Ne Pas Déranger</string>
+    <string name="dnd_description">Utilisé pour activer automatiquement le mode Ne Pas Déranger pendant les heures de prière.</string>
+
+    <string name="alarm">Alarme &amp; Rappels</string>
+    <string name="alarm_description">Utilisé pour planifier le mode Ne pas déranger pour les heures de prière.</string>
+
+    <string name="help">Aide</string>
+    <string name="bulb">Avant de commencer à utiliser l\'appli</string>
+    <string name="bulb_content">Guide de démarrage rapide</string>
+    <string name="bulb_description">Lorsque vous utilisez cette appli pour la première fois, veuillez lire les conseils ci-dessous pour configurer les paramètres.</string>
+
+    <string name="important_note">Mise à jour mensuelle des heures de prière et détection des changements de localisation</string>
+    <string name="important_note_description">Cette appli récupère les heures de prière à partir de l\'API aladhan.com le premier jour de chaque mois et dépend de la localisation de votre appareil et d\'une connexion Internet active. Ceci afin d\'assurer l\'exactitude des heures de prière et le bon fonctionnement du mode Ne Pas Déranger. Pour une détection continue des changements de localisation lors de déplacements de grandes distances, qui est une fonctionnalité importante de l\'appli, les services de localisation doivent être activés en permanence et une connexion Internet persistante est requise.</string>
+
+    <string name="volume">Mode Ne Pas Déranger</string>
+    <string name="volume_description">Durant le mode Ne Pas Déranger, l\'application coupe tous les sons et désactive les vibrations pour les appels et les notifications. Cependant, les alarmes provenant du haut-parleur principal et l\'audio des appels le haut-parleur du téléphone resteront audibles. Une fois le mode NPD désactivé, les niveaux sonores sont restaurés à leurs dernières valeurs sauvegardées.</string>
+
+    <string name="calculation">Méthodes de calcul</string>
+    <string name="calculation_description">Sélectionnez la méthode de calcul souhaitée avant d\'activer l\'appli. Veuillez noter que l\'appli utilise l\'API d\'aladhan.com pour obtenir avec précision les heures de prière.</string>
+
+    <string name="durations">Durées</string>
+    <string name="durations_description">Sélectionnez les durées en fonction de vos préférences. Notez que les cinq prières quotidiennes, la prière du vendredi (Joumoua), Tarawih, Tahajjoud et les prières de l\'Aïd ont chacunes leurs propres durées.</string>
+
+    <string name="time">Heure</string>
+    <string name="time_description">Choisissez l\’heure de la prière de l\’Aïd Al-Fitr et Al-Adha.</string>
+
+    <string name="tile">Tuile Mode Prière</string>
+    <string name="tile_description">Vous pouvez ajouter la tuile du Mode Prière dans les paramètres rapides afin que l\'accès à l\'appli soit plus rapide.</string>
+
+    <string name="wearable">Montre connectée</string>
+    <string name="wearable_description">Votre montre connectée peut également recevoir les notifications et suivre le mode sonore de votre téléphone. Pour cela, vérifiez les paramètres de l\'appli de votre montre.</string>
+
+    <string name="donation">Dons</string>
+    <string name="donation_link_text">PayPal</string>
+    <string name="donation_content">Soutenez-nous</string>
+    <string name="donation_description"><![CDATA[
+Prayer mode est un logiciel gratuit et open-source. Son développement et sa maintenance demandent du temps et des efforts.<br/><br/>
+Si vous trouvez cette application utile et souhaitez soutenir son développement continu, vous pouvez faire un don volontaire.<br/><br/>
+Les dons sont <b>volontaires et non remboursables</b> et ne vous donnent droit à aucun service ou fonctionnalité premium.<br/><br/>
+Ils sont simplement un moyen de montrer votre appreciation et d\'aider à garantir que l\'application reste gratuite et mise à jour pour tous.<br/><br/>
+Vous pouvez faire un don en utilisant [DONATION_LINK].<br/><br/>
+]]></string>
+
+    <string name="back_button">Boutton arrière</string>
+
+    <!-- MainActivity SnackBar -->
+    <string name="cannot_change_settings">Lorsque l\'interrupteur est activé, les paramètres ne peuvent pas être modifiés.</string>
+    <string name="permissions_granted">Toutes les autorisations sont accordées, l\'interrupteur peut être activé.</string>
+
+    <string name="alarm_permission_granted">Permission de l\'alarme accordée.</string>
+    <string name="grant_location_permission">Veuillez accorder l\'autorisation de localisation.</string>
+    <string name="grant_alarm_permission">Veuillez accorder l\'autorisation de l\'alarme.</string>
+    <string name="grant_dnd_permission">Permission Ne Pas Déranger nécessaire pour le mode silencieux automatique.</string>
+    <string name="background_location_denied_message">Accès à la localisation en arrière-plan nécessaire pour MàJ les heures de prière.</string>
+    <string name="no_location_internet">Il n\'est pas possible d\'activer l\'interrupteur, veuillez activer le service de localisation et/ou la connexion Internet.</string>
+    <string name="app_disabled">Mode Prière désactivé.</string>
+    <string name="app_enabled">Mode Prière activé.</string>
+    <string name="alarm_permission_denied_message">Cette appli nécessite l\'autorisation de l\'alarme pour des rappels précis. Veuillez accorder cette autorisation dans les paramètres.</string>
+    <string name="notification_disabled">Les notifications sont désactivées mais peuvent être autorisées dans les paramètres.</string>
+
+    <!-- PermissionHelper Dialogs -->
+    <string name="background_location_permission_title">Autorisation de localisation en arrière-plan requise</string>
+    <string name="background_location_permission_message">Cette appli nécessite un accès continu à la localisation de votre appareil lorsque l\'appli n\'est pas utilisée afin d\'adapter les heures de prière. Veuillez sélectionner &lt;b&gt;Toujours autoriser&lt;/b&gt; dans Autorisations/Position.</string>
+
+    <string name="alarm_permission_title">Autorisation de l\'alarme requise</string>
+    <string name="alarm_permission_message">Cette appli nécessite l\'autorisation d\'alarme pour activer/désactiver le mode Ne Pas Déranger à l\'heure précise et également pour programmer les prochaines prières. Veuillez accorder l\'autorisation dans les paramètres.</string>
+
+    <string name="dnd_permission_title">Accès Ne Pas Déranger requis</string>
+    <string name="dnd_permission_message">Veuillez accorder l\'accès Ne Pas Déranger qui active la mise en silence automatique pendant les heures de prière. Cet accès est nécessaire au bon fonctionnement de l\'application.</string>
+
+    <!-- mainActivity -->
+    <string name="location_permission_denied_title">Autorisation de localisation requise</string>
+    <string name="location_permission_denied_message">Cette appli nécessite un accès continu à la localisation de votre appareil pendant son utilisation pour obtenir les horaires de prière avec précision. Veuillez autoriser la localisation dans les paramètres de l\'appli.</string>
+
+    <string name="location_permanently_denied_title">Localisation définitivement refusée</string>
+    <string name="location_permanently_denied_message">L\'autorisation de localisation peut toujours être accordée dans les paramètres de l\'appli.</string>
+
+    <string name="notification_recommended_title">Notifications Recommandées</string>
+    <string name="notification_recommended_message">Les alertes et rappels du mode Prière peuvent être manqués sans accès aux notifications.</string>
+
+    <string name="try_again">Réessayer</string>
+    <string name="exit">Quitter</string>
+    <string name="enable">Activer</string>
+    <string name="skip">Ignorer</string>
+
+    <string name="open_settings">Ouvrir les paramètres</string>
+    <string name="cancel">Annuler</string>
+    <string name="ok">Accepter</string>
+
+    <string name="app_disabled_after_reboot">Le service de localisation a été interrompu après le redémarrage de l\'appareil. Veuillez ouvrir l\'appli pour démarrer le service de localisation.</string>
+
+    <string name="terms_dialog_title">Avis Important</string>
+    <string name="terms_dialog_message">Veuillez lire attentivement nos Conditions d\'utilisation et notre Politique de confidentialité en utilisant les liens ci-dessous. Vous devez les accepter pour utiliser cette application.</string>
+    <string name="terms_dialog_link">Conditions d\'Utilisation</string>
+    <string name="privacy_link">Politique de Confidentialité</string>
+    <string name="decline">Refuser</string>
+    <string name="accept">Accepter</string>
+
+    <string name="today_fajr_time_is">Aujourd\'hui la prière du Fajr est à %1$s.</string>
+    <string name="today_dhuhr_time_is">Aujourd\'hui la prière d\'Al Joumoua est à %1$s.</string>
+    <string name="silent_mode_activated_for">Ne Pas Déranger activé pour %1$s.</string>
+    <string name="today_imsak_time_is">Aujourd\'hui l\'heure de l\'Imsak est à %1$s.</string>
+    <string name="back_to_normal_mode">Mode Ne Pas Déranger désactivé.</string>
+    <string name="location_title">Service de localisation.</string>
+    <string name="getting_location_update">Obtention des mises à jour de localisation en cours.</string>
+    <string name="happy_eid_alfitr">Joyeux Aïd Al-Fitr, qu\'Allah accepte nos bonnes actions ainsi que les vôtres.</string>
+    <string name="happy_eid_aladha">Joyeux Aïd Al-Adha, qu\'Allah accepte nos bonnes actions ainsi que les vôtres.</string>
+    <string name="dnd_already_on">Mode Ne Pas Déranger déjà activé par l\'utilisateur ou le système lors de la tentative d\'activation NPD pour %1$s et restera donc actif pour respecter vos réglages actuels.</string>
+
+    <string name="location_service_disabled">Veuillez activer le service de localisation pour que l\'appli puisse fonctionner correctement.</string>
+    <string name="travelled_distance">Vous avez parcouru %1$s km. Adaptation des horaires de prière à votre nouvelle position.</string>
+    <string name="location_name">Récupération des heures de prière pour %1$s. Localisation incorrecte ? Veuillez ajuster les paramètres de localisation de votre appareil.</string>
+
+    <string name="open_prayer">Ouvrir l\'application</string>
+
+    <string name="eid">Al Aïd</string>
+    <string name="imsak">Imsak</string>
+    <string name="fajr">Fajr</string>
+    <string name="sunrise">Lever du soleil</string>
+    <string name="dhuhr">Dhuhr</string>
+    <string name="asr">Asr</string>
+    <string name="maghrib">Maghrib</string>
+    <string name="isha">Isha</string>
+    <string name="tarawih">Tarawih</string>
+    <string name="tahajjud">Tahajjoud</string>
+    <string name="prayer_name_unknown">Prayer</string>
+
+    <string name="fetch_title">MàJ horaires des prières</string>
+    <string name="fetch_failed_no_internet">Aucune connexion Internet disponible. Veuillez vous connecter, désactivez puis réactiver l\'interrupteur.</string>
+    <string name="fetch_failed">Une erreur inattendue s\'est produite lors de la MàJ des heures de prières. Veuillez désactiver puis réactiver l\'interrupteur.</string>
+    <string name="schedule_title">Planning horaires des prières</string>
+
+    <!-- Catch & blocks -->
+    <string name="failed_writing">Veuillez vous assurer que vous disposez de suffisamment d\'espace de stockage.</string>
+    <string name="permission_denied_writing">Une erreur inattendue s\'est produite lors de l\'enregistrement du fichier des heures de prière, veuillez redémarrer l\'application et vérifier les mises à jour.</string>
+
+    <!-- For debugging only -->
+    <string name="silent_schedule_success">Programmation quotidienne réussie.</string>
+    <string name="monthly_update">MàJ des horaires de prière pour ce mois %1$s.</string>
+    <string name="monthly_update_default_method">MàJ des horaires de prière pour ce mois %1$s en utilisant la méthode par défaut.</string>
+    <string name="speed">You travelled at %1$s km/h.</string>
+
+    <string name="worker_failed">Worker failed.</string>
+    <string name="process_prayer">Process prayer times</string>
+    <string name="fail_read_file">Failed to read from file %1$s</string>
+    <string name="error_parsing_time">Error parsing time %1$s</string>
+    <string name="invalid_time_format">Invalid time format %1$s</string>
+    <string name="unexpected_error">Unexpected error while getting prayer calendar %1$s</string>
+
+    <string name="error">Error</string>
+    <string name="error_getting_hijri_date">Error getting hijri date %1$s</string>
+    <string name="failed_schedule_silent_mode">Failed to schedule silent mode for %1$s</string>
+</resources>

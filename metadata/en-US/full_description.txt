@@ -1,0 +1,34 @@
+Are you tired of remembering to put your smartphone on silent mode before every prayer? Have you ever forgotten 
+to activate silent mode, then your humility diminishes when notifications or a call interrupt your prayer? And p
+erhaps you might disturb the worshippers next to you?
+
+With the precisely designed Prayer mode app, no more worry or embarrassment. Our app activates Do Not Disturb mode 
+on your behalf, allowing you to focus deeply in prayer and avoid distracting those praying around you.
+
+Set it once, the app does the rest! It works automatically in the background, keeping you informed via notifications.
+
+Customize Your Prayer Settings:
+•	Calculation Methods: Access 23 Prayer Calculation Methods powered by aladhan.com API.
+•	The Five Daily Prayers: Adjust silent duration for all prayers.
+•	Friday Prayer: Set silent periods before and after Adhan.
+•	Ramadan Nights: Customizable durations for Taraweeh and Tahajjud.
+•	Eid Prayers: Customizable time and silent duration for Eid al-Fitr and Eid al-Adha.
+•	Smart Location Detection: Automatically adjusts prayer times based on your precise location and reschedule DND mode for the next prayers.
+
+In addition to automatic Do Not Disturb mode and smart location adaptation, receive important and timely notifications:
+•	Alerts for Do Not Disturb activation and deactivation at each prayer.
+•	Notification of time adjustments when travelling.
+•	Reminder for Fajr time, Dhuhr on Friday, and the start of Imsak during Ramadan.
+
+Our app is designed with a comfortable and user-friendly interface, also featuring Light and Dark modes for 
+comfortable viewing. You can also use the Prayer mode Quick Settings Tile for faster access to the app. 
+Your privacy is our utmost priority; we are committed to protecting your data and do not collect any personal 
+information, ensuring a safe and trustworthy experience.
+
+Our app is designed to serve the Muslim Ummah and supports multiple languages including Arabic, English, French, 
+Urdu, Indonesian, Malaysian, Turkish, as well as languages that will be added later.
+
+We are working hard to provide the best experience with our app, so expect more functionalities in upcoming 
+free updates.
+
+Download the app today, and make your prayer surrounded by devotion and tranquillity.

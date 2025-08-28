@@ -1,0 +1,343 @@
+<resources>
+    <string name="app_name">Namaz modu</string>
+    <string name="Off">Kapalı</string>
+    <string name="On">Açık</string>
+    <string name="select_option">Bir seçenek belirleyin</string>
+
+    <!-- Daily Schedule Card view -->
+    <string name="daily_schedule">Günlük Namaz Vakitleri</string>
+
+    <string name="calculation_method">Hesaplama Yöntemi</string>
+    <string name="select_calculation_method">Hesaplama Yöntemi Seçin</string>
+    <string-array name="calculation_methods">
+        <item>Umm Al-Qura Üniversitesi, Mekke</item>
+        <item>Müslüman Dünya Ligi</item>
+        <item>Kuzey Amerika İslam Cemiyeti</item>
+        <item>Mısır Genel Araştırma Kurumu</item>
+        <item>İslam Bilimleri Üniversitesi, Karaçi</item>
+        <item>Körfez Bölgesi</item>
+        <item>Kuveyt</item>
+        <item>Katar</item>
+        <item>Majlis Ugama Islam Singapura, Singapur</item>
+        <item>Fransa İslam Birliği</item>
+        <item>Diyanet İşleri Başkanlığı, Türkiye</item>
+        <item>Rusya Müslümanları Ruhani İdaresi</item>
+        <item>Hilal Görülme Komitesi</item>
+        <item>Dubai, BAE</item>
+        <item>Jabatan Kemajuan Islam Malaysia (JAKIM)</item>
+        <item>Tunus</item>
+        <item>Cezayir</item>
+        <item>Endonezya Din İşleri Bakanlığı</item>
+        <item>Fas</item>
+        <item>Comunidate Islamica de Lisboa, Portekiz</item>
+        <item>Ürdün Vakıflar İslam İşleri ve Kutsal Yerler Bakanlığı</item>
+        <item>Tahran Üniversitesi Jeofizik Enstitüsü</item>
+        <item>Şia İsna Aşeri, Leva Enstitüsü, Kum</item>
+    </string-array>
+
+    <string name="daily_silent_duration_after_adhan">Ezan Sonrası Günlük Sessizlik Süresi</string>
+    <string name="daily_silent_duration">Günlük Sessizlik Süresi</string>
+    <string name="select_silent_duration">Sessizlik süresi seçin</string>
+    <string-array name="silent_durations">
+        <item>15 dakika</item>
+        <item>20 dakika</item>
+        <item>25 dakika</item>
+        <item>30 dakika</item>
+        <item>35 dakika</item>
+        <item>40 dakika</item>
+        <item>45 dakika</item>
+    </string-array>
+
+    <!-- Joumoua Card view -->
+    <string name="joumoua">Cuma</string>
+    <!-- Black fix text -->
+    <string name="before_dhuhr">Öğle Namazı Öncesi Süre</string>
+    <!-- TV variable text -->
+    <string name="duration_before_dhuhr">Öğle Öncesi Süre</string>
+    <!-- Select menu -->
+    <string name="select_before_dhuhr_duration">Öğle öncesi süre seçin</string>
+    <string-array name="before_dhuhr_duration">
+        <item>15 dakika</item>
+        <item>20 dakika</item>
+        <item>25 dakika</item>
+        <item>30 dakika</item>
+        <item>35 dakika</item>
+        <item>40 dakika</item>
+        <item>45 dakika</item>
+        <item>50 dakika</item>
+        <item>55 dakika</item>
+        <item>60 dakika</item>
+    </string-array>
+
+    <string name="after_dhuhr">Ezan Sonrası Sessizlik Süresi</string>
+    <string name="duration_after_dhuhr">Ezan Sonrası Süre</string>
+    <string name="select_after_dhuhr_duration">Ezan sonrası süre seçin</string>
+    <string-array name="after_dhuhr_duration">
+        <item>15 dakika</item>
+        <item>20 dakika</item>
+        <item>25 dakika</item>
+        <item>30 dakika</item>
+        <item>35 dakika</item>
+        <item>40 dakika</item>
+        <item>45 dakika</item>
+        <item>50 dakika</item>
+        <item>55 dakika</item>
+        <item>60 dakika</item>
+    </string-array>
+
+    <!-- Ramadan Card view -->
+    <string name="ramadan">Ramazan</string>
+
+    <string name="tarawih_silent_duration">Teravih Sessizlik Süresi</string>
+    <string name="tarawih_duration">Teravih Süresi</string>
+    <string name="select_tarawih_duration">Teravih süresi seçin</string>
+    <string-array name="tarawih_duration">
+        <item>20 dakika</item>
+        <item>30 dakika</item>
+        <item>40 dakika</item>
+        <item>50 dakika</item>
+        <item>1 saat</item>
+        <item>1 saat 30 dakika</item>
+        <item>2 saat</item>
+        <item>2 saat 30 dakika</item>
+        <item>3 saat</item>
+    </string-array>
+
+    <string name="tahajjud_silent_duration">Teheccüd Sessizlik Süresi</string>
+    <string name="tahajjud_duration">Teheccüd Süresi</string>
+    <string name="select_tahajjud_duration">Teheccüd süresi seçin</string>
+    <string-array name="tahajjud_duration">
+        <item>20 dakika</item>
+        <item>30 dakika</item>
+        <item>40 dakika</item>
+        <item>50 dakika</item>
+        <item>1 saat</item>
+        <item>1 saat 30 dakika</item>
+        <item>2 saat</item>
+        <item>2 saat 30 dakika</item>
+        <item>3 saat</item>
+    </string-array>
+
+    <!-- Eid Card view -->
+    <string name="eid_alfitr_and_eid_aladha">Ramazan Bayramı - Kurban Bayramı</string>
+    <string name="eid_time_prayer">Bayram Namazı Saati</string>
+    <string name="eid_time">Bayram Saati</string>
+    <string name="select_eid_time">Bayram saati seçin</string>
+    <string-array name="eid_time">
+        <item>Güneş doğumundan 20 dakika sonra</item>
+        <item>06:00</item>
+        <item>06:30</item>
+        <item>07:00</item>
+        <item>07:30</item>
+        <item>08:00</item>
+        <item>08:30</item>
+        <item>09:00</item>
+        <item>10:00</item>
+    </string-array>
+
+    <string name="eid_silent_duration">Bayram Sessizlik Süresi</string>
+    <string name="eid_duration">Bayram Süresi</string>
+    <string name="select_eid_duration">Bayram namazı süresi seçin</string>
+    <string-array name="eid_duration">
+        <item>20 dakika</item>
+        <item>30 dakika</item>
+        <item>40 dakika</item>
+        <item>50 dakika</item>
+        <item>60 dakika</item>
+    </string-array>
+
+    <!-- Privacy Card view -->
+    <string name="privacy">Gizlilik</string>
+    <string name="privacy_notice">Gizlilik Bildirimi</string>
+    <string name="privacy_content">Namaz modu Gizlilik Bildirimi</string>
+    <string name="privacy_policy_link_text">bu bağlantıyı</string>
+
+    <string name="privacy_description"><![CDATA[
+Bu uygulama, coğrafi konumunuza uygun doğru namaz vakitlerini hesaplamak için cihazınızın konumunu kullanır.<br/><br/>
+Namaz vakitlerinin sürekli güncel kalmasını ve doğru vakitlerde Rahatsız Etmeyin modunun otomatik olarak etkinleştirilmesini sağlamak için, uygulama arka planda konum erişimi gerektirir (uygulama kapalı veya kullanılmıyor olsa bile).<br/><br/>
+
+Şunları yapmadığımızı bilmenizi isteriz:<br/>
+<ul>
+  <li>Konum verilerinizi hassas veya yaklaşık olarak sürekli olarak toplamayız.</li>
+  <li>Konum verilerinizi sunucularımızda saklamak.</li>
+  <li>Konum verilerinizi üçüncü şahıslarla paylaşmayız.</li>
+  <li>Başka hiçbir kişisel bilgi toplamayız.</li>
+</ul>
+
+<b>Yerel Olarak Ne Saklıyoruz (Cihazınızda):</b><br/><br/>
+Kesintisiz ve doğru namaz vakti güncellemelerini sağlamak için, uygulama yalnızca <b>bilinen son konumunuzu (enlem ve boylam) cihazınızda yerel olarak saklar</b>. Bu, uygulamanın temel işlevselliğinin tasarlandığı gibi çalışması için gereklidir ve bu veriler <b>yalnızca konum değişikliklerini tespit etmek amacıyla</b> kullanılır. Bu konum verileri, cihazınızın konumu her değiştiğinde üzerine yazılır, cihazınızda hiçbir konum verisi geçmişi tutulmaz ve hiçbir veri sunucularımıza gönderilmez veya harici olarak paylaşılmaz.<br/>
+Uygulama, cihazınızın konumuna erişim izni talep edecektir. Bu izni vermeyi veya reddetmeyi seçebilirsiniz. Arka planda konum iznini reddederseniz, uygulama namaz vakitlerini sürekli olarak güncelleyemeyebilir veya Rahatsız Etmeyin modunu otomatik olarak yönetemeyebilir.<br/><br/>
+
+<b>Rahatsız Etmeyin Modu</b><br/><br/>
+Bu uygulama, cihazınızda Rahatsız Etmeyin (DND) modunu etkinleştirme izni de talep edebilir. Bu izin, uygulamanın namaz vakitlerinde kesintileri en aza indirmek için DND modunu geçici olarak etkinleştirerek düzgün çalışması için gereklidir.<br/><br/>
+Bu izin uygulamanın cihazınızın ses ve titreşim ayarlarını kontrol etmesine izin verse de, uygulamanın bildirimlerinizi, mesajlarınızı, çağrı içeriğinizi veya bildirimleriniz tarafından görüntülenen diğer herhangi bir kişisel verinizi kesinlikle erişmediğini, okumadığını veya toplamadığını açıkça belirtmek isteriz. Bu izin yalnızca DND modunu açıp kapatma amacıyla kullanılırsınız.<br/><br/>
+DND modu etkinken <b>standart bildirimleri, acil aramalar dahil alamayabileceğinizi</b> kabul etmiş olursunuz. Şirketimiz, uygulamanın DND modunu etkinleştirdiği dönemlerde kaçırılan bildirimlerden kaynaklanan sonuçlardan sorumlu tutulamaz.<br/><br/>
+DND ayarlarını ve istisnalarını ihtiyaçlarınıza göre yapılandırmak sizin sorumluluğunuzdadır.<br/><br/>
+Gizliliğinizi korumaya kararlıyız. Gizlilik uygulamalarımızla ilgili sorularınız veya endişeleriniz varsa lütfen bize <a href="mailto:prayer.mode@outlook.com">prayer.mode@outlook.com</a> adresinden ulaşın.<br/><br/>
+Gizlilik Politikamızın tüm detayları için lütfen [PRIVACY_LINK].<br/><br/>
+Uygulamamıza güvendiğiniz için teşekkür ederiz.<br/><br/>
+]]></string>
+    <string name="terms">Terms of Service</string>
+
+    <string name="permission">İzinler</string>
+    <string name="permissions_content">İzin Gerekli</string>
+    <string name="location_permission">Konum izni simgesi</string>
+
+    <string name="location">Konum</string>
+    <string name="location_description">Doğru namaz vakitlerini almak ve uygulama aktif olarak açık olmasa bile otomatik güncellemeleri sağlamak için cihazınızın konumuna erişmek için kullanılır.</string>
+
+    <string name="notifications">Bildirimler</string>
+    <string name="notifications_description">Hatırlatıcılar, uyarılar ve diğer önemli bilgiler hakkında bilgi sağlamak ve bunları zamanında almanızı sağlamak için kullanılır.</string>
+
+    <string name="dnd">Rahatsız Etmeyin Modu</string>
+    <string name="dnd_description">Namaz vakitlerinde Rahatsız Etmeyin modunu otomatik olarak etkinleştirmek için kullanılır.</string>
+
+    <string name="alarm">Alarm &amp; Hatırlatıcılar</string>
+    <string name="alarm_description">Namaz vakitleri için Rahatsız Etmeyin modunu planlamak için kullanılır.</string>
+
+    <string name="help">Yardım</string>
+    <string name="bulb">Uygulamayı kullanmaya başlamadan önce</string>
+    <string name="bulb_content">Hızlı Başlangıç Kılavuzu</string>
+    <string name="bulb_description">Bu uygulamayı ilk kez kullanırken, ayarları yapılandırmak için lütfen aşağıdaki ipuçlarını izleyin.</string>
+
+    <string name="important_note">Aylık güncelleme ve konum değişikliği tespiti</string>
+    <string name="important_note_description">Bu uygulama, her ayın ilk gününde aladhan.com API\'sinden namaz vakitlerini alır ve doğru namaz vakitleri ile Rahatsız Etmeyin modunun düzgün çalışması için cihazınızın konumuna ve aktif bir İnternet bağlantısına güvenir. Uzun mesafeli seyahatlerde sürekli konum değişikliği tespiti için daima açık konum hizmetleri ve kalıcı İnternet bağlantısı gereklidir.</string>
+
+    <string name="volume">Rahatsız Etmeyin Modu</string>
+    <string name="volume_description">Rahatsız Etmeyin modu sırasında uygulama tüm sesleri kapatır ve aramalar ile bildirimler için titreşimleri susturur. Ancak, ana hoparlörden gelen alarmlar ve ahize hoparlöründen gelen arama sesleri duyulmaya devam edecektir. Rahatsız Etmeyin modu kapatıldığında, ses seviyeleri kaydedilen son değerlerine geri yüklenir.</string>
+
+    <string name="calculation">Hesaplama yöntemleri</string>
+    <string name="calculation_description">Anahtarı etkinleştirmeden önce tercih ettiğiniz hesaplama yöntemini seçin. Lütfen uygulamanın doğru namaz vakitlerini almak için aladhan.com API\'sini kullandığını unutmayın.</string>
+
+    <string name="durations">Süreler</string>
+    <string name="durations_description">Tercihlerinize göre süreleri seçin. Beş vakit namaz, Cuma, Teravih, Teheccüd ve Bayram namazlarının her birinin kendi süresi vardır.</string>
+
+    <string name="time">Zaman</string>
+    <string name="time_description">Ramazan ve Kurban Bayramı namazı saatini seçin.</string>
+
+    <string name="tile">Namaz modu Kısayolu</string>
+    <string name="tile_description">Namaz modu kısayolunu Hızlı Ayarlar\'a ekleyerek uygulamaya daha hızlı erişebilirsiniz.</string>
+
+    <string name="wearable">Akıllı Saat</string>
+    <string name="wearable_description">Bağlı olduğunuz saat de bildirim alabilir ve telefonunuzun ses modunu takip edebilir. Bunun için lütfen akıllı saat uygulama ayarlarınızı kontrol edin.</string>
+
+    <string name="donation">Bağışlar</string>
+    <string name="donation_link_text">PayPal</string>
+    <string name="donation_content">Bizi Destekleyin</string>
+    <string name="donation_description"><![CDATA[
+Prayer mode ücretsiz ve açık kaynaklı bir yazılımdır. Geliştirme ve bakım zaman ve emek gerektirir.<br/><br/>
+Bu uygulamayı değerli buluyorsanız ve süregelen geliştirmesini desteklemek istiyorsanız, gönüllü bir bağış yapabilirsiniz.<br/><br/>
+Bağışlar <b>gönüllü ve iade edilemez</b> olup, size herhangi bir premium hizmet veya özellik hakkı vermez.<br/><br/>
+Bağışlar, sadece takdirinizi göstermenin ve uygulamanın herkes için ücretsiz ve güncel kalmasını sağlamaya yardımcı olmanın bir yoludur.<br/><br/>
+[DONATION_LINK] kullanarak bağış yapabilirsiniz.<br/><br/>
+]]></string>
+
+    <string name="back_button">Geri Düğmesi</string>
+
+    <!-- MainActivity SnackBar -->
+    <string name="cannot_change_settings">Anahtar açıkken ayarlar değiştirilemez.</string>
+    <string name="permissions_granted">Tüm izinler verildi, anahtar açılabilir.</string>
+    <string name="alarm_permission_granted">Alarm izni verildi.</string>
+    <string name="grant_location_permission">Lütfen konum iznini verin.</string>
+    <string name="grant_alarm_permission">Lütfen alarm iznini verin.</string>
+    <string name="grant_dnd_permission">Otomatik sessizleştirme için Rahatsız Etmeyin izni gereklidir.</string>
+    <string name="background_location_denied_message">Namaz vakitlerini otomatik güncellemek için arka plan konum erişimi gereklidir.</string>
+    <string name="no_location_internet">Namaz modu etkinleştirilemiyor, lütfen konum hizmetini ve İnternet bağlantısını kontrol edin.</string>
+    <string name="app_disabled">Namaz modu kapalı.</string>
+    <string name="app_enabled">Namaz modu açık.</string>
+    <string name="alarm_permission_denied_message">Bu uygulamanın doğru hatırlatıcılar için alarm iznine ihtiyacı var. Lütfen ayarlardan izni verin.</string>
+    <string name="notification_disabled">Bildirimler devre dışı bırakıldı ancak ayarlardan etkinleştirilebilir</string>
+
+    <!-- PermissionHelper Dialogs -->
+    <string name="background_location_permission_title">Arka Plan Konum İzni Gereklidir</string>
+    <string name="background_location_permission_message">Bu uygulama, namaz vakitlerini uyarlamak için uygulama kullanılmadığında cihazınızın konumuna sürekli erişim gerektirir. Lütfen &lt;b&gt;Her zaman izin ver&lt;/b&gt;\'i İzinler/Konum\'da seçin.</string>
+
+    <string name="alarm_permission_title">Alarm İzni Gerekli</string>
+    <string name="alarm_permission_message">Bu uygulama, Rahatsız Etmeyin modunu belirli bir saatte etkinleştirmek/devre dışı bırakmak ve bir sonraki günün namazlarını planlamak için alarm izni gerektirir. Lütfen izni ayarlardan verin.</string>
+
+    <string name="dnd_permission_title">Rahatsız Etmeyin Modu Erişimi Gereklidir</string>
+    <string name="dnd_permission_message">Lütfen namaz vakitlerinde otomatik sessize almak için Rahatsız Etmeyin erişimi verin, çünkü uygulamanın amaçlandığı gibi çalışması için bu erişim gereklidir.</string>
+
+    <!-- mainActivity -->
+    <string name="location_permission_denied_title">Konum İzni Reddedildi</string>
+    <string name="location_permission_denied_message">Bu uygulamanın doğru namaz vakitlerini alabilmesi için uygulama kullanımdayken cihaz konumunuza sürekli erişim gereklidir. Lütfen bu izni ayarlardan verin.</string>
+
+    <string name="location_permanently_denied_title">Konum kalıcı olarak reddedildi</string>
+    <string name="location_permanently_denied_message">Konum izni uygulama ayarlarından hala verilebilir</string>
+
+    <string name="notification_recommended_title">Bildirimler Önerilir</string>
+    <string name="notification_recommended_message">Bildirim erişimi olmadan namaz modu uyarıları ve hatırlatıcıları kaçırabilirsiniz</string>
+
+    <string name="try_again">Tekrar dene</string>
+    <string name="exit">Çıkış</string>
+    <string name="enable">Etkinleştir</string>
+    <string name="skip">Atla</string>
+
+    <string name="open_settings">Ayarları Aç</string>
+    <string name="cancel">İptal</string>
+    <string name="ok">TAMAM</string>
+
+    <string name="app_disabled_after_reboot">Cihaz yeniden başlatıldıktan sonra konum hizmeti durduruldu. Lütfen konum hizmetini başlatmak için uygulamayı açın.</string>
+
+    <string name="terms_dialog_title">Önemli Bildirim</string>
+    <string name="terms_dialog_message">Lütfen aşağıdaki bağlantıları kullanarak Hizmet Şartlarımızı ve Gizlilik Politikamızı dikkatlice okuyun. Bu uygulamayı kullanmak için bunları kabul etmelisiniz.</string>
+    <string name="terms_dialog_link">Hizmet Şartları</string>
+    <string name="privacy_link">Gizlilik Bildirimi</string>
+    <string name="decline">Reddet</string>
+    <string name="accept">Kabul Et</string>
+
+    <string name="today_fajr_time_is">Bugün Sabah namazı saati %1$s.</string>
+    <string name="today_dhuhr_time_is">Bugünkü Cuma namazı saati %1$s.</string>
+    <string name="silent_mode_activated_for">%1$s için Rahatsız Etmeyen mod etkinleştirildi.</string>
+    <string name="today_imsak_time_is">Bugünkü imsak vakti %1$s.</string>
+    <string name="back_to_normal_mode">Rahatsız Etmeyin Modu kapatıldı.</string>
+    <string name="location_title">Konum hizmeti</string>
+    <string name="getting_location_update">Konum güncellemeleri alınıyor.</string>
+    <string name="happy_eid_alfitr">Ramazan Bayramınız mübarek olsun, Allah bizim ve sizin iyiliklerinizi kabul etsin.</string>
+    <string name="happy_eid_aladha">Kurban Bayramınız mübarek olsun, Allah bizim ve sizin iyiliklerinizi kabul etsin.</string>
+    <string name="dnd_already_on">%1$s için Rahatsız Etmeyin modu etkinleştirilmeye çalışılırken zaten kullanıcı/sistem tarafından açıktı, bu nedenle mevcut ayarlarınıza saygı duyarak açık kalacaktır.</string>
+
+    <string name="location_service_disabled">Uygulamanın beklendiği gibi çalışması için lütfen konum hizmetini etkinleştirin.</string>
+    <string name="travelled_distance">%1$s km yol katettiniz. Namaz vakitleri programınız yeni konumunuza göre güncelleniyor.</string>
+    <string name="location_name">%1$s için namaz vakitleri alınıyor. Konum yanlış mı? Cihazınızın konum ayarlarını düzenlemeniz gerekebilir.</string>
+
+    <string name="open_prayer">Uygulamayı aç</string>
+
+    <string name="eid">Bayram</string>
+    <string name="imsak">İmsak</string>
+    <string name="fajr">Sabah</string>
+    <string name="sunrise">Güneş</string>
+    <string name="dhuhr">Öğle</string>
+    <string name="asr">İkindi</string>
+    <string name="maghrib">Akşam</string>
+    <string name="isha">Yatsı</string>
+    <string name="tarawih">Teravih</string>
+    <string name="tahajjud">Teheccüd</string>
+    <string name="prayer_name_unknown">Namaz</string>
+
+    <string name="fetch_title">Namaz Vakitleri Güncellemeleri</string>
+    <string name="fetch_failed_no_internet">İnternet bağlantısı yok. Lütfen İnternete bağlanın ve anahtarı kapatıp yeniden açın.</string>
+    <string name="fetch_failed">Namaz vakitleri alınırken beklenmeyen bir hata oluştu. Lütfen anahtarı kapatıp yeniden açın.</string>
+    <string name="schedule_title">Namaz vakitleri takvimi</string>
+
+    <!-- Catch & else blocks -->
+    <string name="failed_writing">Lütfen yeterli depolama alanınız olduğundan emin olun.</string>
+    <string name="permission_denied_writing">Namaz vakitleri dosyası kaydedilirken beklenmeyen bir hata oluştu. Lütfen uygulamayı yeniden başlatın ve güncellemeleri kontrol edin.</string>
+
+    <!-- For debugging only -->
+    <string name="silent_schedule_success">Bugünkü programlama başarılı.</string>
+    <string name="monthly_update">Bu ay için namaz vakitleri güncelleniyor: %1$s.</string>
+    <string name="monthly_update_default_method">Bu ay için namaz vakitleri varsayılan yöntemle güncelleniyor: %1$s.</string>
+    <string name="speed">You travelled at %1$s km/h.</string>
+
+    <string name="worker_failed">Worker failed.</string>
+    <string name="process_prayer">Process prayer times</string>
+    <string name="fail_read_file">Failed to read from file %1$s</string>
+    <string name="error_parsing_time">Error parsing time %1$s</string>
+    <string name="invalid_time_format">Invalid time format %1$s</string>
+    <string name="unexpected_error">Unexpected error while getting prayer calendar %1$s</string>
+
+    <string name="error">Error</string>
+    <string name="error_getting_hijri_date">Error getting hijri date %1$s</string>
+    <string name="failed_schedule_silent_mode">Failed to schedule silent mode for %1$s</string>
+</resources>

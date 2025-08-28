@@ -1,0 +1,83 @@
+<resources>
+
+    <string-array name="silent_durations">
+        <item>١٥ دقيقة</item>
+        <item>٢٠ دقيقة</item>
+        <item>٢٥ دقيقة</item>
+        <item>٣٠ دقيقة</item>
+        <item>٣٥ دقيقة</item>
+        <item>٤٠ دقيقة</item>
+        <item>٤٥ دقيقة</item>
+    </string-array>
+
+    <string-array name="before_dhuhr_duration">
+        <item>١٥ دقيقة</item>
+        <item>٢٠ دقيقة</item>
+        <item>٢٥ دقيقة</item>
+        <item>٣٠ دقيقة</item>
+        <item>٣٥ دقيقة</item>
+        <item>٤٠ دقيقة</item>
+        <item>٤٥ دقيقة</item>
+        <item>٥٠ دقيقة</item>
+        <item>٥٥ دقيقة</item>
+        <item>٦٠ دقيقة</item>
+    </string-array>
+
+    <string-array name="after_dhuhr_duration">
+        <item>١٥ دقيقة</item>
+        <item>٢٠ دقيقة</item>
+        <item>٢٥ دقيقة</item>
+        <item>٣٠ دقيقة</item>
+        <item>٣٥ دقيقة</item>
+        <item>٤٠ دقيقة</item>
+        <item>٤٥ دقيقة</item>
+        <item>٥٠ دقيقة</item>
+        <item>٥٥ دقيقة</item>
+        <item>٦٠ دقيقة</item>
+    </string-array>
+
+    <string-array name="tarawih_duration">
+        <item>٢٠ دقيقة</item>
+        <item>٣٠ دقيقة</item>
+        <item>٤٠ دقيقة</item>
+        <item>٥٠ دقيقة</item>
+        <item>ساعة واحدة</item>
+        <item>ساعة ونصف</item>
+        <item>ساعتان</item>
+        <item>ساعتان ونصف</item>
+        <item>٣ ساعات</item>
+    </string-array>
+
+    <string-array name="tahajjud_duration">
+        <item>٢٠ دقيقة</item>
+        <item>٣٠ دقيقة</item>
+        <item>٤٠ دقيقة</item>
+        <item>٥٠ دقيقة</item>
+        <item>ساعة واحدة</item>
+        <item>ساعة ونصف</item>
+        <item>ساعتان</item>
+        <item>ساعتان ونصف</item>
+        <item>٣ ساعات</item>
+    </string-array>
+
+    <string-array name="eid_time">
+        <item>٢٠ دقيقة بعد الشروق</item>
+        <item>الساعة ٠٦:٠٠</item>
+        <item>الساعة ٠٦:٣٠</item>
+        <item>الساعة ٠٧:٠٠</item>
+        <item>الساعة ٠٧:٣٠</item>
+        <item>الساعة ٠٨:٠٠</item>
+        <item>الساعة ٠٨:٣٠</item>
+        <item>الساعة ٠٩:٠٠</item>
+        <item>الساعة ١٠:٠٠</item>
+    </string-array>
+
+    <string-array name="eid_duration">
+        <item>٢٠ دقيقة</item>
+        <item>٣٠ دقيقة</item>
+        <item>٤٠ دقيقة</item>
+        <item>٥٠ دقيقة</item>
+        <item>٦٠ دقيقة</item>
+    </string-array>
+
+ </resources>

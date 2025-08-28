@@ -1,0 +1,13 @@
+<resources>
+    <color name="colorPrimary">#ADD8E6</color> <!-- Light blue -->
+    <color name="colorSurface">#121212</color> <!-- Dark background -->
+    <color name="cardBackground">#2B2B2B</color> <!-- Light dark cards -->
+    <color name="textColorPrimary">#FFFFFF</color> <!-- White text -->
+    <color name="textColorSecondary">#BDBDBD</color> <!-- Light gray text above cards -->
+    <!-- Black text inside cards -->
+    <color name="tvTextColor">#ADD8E6</color> <!-- Light blue tv text -->
+    <color name="dividerColor">#121212</color> <!-- Dark gray/black-->
+    <!-- back arrow -->
+    <color name="ripple_color">#33FFFFFF</color> <!-- ripple -->
+
+</resources>
