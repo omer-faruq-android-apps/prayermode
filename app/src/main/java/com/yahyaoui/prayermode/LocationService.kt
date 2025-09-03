@@ -130,8 +130,10 @@ class LocationService : Service(), CoroutineScope {
                 val lastFetchLongitude = sharedHelper.getDouble(PREF_LAST_FETCH_LONGITUDE, Double.NaN)
                 val lastFetchTimeMs = sharedHelper.getLong(PREF_LAST_FETCH_TIME_MS, 0L)
 
-                if (lastFetchLatitude.isNaN() || lastFetchLongitude.isNaN() || lastFetchTimeMs == 0L)
+                if (lastFetchLatitude.isNaN() || lastFetchLongitude.isNaN() || lastFetchTimeMs == 0L) {
+                    if (BuildConfig.DEBUG) Log.i(tag, "Initial state or invalid data detected.")
                     return@withLock
+                }
 
                 val lastFetchLocation = Location("lastFetch").apply {
                     latitude = lastFetchLatitude
@@ -152,15 +154,14 @@ class LocationService : Service(), CoroutineScope {
                     val locationAge = System.currentTimeMillis() - newLocation.time
                     Log.d(tag, "--- Location Update Check ---")
                     Log.d(tag, "New Location: Lat=${"%.4f".format(newLocation.latitude)}, Lon=${"%.4f".format(newLocation.longitude)}, " + "Acc=${"%.1f".format(newLocation.accuracy)}m, Age=${(locationAge / 1000).toInt()}s")
-                    Log.d(tag, "Last Fetch Data from SharedPreferences:")
-                    Log.d(tag, "- Lat: ${"%.4f".format(lastFetchLatitude)}, Lon: ${"%.4f".format(lastFetchLongitude)}")
+                    Log.d(tag, "Last Fetch Data from SharedPreferences: Lat: ${"%.4f".format(lastFetchLatitude)}, Lon: ${"%.4f".format(lastFetchLongitude)}")
                     Log.i(tag, "Calculated Values:")
                     Log.i(tag, "- Displacement: ${"%.1f".format(displacementKm)} km")
                     Log.i(tag, "- Time passed since last fetch: ${"%.2f".format(timePassedMinutes)} minutes")
                     Log.i(tag, "--- End of Check ---")
                 }
                 val shouldTrigger = displacementKm >= MIN_DISPLACEMENT_KM &&
-                        isSignificantMove(displacementKm, timeSinceLastFetchMs)
+                        (isSignificantMove(displacementKm, timeSinceLastFetchMs) || displacementKm > 100)
                 if (shouldTrigger) triggerPrayerTimesFetch(newLocation, displacementKm)
             }
         }
@@ -184,11 +185,8 @@ class LocationService : Service(), CoroutineScope {
             return false
         }
 
-        val isSignificant = (speed in 5f..300f) || displacementKm > 100
-        if (BuildConfig.DEBUG) {
-            if (!isSignificant) Log.w(tag, "Movement rejected: Final check failed. Speed not in 5-300 km/h range and displacement not > 100 km.")
-        }
-
+        val isSignificant = speed in 3.5f..300f
+        if (BuildConfig.DEBUG) Log.w(tag, "Movement rejected: Speed %.1f km/h is not realistic for travel (3.5-300 km/h required).".format(speed))
         return isSignificant
     }
 
