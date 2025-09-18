@@ -25,14 +25,17 @@ android {
     }
 
     signingConfigs {
-        create("release") {
-            val keystoreProperties = Properties().apply {
-                load(File(rootProject.rootDir, "keystore.properties").reader())
+        val keystoreFile = File(rootProject.rootDir, "keystore.properties")
+        if (keystoreFile.exists()) {
+            create("release") {
+                val keystoreProperties = Properties().apply {
+                    load(keystoreFile.reader())
+                }
+                keyAlias = keystoreProperties.getProperty("keyAlias")
+                keyPassword = keystoreProperties.getProperty("keyPassword")
+                storeFile = file(keystoreProperties.getProperty("storeFile"))
+                storePassword = keystoreProperties.getProperty("storePassword")
             }
-            keyAlias = keystoreProperties.getProperty("keyAlias")
-            keyPassword = keystoreProperties.getProperty("keyPassword")
-            storeFile = file(keystoreProperties.getProperty("storeFile"))
-            storePassword = keystoreProperties.getProperty("storePassword")
         }
     }
 
