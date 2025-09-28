@@ -132,7 +132,6 @@ class LocationService : Service(), CoroutineScope {
 
                 if (lastFetchLatitude.isNaN() || lastFetchLongitude.isNaN() || lastFetchTimeMs == 0L) {
                     if (BuildConfig.DEBUG) Log.i(tag, "Initial state or invalid data detected.")
-                    triggerPrayerTimesFetch(newLocation, 0f)
                     return@withLock
                 }
 
@@ -177,7 +176,7 @@ class LocationService : Service(), CoroutineScope {
                 withContext(Dispatchers.IO) {
                     if (tools.findLocation(methodIndex)) {
                         if (BuildConfig.DEBUG) Log.i(tag, "Prayer times fetch successful due to travel.")
-                        NotificationHelper.sendNotification(this@LocationService, R.string.location_title, R.string.travelled_distance, 333, "%.1f".format(distance))
+                        if (distance>0) NotificationHelper.sendNotification(this@LocationService, R.string.location_title, R.string.travelled_distance, 333, "%.1f".format(distance))
                         tools.exitSilentMode()
                         tools.cancelAllSilentModes()
                         tools.cancelScheduledSilentMode()
