@@ -1,0 +1,3 @@
+Adding audio takbir with a switch.
+Minor bug fix.
+Code optimization.
