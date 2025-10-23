@@ -259,6 +259,10 @@
 
     <string name="background_location_rationale">لتحديث مواقيت الصلاة وجدولة الوضع الصامت تلقائيًا عند انتقالك إلى موقع جديد، مما يضمن كتم صوت هاتفك دائمًا في الوقت الصحيح دون الحاجة لفتح التطبيق.</string>
 
+    <string name="update_notification_title">تحديث وضع الصلاة</string>
+    <string name="update_notification_message">النسخة %1$s متاحة الآن.</string>
+    <string name="update">حدّث الآن</string>
+
     <!-- Catch & else blocks -->
     <string name="failed_writing">يرجى التأكد من وجود مساحة تخزين كافية.</string>
     <string name="permission_denied_writing">حدث خطأ غير متوقع أثناء حفظ ملف أوقات الصلاة، يرجى إعادة تشغيل التطبيق والتحقق من وجود تحديثات.</string>

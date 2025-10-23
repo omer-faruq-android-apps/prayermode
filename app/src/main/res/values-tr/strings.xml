@@ -323,6 +323,10 @@ Bağışlar, sadece takdirinizi göstermenin ve uygulamanın herkes için ücret
 
     <string name="background_location_rationale">Yeni bir konuma seyahat ettiğinizde Namaz Vakti ve Sessiz Modu otomatik olarak güncellemek ve telefonunuzun uygulamayı açmanıza gerek kalmadan her zaman doğru zamanda sessize alınmasını sağlamak için.</string>
 
+    <string name="update_notification_title">Namaz Modu Güncellemesi</string>
+    <string name="update_notification_message">%1$s sürümü artık mevcut.</string>
+    <string name="update">Şimdi Güncelle</string>
+
     <!-- Catch & else blocks -->
     <string name="failed_writing">Lütfen yeterli depolama alanınız olduğundan emin olun.</string>
     <string name="permission_denied_writing">Namaz vakitleri dosyası kaydedilirken beklenmeyen bir hata oluştu. Lütfen uygulamayı yeniden başlatın ve güncellemeleri kontrol edin.</string>

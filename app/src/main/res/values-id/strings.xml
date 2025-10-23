@@ -323,6 +323,10 @@ Anda dapat menyumbang menggunakan [DONATION_LINK].<br/><br/>
 
     <string name="background_location_rationale">Untuk memperbarui jadwal Mode Senyap dan waktu salat secara otomatis saat Anda bepergian ke lokasi baru, memastikan ponsel Anda selalu dibisukan pada waktu yang tepat tanpa perlu membuka aplikasi.</string>
 
+    <string name="update_notification_title">Pembaruan Mode Salat</string>
+    <string name="update_notification_message">Versi %1$s sekarang tersedia.</string>
+    <string name="update">Perbarui Sekarang</string>
+
     <!-- Catch & else blocks -->
     <string name="failed_writing">Pastikan ruang penyimpanan mencukupi.</string>
     <string name="permission_denied_writing">Terjadi kesalahan tak terduga saat menyimpan file jadwal shalat. Silakan mulai ulang aplikasi dan periksa pembaruan.</string>

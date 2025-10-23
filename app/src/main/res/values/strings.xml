@@ -327,6 +327,10 @@ Thank you for trusting our application.<br/><br/>
 
     <string name="background_location_rationale">To automatically update Silent Mode schedules and prayer times when you travel to a new location, ensuring your phone is always silenced at the correct time without needing to open the app.</string>
 
+    <string name="update_notification_title">Prayer mode update</string>
+    <string name="update_notification_message">Version %1$s is now available.</string>
+    <string name="update">Update now</string>
+
     <!-- Catch & else blocks -->
     <string name="failed_writing">Please ensure you have sufficient storage space.</string>
     <string name="permission_denied_writing">An unexpected error occurred saving prayer times file, please restart the app and check for updates.</string>

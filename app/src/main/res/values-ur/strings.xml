@@ -326,6 +326,10 @@
 
     <string name="background_location_rationale">جب آپ کسی نئی جگہ سفر کرتے ہیں، تو نماز کے اوقات اور سائلنٹ موڈ کے شیڈول کو خودکار طریقے سے اپ ڈیٹ کرنے کے لیے، تاکہ آپ کا فون ایپلیکیشن کھولے بغیر ہمیشہ صحیح وقت پر خاموش رہے۔</string>
 
+    <string name="update_notification_title">نماز موڈ اپ ڈیٹ</string>
+    <string name="update_notification_message">ورژن %1$s اب دستیاب ہے۔</string>
+    <string name="update">ابھی اپ ڈیٹ کریں</string>
+
     <!-- Catch & else blocks -->
     <string name="failed_writing">براہ کرم یقینی بنائیں کہ آپ کے پاس کافی اسٹوریج جگہ ہے۔</string>
     <string name="permission_denied_writing">نماز کے اوقات کی فائل کو محفوظ کرتے وقت ایک غیر متوقع خرابی پیش آگئی ہے۔ براہ کرم ایپ کو دوبارہ شروع کریں اور اپ ڈیٹس چیک کریں۔</string>
