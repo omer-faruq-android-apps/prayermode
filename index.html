@@ -65,16 +65,31 @@
         
         .navbar {
             display: flex;
-            justify-content: space-between;
+            justify-content: center; /* Centered by default on desktop */
             align-items: center;
             padding: 0 1rem;
+            position: relative;
         }
-        
-        .logo {
+
+        /* Menu Toggle for Mobile (Default Hidden) */
+        .menu-toggle {
+            display: none; 
+            cursor: pointer;
             font-size: 1.8rem;
-            font-weight: 700;
-            display: flex;
-            align-items: center;
+            color: white;
+            padding: 5px;
+            transition: var(--transition);
+        }
+
+        .menu-toggle:hover {
+            color: var(--accent);
+        }
+
+        /* Logo/Title for Mobile View */
+        .logo-mobile {
+            display: none; 
+            font-size: 1.5rem;
+            font-weight: 600;
             color: white;
             font-family: 'Playfair Display', serif;
         }
@@ -116,105 +131,6 @@
             width: 100%;
         }
         
-        /* Mobile Menu Button */
-        .menu-btn {
-            display: none;
-            flex-direction: column;
-            justify-content: space-between;
-            width: 30px;
-            height: 21px;
-            background: transparent;
-            border: none;
-            cursor: pointer;
-            padding: 0;
-        }
-        
-        .menu-btn span {
-            display: block;
-            height: 3px;
-            width: 100%;
-            background-color: white;
-            border-radius: 10px;
-            transition: var(--transition);
-        }
-        
-        /* Mobile Navigation */
-        .mobile-nav {
-            position: fixed;
-            top: 0;
-            right: -100%;
-            width: 80%;
-            max-width: 300px;
-            height: 100vh;
-            background: var(--primary);
-            z-index: 1001;
-            padding: 2rem;
-            transition: var(--transition);
-            overflow-y: auto;
-            box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
-        }
-        
-        .mobile-nav.active {
-            right: 0;
-        }
-        
-        .mobile-nav-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 2rem;
-            padding-bottom: 1rem;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-        }
-        
-        .mobile-nav-links {
-            list-style: none;
-        }
-        
-        .mobile-nav-links li {
-            margin-bottom: 1.5rem;
-        }
-        
-        .mobile-nav-links a {
-            color: white;
-            text-decoration: none;
-            font-size: 1.1rem;
-            display: block;
-            padding: 0.5rem 0;
-            transition: var(--transition);
-        }
-        
-        .mobile-nav-links a:hover {
-            color: var(--accent);
-            padding-left: 10px;
-        }
-        
-        .close-btn {
-            background: none;
-            border: none;
-            color: white;
-            font-size: 1.5rem;
-            cursor: pointer;
-        }
-        
-        .overlay {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.5);
-            z-index: 1000;
-            opacity: 0;
-            visibility: hidden;
-            transition: var(--transition);
-        }
-        
-        .overlay.active {
-            opacity: 1;
-            visibility: visible;
-        }
-        
         /* Hero Section */
         .hero {
             background: linear-gradient(135deg, rgba(26, 58, 95, 0.9) 0%, rgba(42, 91, 132, 0.9) 100%), url('https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=1920&q=80') no-repeat center center/cover;
@@ -247,36 +163,35 @@
             z-index: 2;
         }
         
-        .hero h1 {
-            font-size: 2rem;
-            margin-bottom: 2rem;
-            font-weight: 700;
-            font-family: 'Playfair Display', serif;
-            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-            position: relative;
-            display: inline-block;
-        }
+		.hero h1 {
+   			font-size: 2rem;
+    		margin-bottom: 2rem;
+    		font-weight: 700;
+    		font-family: 'Playfair Display', serif;
+    		text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+   			position: relative;
+    		display: inline-block;
+		}
 
-        .hero h1:after {
-            content: '';
-            position: absolute;
-            width: 70px;
-            height: 4px;
-            background: var(--accent);
-            bottom: -15px;
-            left: 50%;
-            transform: translateX(-50%);
-            border-radius: 2px;
-        }
+		.hero h1:after {
+    		content: '';
+    		position: absolute;
+    		width: 70px;
+   	 		height: 4px;
+    		background: var(--accent);
+    		bottom: -15px;
+    		left: 50%;
+    		transform: translateX(-50%);
+    		border-radius: 2px;
+		}
         
         .hero h1 span {
             color: var(--accent);
             position: relative;
         }
-        
-        #hero {
-            scroll-margin-top: 60px;
-        }
+		#hero {
+    		scroll-margin-top: 60px;
+		}
    
         .hero p {
             font-size: 1.3rem;
@@ -640,15 +555,15 @@
             color: rgba(255, 255, 255, 0.7);
             font-size: 0.9rem;
         }
-        
-        /* Testimonials Section Title Color */
+		
+		/* Testimonials Section Title Color */
         .testimonials .section-title h2 {
-            color: var(--accent) !important;
+            color: var(--accent) !important; 
             text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
         }
 
         .testimonials .section-title p {
-            color: rgba(255, 255, 255, 0.9) !important;
+            color: rgba(255, 255, 255, 0.9) !important; 
         }
         
         /* CTA Section */
@@ -807,118 +722,117 @@
             animation-delay: 0.3s;
         }
         
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .navbar {
-                flex-direction: row;
-                padding: 1rem;
-            }
-            
-            .nav-links {
-                display: none;
-            }
-            
-            .menu-btn {
+		/* Responsive Design */
+        @media (max-width: 992px) {
+            /* Header and Mobile Menu Setup */
+            header .container {
                 display: flex;
+                justify-content: space-between;
+                align-items: center;
             }
-            
+            .navbar {
+                justify-content: space-between; 
+            }
+            .logo-mobile {
+                display: block; 
+                margin-left: 1rem;
+            }
+            .menu-toggle {
+                display: block; 
+                order: -1; /* Place toggle on the left */
+            }
+
+            .nav-links {
+                /* Mobile Menu Styles (Hidden by default) */
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 60px; /* Below header */
+                left: 0;
+                width: 100%;
+                background: var(--primary); 
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+                padding: 1rem 0;
+                z-index: 999;
+                text-align: center;
+                border-bottom: 3px solid var(--accent);
+            }
+
+            .nav-links.active {
+                display: flex; /* Show when active */
+            }
+
+            .nav-links li {
+                margin: 0;
+                padding: 10px 0;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            }
+
+            .nav-links li:last-child {
+                border-bottom: none;
+            }
+
+            .nav-links a {
+                padding: 10px 0;
+                display: block;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero {
+                min-height: 80vh; 
+            }
             .hero h1 {
-                font-size: 2rem;
+                font-size: 2.5rem;
+                margin-bottom: 2.5rem; 
             }
-            
             .hero p {
                 font-size: 1.1rem;
             }
-            
             .section-title h2 {
                 font-size: 2rem;
             }
-            
             .app-container {
                 flex-direction: column;
             }
-            
+            .app-image, .app-content {
+                min-width: unset;
+                max-width: 100%;
+            }
+            .app-showcase {
+                padding: 3rem 0;
+            }
             .security-badge {
                 flex-direction: column;
                 text-align: center;
+                padding: 1rem;
             }
-            
             .security-icon {
                 margin-right: 0;
                 margin-bottom: 1rem;
             }
-            
-            /* Mobile-specific adjustments */
-            .hero {
-                min-height: 80vh;
+            .security-text {
+                text-align: center;
             }
-            
-            .hero-content {
-                padding: 1rem;
-            }
-            
             .features-grid {
                 grid-template-columns: 1fr;
-            }
-            
-            .testimonial-grid {
-                grid-template-columns: 1fr;
-            }
-            
-            .footer-grid {
-                grid-template-columns: 1fr;
-                gap: 2rem;
-            }
-            
-            .app-bullets li {
-                font-size: 0.95rem;
-            }
-            
-            .btn {
-                padding: 0.7rem 1.5rem;
-                font-size: 0.85rem;
-            }
-            
-            .hero h1:after {
-                width: 50px;
-            }
-            
-            .section-title h2:after {
-                width: 50px;
             }
         }
         
         @media (max-width: 480px) {
             .hero h1 {
-                font-size: 1.8rem;
-            }
-            
-            .hero p {
-                font-size: 1rem;
-            }
-            
-            .feature-card {
-                padding: 2rem 1.5rem;
-            }
-            
-            .testimonial-card {
-                padding: 2rem 1.5rem;
-            }
-            
-            .cta-content {
-                padding: 3rem 1.5rem;
-            }
-            
-            .cta h2 {
                 font-size: 2rem;
             }
-            
-            .footer-grid {
-                gap: 1.5rem;
+            .screenshot-item {
+                width: 200px;
+                height: 400px;
+            }
+            .btn {
+                padding: 0.8rem 1.5rem;
             }
         }
-        
-        /******************** Screenshots Section **************************************/
+
+		/******************** Screenshots Section **************************************/
         .screenshots {
             padding: 5rem 0;
             background: linear-gradient(to bottom, #f0f4f8, #e6e9ff);
@@ -948,19 +862,19 @@
             display: none; /* Chrome, Safari and Opera */
         }
         
-        .screenshot-item {
-            flex: 0 0 auto;
-            width: 280px;
-            height: 497px;
-            scroll-snap-align: start;
-            border-radius: 30px;
-            overflow: hidden;
-            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
-            transition: var(--transition);
-            position: relative;
-            border: 8px solid var(--dark);
-            background: var(--dark);
-        }
+		.screenshot-item {
+			flex: 0 0 auto;
+			width: 280px; /* Adjust this as needed */
+			height: 497px; /* 280 * (16/9) = 497px */
+			scroll-snap-align: start;
+			border-radius: 30px;
+			overflow: hidden;
+			box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+			transition: var(--transition);
+			position: relative;
+			border: 8px solid var(--dark);
+			background: var(--dark); /* Add background color to match border */
+		}
         
         .screenshot-item:hover {
             transform: translateY(-10px);
@@ -973,7 +887,7 @@
             object-fit: contain;
             display: block;
         }
-          
+		  
         .screenshot-overlay {
             position: absolute;
             bottom: 0;
@@ -1076,124 +990,76 @@
     </style>
 </head>
 <body>
-    <!-- Header & Navigation -->
     <header>
         <div class="container">
             <nav class="navbar">
-                <button class="menu-btn" aria-label="Toggle menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button><div class="logo">Prayer mode</div>
-                <ul class="nav-links">
-                    <li><a href="#hero">Introduction</a></li>
+                <div class="menu-toggle" id="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <div class="logo-mobile">Prayer mode</div>
+
+                <ul class="nav-links" id="mobile-menu">
+					<li><a href="#hero">Introduction</a></li>
                     <li><a href="#features">Features</a></li>
                     <li><a href="#app">Overview</a></li>
                     <li><a href="#security">Security</a></li>
                     <li><a href="#testimonials">Testimonials</a></li>
                     <li><a href="#screenshots">Screenshots</a></li>
-                    <li><a href="#contact">Contact</a></li>
+					<li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <!-- Mobile Navigation -->
-    <div class="mobile-nav" id="mobileNav">
-        <div class="mobile-nav-header">
-            <h3>Prayer mode</h3>
-            <button class="close-btn" aria-label="Close menu">
-                <i class="fas fa-times"></i>
-            </button>
-        </div>
-        <ul class="mobile-nav-links">
-            <li><a href="#hero">Introduction</a></li>
-            <li><a href="#features">Features</a></li>
-            <li><a href="#app">Overview</a></li>
-            <li><a href="#security">Security</a></li>
-            <li><a href="#testimonials">Testimonials</a></li>
-            <li><a href="#screenshots">Screenshots</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </div>
-    <div class="overlay" id="overlay"></div>
-
-    <!-- Hero Section -->
     <section class="hero" id="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1>Introducing <span>Prayer mode</span></h1>
-                <p>The app that auto-silences your device during prayer times, helping you maintain focus and reverence without distractions.</p>
-                <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; margin: 1.5rem 0;">
-                    <div style="display: flex; align-items: center; gap: 0.5rem;">
-                        <i class="fas fa-shield-alt" style="color: #4caf50;"></i>
-                        <a href="#security" style="font-size: 0.9rem; color: inherit; text-decoration: none; cursor: pointer; border-bottom: 1px dotted rgba(255,255,255,0.5);">
-                        VirusTotal Verified
-                        </a>
-                    </div>	
-                    <div style="display: flex; align-items: center; gap: 0.5rem;">
-                        <i class="fas fa-check" style="color: #4caf50;"></i>
-                        <span style="font-size: 0.9rem;">No Ads</span>
-                    </div>
-                    <div style="display: flex; align-items: center; gap: 0.5rem;">
-                        <i class="fas fa-check" style="color: #4caf50;"></i>
-                        <span style="font-size: 0.9rem;">No Data Collection</span>
-                    </div>
-                    <div style="display: flex; align-items: center; gap: 0.5rem;">
-                        <i class="fas fa-check" style="color: #4caf50;"></i>
-                        <span style="font-size: 0.9rem;">No Publicity Included</span>
-                    </div>
-                </div>			
-                <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; margin: 1.5rem 0;">
-                    <div style="display: flex; align-items: center; gap: 0.5rem;">
-                        <i class="fas fa-check" style="color: #4caf50;"></i>
-                        <span style="font-size: 0.9rem;">No Tracking</span>
-                    </div>
-                    <div style="display: flex; align-items: center; gap: 0.5rem;">
-                        <i class="fas fa-check" style="color: #4caf50;"></i>
-                        <span style="font-size: 0.9rem;">Completely Free</span>
-                    </div>
-                    <div style="display: flex; align-items: center; gap: 0.5rem;">
-                        <i class="fas fa-check" style="color: #4caf50;"></i>
-                        <span style="font-size: 0.9rem;">Source Code is Public</span>
-                    </div>
-                    <div style="display: flex; align-items: center; gap: 0.5rem;">
-                        <i class="fas fa-check" style="color: #4caf50;"></i>
-                        <span style="font-size: 0.9rem;">No Hidden Costs</span>
-                    </div>
+		<div class="container">
+			<div class="hero-content">
+				<h1>Introducing <span>Prayer mode</span></h1>
+				<p>The app that auto-silences your device during prayer times, helping you maintain focus and reverence without distractions.</p>
+            
+            <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1.5rem; margin: 1.5rem 0 2.5rem; max-width: 600px; margin-left: auto; margin-right: auto;">
+                <div style="display: flex; align-items: center; gap: 0.6rem; font-size: 1rem; font-weight: 500;">
+                    <i class="fas fa-shield-alt" style="color: var(--accent);"></i>
+                    <span>**100% Malware-Free (VirusTotal Verified)**</span>
                 </div>
-
-                <!-- Android Security Warning -->
-                <div style="max-width: 500px; margin: 1.5rem auto; padding: 1.2rem; background: rgba(255,255,255,0.1); border-radius: 10px; border: 1px solid rgba(212, 175, 55, 0.5);">
-                    <div style="display: flex; align-items: flex-start; gap: 0.8rem;">
-                        <i class="fas fa-exclamation-triangle" style="color: var(--accent); font-size: 1.3rem; margin-top: 0.1rem;"></i>
-                        <div>
-                            <h4 style="margin: 0 0 0.5rem 0; color: white; font-size: 1rem;">Important: About The Android Security Warning</h4>
-                            <p style="margin: 0 0 0.8rem 0; font-size: 0.9rem; opacity: 0.9; line-height: 1.5;">
-                                <strong>When you download the file, you might see:</strong> 
-                                <em>"This APK file might be harmful for your device..."</em>
-                            </p>
-                            <p style="margin: 0; font-size: 0.9rem; opacity: 0.9; line-height: 1.5;">
-                                <strong>This is 100 % normal!</strong> Android shows this for all non-Google Play apps. 
-                                Our app is guaranteed safe and malware-free (verified by VirusTotal). Simply tap "OK" or "Keep" to continue. </p>
-                                <a href="https://prayermode.github.io/prayermode/help.html" style="color: #ADD8E6; text-decoration: underline; font-weight: bold;">How to enable "Installing from unknown sources"</a>
-                            </div>
-                    </div>
+                <div style="display: flex; align-items: center; gap: 0.6rem; font-size: 1rem; font-weight: 500;">
+                    <i class="fas fa-lock" style="color: var(--accent);"></i>
+                    <span>**Privacy First: No Ads, No Tracking**</span>
                 </div>
-                <p style="font-size: 0.9rem; margin-bottom: 0.5rem; opacity: 0.8;">Available in English, العربية, Français, Türkçe, اُردُو, Bahasa Indonesia, Bahasa Malaysia and supported on Android 7+
-                <a href="https://prayermode.github.io/prayermode/release-notes.html" style="color: #ADD8E6; text-decoration: underline; font-weight: bold; font-size: 0.9rem; white-space: nowrap;">See Release Notes</a>
-
-                <!-- Download Button -->
-                <div>
-                    <a href="https://github.com/prayermode/apk/releases/download/v1.2/prayer-mode.apk" class="btn">
-                        <i class="fas fa-download"></i> Download Secure APK Now
-                    </a>
+                <div style="display: flex; align-items: center; gap: 0.6rem; font-size: 1rem; font-weight: 500;">
+                    <i class="fas fa-code-branch" style="color: var(--accent);"></i>
+                    <span>**Free & Fully Transparent Code**</span>
                 </div>
             </div>
-        </div>
-    </section>
+            
+          	<div style="max-width: 500px; margin: 1.5rem auto; padding: 1.2rem; background: rgba(255,255,255,0.1); border-radius: 10px; border: 1px solid rgba(212, 175, 55, 0.5);">
+                <div style="display: flex; align-items: flex-start; gap: 0.8rem;">
+                    <i class="fas fa-exclamation-triangle" style="color: var(--accent); font-size: 1.3rem; margin-top: 0.1rem;"></i>
+                    <div>
+                        <h4 style="margin: 0 0 0.5rem 0; color: white; font-size: 1rem;">Important: About The Android Security Warning</h4>
+                        <p style="margin: 0 0 0.8rem 0; font-size: 0.9rem; opacity: 0.9; line-height: 1.5;">
+                            <strong>When you download the file, you might see:</strong> 
+                            <em>"This APK file might be harmful for your device..."</em>
+                        </p>
+                        <p style="margin: 0; font-size: 0.9rem; opacity: 0.9; line-height: 1.5;">
+                            <strong>This is 100 % normal!</strong> Android shows this for all non-Google Play apps. 
+                            Our app is guaranteed safe and malware-free (verified by VirusTotal). Simply tap "OK" or "Keep" to continue. </p>
+                            <a href="https://prayermode.github.io/prayermode/help.html" style="color: #ADD8E6; text-decoration: underline; font-weight: bold;">How to enable "Installing from unknown sources"</a>
+                        </div>
+                </div>
+            </div>
+            <p style="font-size: 0.9rem; margin-bottom: 0.5rem; opacity: 0.8;">Available in English, العربية, Français, Türkçe, اُردُو, Bahasa Indonesia, Bahasa Malaysia and supported on Android 7+
+            <a href="https://prayermode.github.io/prayermode/release-notes.html" style="color: #ADD8E6; text-decoration: underline; font-weight: bold; font-size: 0.9rem; white-space: nowrap;">See Release Notes</a>
 
-    <!-- Features Section -->
+            <div>
+                <a href="https://github.com/prayermode/apk/releases/download/v1.2/prayer-mode.apk" class="btn">
+                    <i class="fas fa-download"></i> Download Secure APK Now
+                </a>
+            </div>
+		  </div>
+		</div>
+	</section>
+
     <section class="features" id="features">
         <div class="container">
             <div class="section-title">
@@ -1233,12 +1099,11 @@
         </div>
     </section>
 
-    <!-- App Showcase -->
     <section class="app-showcase" id="app">
         <div class="container">
             <div class="app-container">
                 <div class="app-image">
-                    <img src="feature_EN.jpg" alt="Feature" class="app-showcase-image">
+					<img src="feature_EN.jpg" alt="Feature" class="app-showcase-image">
                 </div>
                 <div class="app-content">
                     <h2>Pray without being disturbed during your Salah.</h2>
@@ -1258,7 +1123,6 @@
         </div>
     </section>
 
-    <!-- Security Section -->
     <section class="security" id="security">
         <div class="container">
             <div class="section-title">
@@ -1286,7 +1150,6 @@
         </div>
     </section>
 
-    <!-- Testimonials -->
     <section class="testimonials" id="testimonials">
         <div class="container">
             <div class="section-title">
@@ -1347,9 +1210,8 @@
             </div>
         </div>
     </section>
-    
-    <!-- Screenshots Section -->
-    <section class="screenshots" id="screenshots">
+	
+	    <section class="screenshots" id="screenshots">
         <div class="container">
             <div class="section-title">
                 <h2>Screenshots</h2>
@@ -1362,32 +1224,26 @@
                 </button>
                 
                 <div class="screenshots-carousel">
-                    <!-- Screenshot 1 -->
                     <div class="screenshot-item">
                         <img src="screenshot1.jpg" alt="Prayer mode Home Screen">
-                    </div>
+                        </div>
                     
-                    <!-- Screenshot 2 -->
                     <div class="screenshot-item">
                         <img src="screenshot2.jpg" alt="Prayer mode Dark Theme">
                     </div>
                     
-                    <!-- Screenshot 3 -->
                     <div class="screenshot-item">
                         <img src="screenshot3.jpg" alt="Prayer Mode Notifications">
                     </div>
                     
-                    <!-- Screenshot 4 -->
                     <div class="screenshot-item">
                         <img src="screenshot4.jpg" alt="Prayer Mode Location Settings">
                     </div>
                     
-                    <!-- Screenshot 5 -->
                     <div class="screenshot-item">
                         <img src="screenshot5.jpg" alt="Prayer Mode DND Settings">
                     </div>
                     
-                    <!-- Screenshot 6 -->
                     <div class="screenshot-item">
                         <img src="screenshot6.jpg" alt="Prayer Mode Prayer Times">
                     </div>
@@ -1406,7 +1262,6 @@
         </div>
     </section>
 
-    <!-- Footer -->
     <footer id="contact">
         <div class="container">
             <div class="footer-grid">
@@ -1414,21 +1269,17 @@
                     <h3>Prayer mode</h3>
                     <p>Ideas that come true for a better life.</p>
                     <div class="social-links">
-                        <!--<a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>-->
-                    </div>
+                        </div>
                 </div>
                 <div class="footer-col">
                     <h3>The App</h3>
                     <ul class="footer-links">
-                        <li><a href="#hero">Introduction</a></li>
+						<li><a href="#hero">Introduction</a></li>
                         <li><a href="#features">Features</a></li>
                         <li><a href="#app">Overview</a></li>
                         <li><a href="#security">Security</a></li>
-                        <li><a href="#testimonials">Testimonials</a></li>
-                        <li><a href="#screenshots">Screenshots</a></li>
+						<li><a href="#testimonials">Testimonials</a></li>
+						<li><a href="#screenshots">Screenshots</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
@@ -1452,30 +1303,8 @@
     </footer>
 
     <script>
-        // Mobile menu functionality
+        // Simple animation on scroll
         document.addEventListener('DOMContentLoaded', function() {
-            const menuBtn = document.querySelector('.menu-btn');
-            const closeBtn = document.querySelector('.close-btn');
-            const mobileNav = document.getElementById('mobileNav');
-            const overlay = document.getElementById('overlay');
-            
-            function toggleMenu() {
-                mobileNav.classList.toggle('active');
-                overlay.classList.toggle('active');
-                document.body.style.overflow = mobileNav.classList.contains('active') ? 'hidden' : '';
-            }
-            
-            menuBtn.addEventListener('click', toggleMenu);
-            closeBtn.addEventListener('click', toggleMenu);
-            overlay.addEventListener('click', toggleMenu);
-            
-            // Close mobile menu when clicking on a link
-            const mobileLinks = document.querySelectorAll('.mobile-nav-links a');
-            mobileLinks.forEach(link => {
-                link.addEventListener('click', toggleMenu);
-            });
-            
-            // Simple animation on scroll
             const animatedElements = document.querySelectorAll('.animate');
             
             const observer = new IntersectionObserver((entries) => {
@@ -1496,6 +1325,29 @@
                 observer.observe(element);
             });
             
+            // Hamburger Menu Toggle
+            const menuToggle = document.getElementById('menu-toggle');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            menuToggle.addEventListener('click', () => {
+                mobileMenu.classList.toggle('active');
+                // Change icon from bars to close
+                const icon = menuToggle.querySelector('i');
+                icon.classList.toggle('fa-bars');
+                icon.classList.toggle('fa-times');
+            });
+
+            // Close menu when a link is clicked (for single page navigation)
+            mobileMenu.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.remove('active');
+                    // Reset icon to bars
+                    const icon = menuToggle.querySelector('i');
+                    icon.classList.add('fa-bars');
+                    icon.classList.remove('fa-times');
+                });
+            });
+
             // Smooth scrolling for anchor links
             document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                 anchor.addEventListener('click', function (e) {
@@ -1511,15 +1363,15 @@
                 const now = new Date();
                 const hours = now.getHours().toString().padStart(2, '0');
                 const minutes = now.getMinutes().toString().padStart(2, '0');
-                // Removed as it was referencing a non-existent element
+                // document.querySelector('.app-time').textContent = `${hours}:${minutes}`; // Original element not found in provided code, skipping
             }
             
             updateMockupTime();
             setInterval(updateMockupTime, 60000);
-        });
         
-        // Screenshots Carousel Functionality
-        document.addEventListener('DOMContentLoaded', function() {
+		
+		
+		       // Screenshots Carousel Functionality
             const carousel = document.querySelector('.screenshots-carousel');
             const prevButton = document.querySelector('.carousel-nav.prev');
             const nextButton = document.querySelector('.carousel-nav.next');
@@ -1527,7 +1379,8 @@
             const screenshotItems = document.querySelectorAll('.screenshot-item');
             
             let currentIndex = 0;
-            const itemWidth = screenshotItems[0].offsetWidth + 32; // width + gap
+            // Recalculate itemWidth dynamically for better responsiveness
+            const itemWidth = screenshotItems[0] ? screenshotItems[0].offsetWidth + 32 : 0; 
             
             // Function to update carousel position
             function updateCarousel() {
@@ -1581,6 +1434,7 @@
             
             // Update indicators on scroll
             carousel.addEventListener('scroll', () => {
+                if (itemWidth === 0) return; // Prevent division by zero
                 const scrollPosition = carousel.scrollLeft;
                 currentIndex = Math.round(scrollPosition / itemWidth);
                 
@@ -1589,7 +1443,7 @@
                 });
             });
         });
-    </script>
+    
+  </script>
 </body>
-
 </html>
