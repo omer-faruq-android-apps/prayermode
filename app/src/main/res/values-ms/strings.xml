@@ -58,6 +58,8 @@
     <!-- Select menu -->
     <string name="select_before_dhuhr_duration">Pilih tempoh sebelum Azan</string>
     <string-array name="before_dhuhr_duration">
+        <item>5 minit</item>
+        <item>10 minit</item>
         <item>15 minit</item>
         <item>20 minit</item>
         <item>25 minit</item>

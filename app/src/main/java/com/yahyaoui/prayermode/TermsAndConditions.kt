@@ -31,7 +31,6 @@ class TermsAndConditions : DialogFragment() {
     }
 
     private var listener: TermsAndConditionsListener? = null
-    private lateinit var tvMessage: TextView
     private lateinit var tvTermsLink: TextView
     private lateinit var tvPrivacyLink: TextView
     private lateinit var sharedHelper: SharedHelper
@@ -46,7 +45,6 @@ class TermsAndConditions : DialogFragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         val view = inflater.inflate(R.layout.dialog_terms_and_conditions, container, false)
 
-        tvMessage = view.findViewById(R.id.tvMessage)
         tvTermsLink = view.findViewById(R.id.tvTermsLink)
         tvPrivacyLink = view.findViewById(R.id.tvPrivacyLink)
 

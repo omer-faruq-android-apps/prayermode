@@ -1,0 +1,355 @@
+<resources>
+    <string name="app_name">Modo Oración</string>
+    <string name="Off">Apagado</string>
+    <string name="On">Encendido</string>
+    <string name="select_option">Selecciona una opción</string> <!-- No translation -->
+    <string name="AudioText">Escuchar el takbir antes de activar el modo silencio</string>
+
+    <!-- Daily Schedule Card view -->
+    <string name="daily_schedule">Horario Diario de Oraciones</string>
+
+    <string name="calculation_method">Método de cálculo</string>  <!-- No translation -->
+    <string name="select_calculation_method">Selecciona el método de cálculo</string>
+    <string-array name="calculation_methods">
+        <item>Universidad Umm Al-Qura, Meca</item>
+        <item>Liga Musulmana Mundial</item>
+        <item>Sociedad Islámica de Norteamérica</item>
+        <item>Autoridad General de Estudio de Egipto</item>
+        <item>Universidad de Ciencias Islámicas, Karachi</item>
+        <item>Región del Golfo</item>
+        <item>Kuwait</item>
+        <item>Qatar</item>
+        <item>Majlis Ugama Islam Singapura, Singapur</item>
+        <item>Unión de Organizaciones Islámicas de Francia</item>
+        <item>Diyanet İşleri Başkanlığı, Turquía</item>
+        <item>Administración Espiritual de los Musulmanes de Rusia</item>
+        <item>Comité de Avistamiento de la Luna</item>
+        <item>Dubái, EAU</item>
+        <item>Jabatan Kemajuan Islam Malaysia (JAKIM)</item>
+        <item>Túnez</item>
+        <item>Argelia</item>
+        <item>Kementerian Agama Republik Indonesia</item>
+        <item>Marruecos</item>
+        <item>Comunidad Islámica de Lisboa, Portugal</item>
+        <item>Ministerio de Awqaf, Asuntos Islámicos y Lugares Santos, Jordania</item>
+        <item>Instituto de Geofísica, Universidad de Teherán</item>
+        <item>Shia Ithna-Ashari, Instituto Leva, Qum</item>
+    </string-array>
+
+    <string name="daily_silent_duration_after_adhan">Duración del silencio diario después del adhan</string>
+    <string name="daily_silent_duration">Duración del silencio diario</string>  <!-- No translation -->
+    <string name="select_silent_duration">Selecciona la duración diaria</string>
+    <string-array name="silent_durations">
+        <item>15 minutos</item>
+        <item>20 minutos</item>
+        <item>25 minutos</item>
+        <item>30 minutos</item>
+        <item>35 minutos</item>
+        <item>40 minutos</item>
+        <item>45 minutos</item>
+    </string-array>
+
+    <!-- Joumoua Card view -->
+    <string name="joumoua">Al-Jumua</string>
+    <!-- Black fix text -->
+    <string name="before_dhuhr">Duración del silencio antes del adhan</string>
+    <!-- TV variable text -->
+    <string name="duration_before_dhuhr">Duración antes del adhan</string>  <!-- No translation -->
+    <!-- Select menu -->
+    <string name="select_before_dhuhr_duration">Selecciona la duración antes del adhan</string>
+    <string-array name="before_dhuhr_duration">
+        <item>5 minutos</item>
+        <item>10 minutos</item>
+        <item>15 minutos</item>
+        <item>20 minutos</item>
+        <item>25 minutos</item>
+        <item>30 minutos</item>
+        <item>35 minutos</item>
+        <item>40 minutos</item>
+        <item>45 minutos</item>
+        <item>50 minutos</item>
+        <item>55 minutos</item>
+        <item>60 minutos</item>
+    </string-array>
+
+    <string name="after_dhuhr">Duración del silencio después del adhan</string>
+    <string name="duration_after_dhuhr">Duración después del adhan</string>  <!-- No translation -->
+    <string name="select_after_dhuhr_duration">Selecciona la duración después del adhan</string>
+    <string-array name="after_dhuhr_duration">
+        <item>15 minutos</item>
+        <item>20 minutos</item>
+        <item>25 minutos</item>
+        <item>30 minutos</item>
+        <item>35 minutos</item>
+        <item>40 minutos</item>
+        <item>45 minutos</item>
+        <item>50 minutos</item>
+        <item>55 minutos</item>
+        <item>60 minutos</item>
+    </string-array>
+
+    <!-- Ramadan Card view -->
+    <string name="ramadan">Ramadán</string>
+
+    <string name="tarawih_silent_duration">Duración del silencio para Isha y Taraweeh</string>
+    <string name="tarawih_duration">Duración de Taraweeh</string>  <!-- No translation -->
+    <string name="select_tarawih_duration">Selecciona la duración de Isha y Taraweeh</string>
+    <string-array name="tarawih_duration">
+        <item>20 minutos</item>
+        <item>30 minutos</item>
+        <item>40 minutos</item>
+        <item>50 minutos</item>
+        <item>1 hora</item>
+        <item>1 hora 30 minutos</item>
+        <item>2 horas</item>
+        <item>2 horas 30 minutos</item>
+        <item>3 horas</item>
+    </string-array>
+
+    <string name="tahajjud_silent_duration">Duración del silencio para Tahajjud</string>
+    <string name="tahajjud_duration">Duración de Tahajjud</string>  <!-- No translation -->
+    <string name="select_tahajjud_duration">Selecciona la duración de Tahajjud</string>
+    <string-array name="tahajjud_duration">
+        <item>20 minutos</item>
+        <item>30 minutos</item>
+        <item>40 minutos</item>
+        <item>50 minutos</item>
+        <item>1 hora</item>
+        <item>1 hora 30 minutos</item>
+        <item>2 horas</item>
+        <item>2 horas 30 minutos</item>
+        <item>3 horas</item>
+    </string-array>
+
+    <!-- Eid Card view -->
+    <string name="eid_alfitr_and_eid_aladha">Eid Al Fitr - Eid Al Adha</string>
+
+    <string name="eid_time_prayer">Hora de la oración del Eid</string>
+    <string name="eid_time">Hora del Eid</string>  <!-- No translation -->
+    <string name="select_eid_time">Selecciona la hora de la oración del Eid</string>
+    <string-array name="eid_time">
+        <item>20 minutos después del amanecer</item>
+        <item>06:00</item>
+        <item>06:30</item>
+        <item>07:00</item>
+        <item>07:30</item>
+        <item>08:00</item>
+        <item>08:30</item>
+        <item>09:00</item>
+        <item>10:00</item>
+    </string-array>
+
+    <string name="eid_silent_duration">Duración del silencio del Eid</string>
+    <string name="eid_duration">Duración del Eid</string>  <!-- No translation -->
+    <string name="select_eid_duration">Selecciona la duración de la oración del Eid</string>
+    <string-array name="eid_duration">
+        <item>20 minutos</item>
+        <item>30 minutos</item>
+        <item>40 minutos</item>
+        <item>50 minutos</item>
+        <item>60 minutos</item>
+    </string-array>
+
+    <!-- Privacy Card view -->
+    <string name="privacy">Privacidad</string>
+    <string name="privacy_notice">Aviso de Privacidad</string>
+    <string name="privacy_content">"Aviso de Privacidad de Modo Oración"</string>
+    <string name="privacy_policy_link_text">este enlace</string>
+
+    <string name="privacy_description"><![CDATA[
+Esta aplicación utiliza la ubicación de tu dispositivo para calcular horarios de oración precisos relevantes para tu área geográfica.<br/><br/>
+Para garantizar actualizaciones continuas de los horarios de oración y activar automáticamente el modo No Molestar en los momentos correctos, la aplicación requiere acceso a la ubicación en segundo plano (incluso cuando la aplicación está cerrada o no en uso).<br/><br/>
+
+Queremos asegurarle que NO:<br/>
+<ul>
+  <li>Recopilamos sus datos de ubicación precisos o aproximados de forma persistente.</li>
+  <li>Almacenamos sus datos de ubicación en nuestros servidores.</li>
+  <li>Compartimos sus datos de ubicación con terceros.</li>
+  <li>Recopilamos cualquier otra información personal.</li>
+</ul>
+
+<b>Lo que almacenamos localmente (en su dispositivo):</b><br/><br/>
+Para garantizar actualizaciones continuas y precisas de los horarios de oración, la aplicación almacena solo su <b>última ubicación conocida (latitud y longitud) localmente en su dispositivo</b>. Esto es necesario para que la funcionalidad principal de la aplicación funcione como está diseñada. Estos datos se utilizan <b>únicamente para detectar cambios de ubicación</b>. Estos datos de ubicación se sobrescriben cada vez que cambia la ubicación de su dispositivo. No se mantiene un historial de datos de ubicación en su dispositivo y no se envían datos a nuestros servidores ni se comparten externamente.<br/><br/>
+La aplicación solicitará permiso para acceder a la ubicación de su dispositivo. Puede elegir otorgar o denegar este permiso. Si deniega el permiso de ubicación en segundo plano, la aplicación no podrá proporcionar horarios de oración actualizados continuamente ni administrar automáticamente el modo No Molestar.<br/><br/>
+
+<b>Modo No Molestar</b><br/><br/>
+Esta aplicación también puede solicitar permiso para activar el modo No Molestar (DND) en su dispositivo. Este permiso es necesario para que la aplicación funcione correctamente al habilitar temporalmente el modo DND para minimizar las interrupciones durante los horarios de oración.<br/><br/>
+Si bien este permiso permite que la aplicación controle la configuración de sonido y vibración de su dispositivo, queremos aclarar explícitamente que la aplicación NO accede, lee ni recopila ninguna de sus notificaciones, mensajes, contenido de llamadas ni ningún otro dato personal que muestren sus notificaciones. Este permiso es únicamente para activar y desactivar el modo DND.<br/><br/>
+Usted reconoce que mientras el modo DND esté activo, <b>es posible que no reciba notificaciones estándar, incluidas llamadas de emergencia</b>. Nuestra empresa no se hará responsable de ninguna consecuencia resultante de notificaciones perdidas y llamadas de emergencia, durante los períodos en que la aplicación haya activado el modo DND.<br/><br/>
+Es su responsabilidad configurar la configuración y excepciones de DND según sus necesidades.<br/><br/>
+Estamos comprometidos a proteger su privacidad. Si tiene alguna pregunta o inquietud sobre nuestras prácticas de privacidad, contáctenos en <a href="mailto:prayer.mode@outlook.com">prayer.mode@outlook.com</a><br/><br/>
+
+Para obtener detalles completos de nuestra Política de Privacidad, siga [PRIVACY_LINK].<br/><br/>
+
+Gracias por confiar en nuestra aplicación.<br/><br/>
+]]></string>
+
+    <string name="terms">Términos de Servicio</string>
+
+    <string name="permission">Permisos</string>
+    <string name="permissions_content">Permisos requeridos</string>
+    <string name="location_permission">Icono de permiso de ubicación</string>
+
+    <string name="location">Ubicación</string>
+    <string name="location_description">Se utiliza para acceder a la ubicación de su dispositivo para obtener horarios de oración precisos y garantizar actualizaciones automáticas, incluso cuando la aplicación no está abierta activamente.</string>
+
+    <string name="notifications">Notificaciones</string>
+    <string name="notifications_description">Se utiliza para proporcionar información sobre recordatorios y alertas y otra información importante, garantizando que los reciba de manera oportuna.</string>
+
+    <string name="dnd">Modo No Molestar</string>
+    <string name="dnd_description">Se utiliza para activar automáticamente el modo No Molestar durante los horarios de oración.</string>
+
+    <string name="alarm">Alarma y Recordatorios</string>
+    <string name="alarm_description">Se utiliza para programar el modo No Molestar para los horarios de oración.</string>
+
+    <string name="help">Ayuda</string>
+    <string name="bulb">Antes de comenzar a usar la aplicación</string>
+    <string name="bulb_content">Guía de Inicio Rápido</string>
+    <string name="bulb_description">Cuando uses esta aplicación por primera vez, sigue los consejos a continuación para configurar los ajustes.</string>
+
+    <string name="important_note">Obtención mensual y detección de cambio de ubicación</string>
+    <string name="important_note_description">"Esta aplicación obtiene los horarios de oración de la API de aladhan.com el primer día de cada mes y depende de la ubicación de su dispositivo y una conexión a Internet activa. Esto es para garantizar horarios de oración precisos y una funcionalidad adecuada del modo No Molestar. Para la detección continua de cambios de ubicación cuando viaja largas distancias, que es una funcionalidad importante de la aplicación, se requieren servicios de ubicación siempre activos y una conexión a Internet persistente."</string>
+
+    <string name="volume">Modo No Molestar</string>
+    <string name="volume_description">Durante No Molestar, la aplicación silencia todos los sonidos y vibraciones para llamadas y notificaciones. Sin embargo, las alarmas del altavoz principal y el audio de sus llamadas usando el auricular seguirán siendo audibles. Una vez que el DND se desactiva, los niveles de sonido se restauran a sus últimos valores guardados.</string>
+
+    <string name="calculation">Métodos de cálculo</string>
+    <string name="calculation_description">Selecciona el método de cálculo preferido antes de activar el interruptor. Ten en cuenta que la aplicación utiliza la API de aladhan.com para obtener horarios de oración precisos.</string>
+
+    <string name="durations">Duración</string>
+    <string name="durations_description">Selecciona las duraciones según tus preferencias. Ten en cuenta que las cinco oraciones diarias, Jumua, Taraweeh, Tahajjud y las oraciones del Eid tienen cada una su propia duración.</string>
+
+    <string name="time">Hora</string>
+    <string name="time_description">Elige la hora de la oración del Eid de Al-Fitr y Al-Adha.</string>
+
+    <string name="tile">Ficha de Modo Oración</string>
+    <string name="tile_description">Al agregar la ficha de Modo Oración a Configuración rápida, puedes acceder a la aplicación más rápidamente.</string>
+
+    <string name="wearable">Wearable</string>
+    <string name="wearable_description">Tu reloj conectado también puede recibir notificaciones y seguir el modo de sonido de tu teléfono; para lograrlo, revisa la configuración de la aplicación de tu reloj inteligente.</string>
+
+    <string name="donation">Donaciones</string>
+    <string name="donation_link_text">PayPal</string>
+    <string name="donation_content">Apóyanos</string>
+    <string name="donation_description"><![CDATA[
+    Modo Oración es software gratuito y de código abierto. El desarrollo y mantenimiento requieren tiempo y esfuerzo.<br/><br/>
+    Si encuentras esta aplicación valiosa y deseas apoyar su desarrollo continuo, puedes hacer una donación voluntaria.<br/><br/>
+    Las donaciones son <b>voluntarias, no reembolsables</b> y no te dan derecho a ningún servicio o función premium.<br/><br/>
+    Son simplemente una forma de mostrar tu aprecio y ayudar a garantizar que la aplicación permanezca gratuita y actualizada para todos.<br/><br/>
+    Puedes donar usando [DONATION_LINK].<br/><br/>
+    ]]></string>
+
+    <string name="back_button">Botón Atrás</string>  <!-- No translation -->
+
+    <!-- MainActivity SnackBar -->
+    <string name="cannot_change_settings">No se pueden cambiar los ajustes mientras el interruptor está encendido.</string>
+    <string name="permissions_granted">Todos los permisos están concedidos, el interruptor se puede encender.</string>
+    <string name="alarm_permission_granted">Permiso de Alarma concedido.</string>
+    <string name="grant_location_permission">Por favor, concede el permiso de Ubicación.</string>
+    <string name="grant_alarm_permission">Por favor, concede el permiso de Alarma.</string>
+    <string name="grant_dnd_permission">Se necesita el permiso de No Molestar para el silenciado automático.</string>
+    <string name="background_location_denied_message">Se necesita acceso a la ubicación en segundo plano para actualizar automáticamente los horarios de oración.</string>
+    <string name="no_location_internet">No se puede activar el Modo Oración, por favor verifica el Servicio de Ubicación y la conexión a Internet.</string>
+    <string name="app_disabled">Modo Oración apagado.</string>
+    <string name="app_enabled">Modo Oración encendido.</string>
+    <string name="alarm_permission_denied_message">Esta aplicación necesita permiso de Alarma para recordatorios precisos. Por favor, concede el permiso en los ajustes.</string>
+    <string name="notification_disabled">Las notificaciones están desactivadas pero se pueden conceder en los ajustes.</string>
+
+    <!-- PermissionHelper Dialogs -->
+    <string name="background_location_permission_title">Se requiere permiso de Ubicación en segundo plano</string>
+    <string name="background_location_permission_message">Esta aplicación requiere acceso continuo a la ubicación de su dispositivo mientras la aplicación no está en uso para adaptar los horarios de oración. Por favor, selecciona &lt;b&gt;Permitir todo el tiempo&lt;/b&gt; en Permisos/Ubicación.</string>
+
+    <string name="alarm_permission_title">Se requiere permiso de Alarma</string>
+    <string name="alarm_permission_message">Esta aplicación requiere permiso de alarma para activar/desactivar el modo DND en el momento preciso y también programar las oraciones del día siguiente. Por favor, concede el permiso en los ajustes.</string>
+
+    <string name="dnd_permission_title">Se requiere acceso a No Molestar</string>
+    <string name="dnd_permission_message">Por favor, concede el acceso a No Molestar para el silenciado automático durante los horarios de oración, ya que este acceso es necesario para que la aplicación funcione según lo previsto.</string>
+
+    <!-- mainActivity -->
+    <string name="location_permission_denied_title">Permiso de Ubicación denegado</string>
+    <string name="location_permission_denied_message">Esta aplicación requiere acceso continuo a la ubicación de su dispositivo mientras la aplicación está en uso para obtener horarios de oración precisos. Por favor, concede este permiso en los ajustes de la aplicación.</string>
+
+    <string name="location_permanently_denied_title">Ubicación denegada permanentemente</string>
+    <string name="location_permanently_denied_message">El permiso de ubicación aún se puede conceder en los ajustes de la aplicación.</string>
+
+    <string name="notification_recommended_title">Notificaciones Recomendadas</string>
+    <string name="notification_recommended_message">Las alertas y recordatorios del Modo Oración se pueden perder sin acceso a las notificaciones.</string>
+
+    <string name="open_settings">Abrir ajustes</string>
+    <string name="try_again">Intentar de nuevo</string>
+    <string name="exit">Salir</string>
+    <string name="enable">Habilitar</string>
+    <string name="skip">Omitir</string>
+
+    <string name="cancel">Cancelar</string>
+    <string name="ok">Aceptar</string>
+
+    <string name="app_disabled_after_reboot">El Servicio de Ubicación se detuvo después del reinicio del dispositivo. Por favor, abre la aplicación para iniciar el servicio de ubicación.</string>
+
+    <string name="terms_dialog_title">Aviso Importante</string>
+    <string name="terms_dialog_message">Por favor, lee nuestros Términos de Servicio y Política de Privacidad cuidadosamente usando los enlaces a continuación. Debes aceptarlos para usar esta aplicación.</string>
+    <string name="terms_dialog_link">Términos de Servicio</string>
+    <string name="privacy_link">Aviso de Privacidad</string>
+    <string name="decline">Rechazar</string>
+    <string name="accept">Aceptar</string>
+
+    <string name="today_fajr_time_is">La oración del Fajr de hoy es a las %1$s.</string>
+    <string name="today_dhuhr_time_is">La oración de Al-Jumua de hoy es a las %1$s.</string>
+    <string name="silent_mode_activated_for">No Molestar activado para %1$s.</string>
+    <string name="today_imsak_time_is">El tiempo de Imsak de hoy es a las %1$s.</string>
+    <string name="back_to_normal_mode">Modo No Molestar desactivado.</string>
+    <string name="location_title">Servicio de ubicación</string>
+    <string name="getting_location_update">Obteniendo actualizaciones de ubicación.</string>
+    <string name="happy_eid_alfitr">Feliz Eid Al Fitr, que Allah acepte nuestras buenas acciones así como las tuyas.</string>
+    <string name="happy_eid_aladha">Feliz Eid Al Adha, que Allah acepte nuestras buenas acciones así como las tuyas.</string>
+    <string name="dnd_already_on">El modo DND ya estaba activo por el usuario/sistema al intentar activarlo para %1$s y, por lo tanto, permanecerá activo para respetar tu configuración actual.</string>
+
+    <string name="location_service_disabled">Para garantizar que la aplicación funcione como se espera, activa el servicio de ubicación.</string>
+    <string name="travelled_distance">Has viajado %1$s km. Adaptando tu horario de oraciones a tu nueva posición.</string>
+    <string name="location_name">Obteniendo horarios de oración para %1$s. ¿Ubicación incorrecta? Es posible que necesites ajustar la configuración de ubicación de tu dispositivo.</string>
+
+    <string name="open_prayer">Abrir aplicación</string>
+
+    <string name="eid">Al Eid</string>
+    <string name="imsak">Imsak</string>
+    <string name="fajr">Fajr</string>
+    <string name="sunrise">Amanecer</string>
+    <string name="dhuhr">Dhuhr</string>
+    <string name="asr">Asr</string>
+    <string name="maghrib">Maghrib</string>
+    <string name="isha">Isha</string>
+    <string name="tarawih">Taraweeh</string>
+    <string name="tahajjud">Tahajjud</string>
+    <string name="prayer_name_unknown">Oración</string>
+
+    <string name="fetch_title">Actualizaciones de horarios de oración</string>
+    <string name="fetch_failed_no_internet">No hay conexión a Internet disponible. Por favor, conéctate a Internet, luego apaga el interruptor y enciéndelo de nuevo.</string>
+    <string name="fetch_failed">Ocurrió un error inesperado al obtener los horarios de oración. Por favor, intenta apagar el interruptor y encenderlo de nuevo.</string>
+    <string name="schedule_title">Horario de horarios de oración</string>
+
+    <string name="background_location_rationale">Para actualizar automáticamente los horarios del Modo Silencio y los horarios de oración cuando viajas a una nueva ubicación, garantizando que tu teléfono siempre se silencie en el momento correcto sin necesidad de abrir la aplicación.</string>
+
+    <string name="update_notification_title">Actualización de Modo Oración</string>
+    <string name="update_notification_message">La versión %1$s ya está disponible.</string>
+    <string name="update">Actualizar ahora</string>
+
+    <!-- Catch & else blocks -->
+    <string name="failed_writing">Por favor, asegúrate de tener suficiente espacio de almacenamiento.</string>
+    <string name="permission_denied_writing">Ocurrió un error inesperado al guardar el archivo de horarios de oración, por favor reinicia la aplicación y busca actualizaciones.</string>
+
+    <!-- For debugging only -->
+    <string name="silent_schedule_success">Successful today scheduling.</string>
+    <string name="monthly_update">Updating prayer times for %1$s.</string>
+    <string name="monthly_update_default_method">Updating prayer times for %1$s using default method.</string>
+
+    <string name="worker_failed">Worker failed.</string>
+    <string name="process_prayer">Process prayer times</string>
+    <string name="fail_read_file">Failed to read from file %1$s</string>
+    <string name="error_parsing_time">Error parsing time %1$s</string>
+    <string name="invalid_time_format">Invalid time format %1$s</string>
+    <string name="unexpected_error">Unexpected error while getting prayer calendar %1$s</string>
+
+    <string name="error">Error</string>
+    <string name="error_getting_hijri_date">Error getting hijri date %1$s</string>
+    <string name="failed_schedule_silent_mode">Failed to schedule silent mode for %1$s</string>
+</resources>

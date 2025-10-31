@@ -2,6 +2,8 @@ package com.yahyaoui.prayermode
 
 import android.content.Context
 import android.media.MediaPlayer
+import android.os.Handler
+import android.os.Looper
 import android.util.Log
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.suspendCancellableCoroutine
@@ -17,7 +19,7 @@ class AudioPlayerHelper(private val context: Context) {
     suspend fun playAudioFromRaw(resourceId: Int): Boolean = withContext(Dispatchers.IO) {
         try {
             if (BuildConfig.DEBUG) Log.d(tag, "Starting audio playback - resourceId: $resourceId")
-            stopAudio()
+            releaseMediaPlayer()
 
             return@withContext suspendCancellableCoroutine { continuation ->
                 mediaPlayer = MediaPlayer.create(context, resourceId).apply {
@@ -29,7 +31,9 @@ class AudioPlayerHelper(private val context: Context) {
 
                     setOnCompletionListener {
                         if (BuildConfig.DEBUG) Log.d(tag, "Audio playback completed successfully")
-                        releaseMediaPlayer()
+                        Handler(Looper.getMainLooper()).postDelayed({
+                            releaseMediaPlayer()
+                        }, 100)
                         continuation.resume(true)
                     }
                     setOnErrorListener { mp, what, extra ->
@@ -53,20 +57,10 @@ class AudioPlayerHelper(private val context: Context) {
         }
     }
 
-    fun stopAudio() {
-        mediaPlayer?.let {
-            if (it.isPlaying) {
-                if (BuildConfig.DEBUG) Log.d(tag, "⏹️ Stopping current audio playback")
-                it.stop()
-            }
-            it.release()
-        }
-        mediaPlayer = null
-    }
-
     fun releaseMediaPlayer() {
         mediaPlayer?.let {
             if (it.isPlaying) {
+                if (BuildConfig.DEBUG) Log.d(tag, "Stopping current audio playback")
                 it.stop()
             }
             it.release()

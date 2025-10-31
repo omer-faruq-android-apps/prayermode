@@ -15,6 +15,8 @@ class SilentModeWorker(appContext: Context, workerParams: WorkerParameters) : Co
     private val sharedHelper: SharedHelper by lazy { SharedHelper(appContext) }
     private val tools: Tools by lazy { Tools(appContext) }
     private val tag = "SilentModeWorker"
+    private val audioPlayerHelper: AudioPlayerHelper by lazy { AudioPlayerHelper(appContext) }
+
 
     override suspend fun doWork(): Result {
         val mode = inputData.getBoolean("mode", false)
@@ -59,10 +61,14 @@ class SilentModeWorker(appContext: Context, workerParams: WorkerParameters) : Co
                     return@withContext Result.success()
                 } else {
                     val silentModeSetSuccess = if (mode) {
-                        if (BuildConfig.DEBUG) {Log.i(tag, "Activating silent mode for $prayerName.")}
+                        if (sharedHelper.getAudioSwitchState() && sharedHelper.getSwitchState() && prayerName != "Joumoua") {
+                            if (BuildConfig.DEBUG) Log.i(tag, "Audio switch and main switch are on, not Joumoua prayer, playing audio...")
+                            audioPlayerHelper.playAudioFromRaw(R.raw.takbir)
+                        }
+                        if (BuildConfig.DEBUG) Log.i(tag, "Activating silent mode for $prayerName.")
                         tools.setSilentMode(true, prayerName)
                     } else {
-                        if (BuildConfig.DEBUG) {Log.i(tag, "Deactivating silent mode for $prayerName.")}
+                        if (BuildConfig.DEBUG) Log.i(tag, "Deactivating silent mode for $prayerName.")
                         tools.setSilentMode(false, prayerName)
                     }
 
