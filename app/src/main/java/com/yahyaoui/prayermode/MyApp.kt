@@ -12,20 +12,20 @@ class MyApp : Application() {
 
     override fun onCreate() {
         super.onCreate()
-        scheduleWeeklyUpdateCheck()
+        scheduleDailyUpdateCheck()
     }
-    private fun scheduleWeeklyUpdateCheck() {
+    private fun scheduleDailyUpdateCheck() {
         val updateRequest = PeriodicWorkRequestBuilder<UpdateCheckWorker>(
-            7, TimeUnit.DAYS,
+            1, TimeUnit.DAYS,
             1, TimeUnit.HOURS
         ).build()
 
         WorkManager.getInstance(this).enqueueUniquePeriodicWork(
-            "weeklyUpdateCheck",
+            "dailyUpdateCheck",
             ExistingPeriodicWorkPolicy.KEEP,
             updateRequest
         )
 
-        if (BuildConfig.DEBUG) Log.d(tag, "Weekly update check scheduled")
+        if (BuildConfig.DEBUG) Log.d(tag, "Daily update check scheduled")
     }
 }

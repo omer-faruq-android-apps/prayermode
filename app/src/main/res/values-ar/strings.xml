@@ -227,7 +227,7 @@
     <string name="today_dhuhr_time_is">موعد صلاة الجمعة اليوم على الساعة %1$s</string>
     <string name="silent_mode_activated_for">تم تفعيل وضع عدم الإزعاج لـصلاة %1$s</string>
     <string name="today_imsak_time_is">وقت الإمساك اليوم على الساعة %1$s</string>
-    <string name="back_to_normal_mode">تم استعادة مستوى الصوت.</string>
+    <string name="back_to_normal_mode">تم إيقاف وضع عدم الإزعاج.</string>
     <string name="location_title">خدمة الموقع</string>
     <string name="getting_location_update">جارٍ الحصول على تحديثات الموقع.</string>
     <string name="happy_eid_alfitr">عيد الفطر مبارك سعيد، تقبل الله منا ومنكم صالح الأعمال.</string>
@@ -262,7 +262,7 @@
     <string name="update_notification_title">تحديث وضع الصلاة</string>
     <string name="update_notification_message">النسخة %1$s متاحة الآن.</string>
     <string name="update">حدّث الآن</string>
-    <string name="silent_schedule_success">تم جدولة أوقات الصلاة بنجاح</string>
+    <string name="silent_schedule_success">تم جدولة أوقات الصلاة بنجاح.</string>
 
     <!-- Catch & else blocks -->
     <string name="failed_writing">يرجى التأكد من وجود مساحة تخزين كافية.</string>
