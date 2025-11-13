@@ -328,7 +328,7 @@ Anda boleh menderma menggunakan [DONATION_LINK].<br/><br/>
     <string name="update_notification_title">Kemas Kini Mod Solat</string>
     <string name="update_notification_message">Versi %1$s kini tersedia.</string>
     <string name="update">Kemas Kini Sekarang</string>
-    <string name="silent_schedule_success">Penjadualan hari ini berjaya.</string>
+    <string name="silent_schedule_success">Penjadualan waktu solat berjaya.</string>
 
     <!-- Catch & else blocks -->
     <string name="failed_writing">Sila pastikan ruang storan mencukupi.</string>

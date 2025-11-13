@@ -262,7 +262,7 @@
     <string name="update_notification_title">تحديث وضع الصلاة</string>
     <string name="update_notification_message">النسخة %1$s متاحة الآن.</string>
     <string name="update">حدّث الآن</string>
-    <string name="silent_schedule_success">تمت الجدولة اليومية بنجاح.</string>
+    <string name="silent_schedule_success">تم جدولة أوقات الصلاة بنجاح</string>
 
     <!-- Catch & else blocks -->
     <string name="failed_writing">يرجى التأكد من وجود مساحة تخزين كافية.</string>

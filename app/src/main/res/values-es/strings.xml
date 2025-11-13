@@ -332,7 +332,7 @@ Gracias por confiar en nuestra aplicación.<br/><br/>
     <string name="update_notification_title">Actualización de Modo Oración</string>
     <string name="update_notification_message">La versión %1$s ya está disponible.</string>
     <string name="update">Actualizar ahora</string>
-    <string name="silent_schedule_success">Programación exitosa hoy.</string>
+    <string name="silent_schedule_success">Programación de horarios de oración exitosa.</string>
 
     <!-- Catch & else blocks -->
     <string name="failed_writing">Por favor, asegúrate de tener suficiente espacio de almacenamiento.</string>

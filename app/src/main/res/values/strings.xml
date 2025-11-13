@@ -332,7 +332,7 @@ Thank you for trusting our application.<br/><br/>
     <string name="update_notification_title">Prayer mode update</string>
     <string name="update_notification_message">Version %1$s is now available.</string>
     <string name="update">Update now</string>
-    <string name="silent_schedule_success">Successful today scheduling.</string>
+    <string name="silent_schedule_success">Successful prayer times scheduling.</string>
 
     <!-- Catch & else blocks -->
     <string name="failed_writing">Please ensure you have sufficient storage space.</string>

@@ -328,7 +328,7 @@ Bağışlar, sadece takdirinizi göstermenin ve uygulamanın herkes için ücret
     <string name="update_notification_title">Namaz Modu Güncellemesi</string>
     <string name="update_notification_message">%1$s sürümü artık mevcut.</string>
     <string name="update">Şimdi Güncelle</string>
-    <string name="silent_schedule_success">Bugünkü programlama başarılı.</string>
+    <string name="silent_schedule_success">Namaz vakitleri başarıyla planlandı.</string>
 
     <!-- Catch & else blocks -->
     <string name="failed_writing">Lütfen yeterli depolama alanınız olduğundan emin olun.</string>

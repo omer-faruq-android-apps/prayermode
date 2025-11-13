@@ -328,7 +328,7 @@ Anda dapat menyumbang menggunakan [DONATION_LINK].<br/><br/>
     <string name="update_notification_title">Pembaruan Mode Salat</string>
     <string name="update_notification_message">Versi %1$s sekarang tersedia.</string>
     <string name="update">Perbarui Sekarang</string>
-    <string name="silent_schedule_success">Penjadwalan hari ini berhasil.</string>
+    <string name="silent_schedule_success">Penjadwalan waktu sholat berhasil.</string>
 
     <!-- Catch & else blocks -->
     <string name="failed_writing">Pastikan ruang penyimpanan mencukupi.</string>

@@ -334,7 +334,7 @@ Vous pouvez faire un don en utilisant [DONATION_LINK].<br/><br/>
     <string name="update_notification_title">MàJ du Mode Prière</string>
     <string name="update_notification_message">La version %1$s est maintenant disponible.</string>
     <string name="update">Mettre à jour</string>
-    <string name="silent_schedule_success">Programmation quotidienne réussie.</string>
+    <string name="silent_schedule_success">Programmation des heures de prière réussie.</string>
 
     <!-- Catch & blocks -->
     <string name="failed_writing">Veuillez vous assurer que vous disposez de suffisamment d\'espace de stockage.</string>
