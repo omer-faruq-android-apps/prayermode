@@ -58,7 +58,7 @@
     <!-- Select menu -->
     <string name="select_before_dhuhr_duration">اذان سے پہلے کا دورانیہ منتخب کریں</string>
     <string-array name="before_dhuhr_duration">
-        <item>5 منٹ</item>
+        <item>بند</item>
         <item>10 منٹ</item>
         <item>15 منٹ</item>
         <item>20 منٹ</item>
@@ -110,10 +110,10 @@
     <string name="tahajjud_duration">تہجد کا دورانیہ</string>
     <string name="select_tahajjud_duration">تہجد کا دورانیہ منتخب کریں</string>
     <string-array name="tahajjud_duration">
-        <item>20 منٹ</item>
+        <item>بند</item>
+        <item>15 منٹ</item>
         <item>30 منٹ</item>
-        <item>40 منٹ</item>
-        <item>50 منٹ</item>
+        <item>45 منٹ</item>
         <item>1 گھنٹہ</item>
         <item>1 گھنٹہ 30 منٹ</item>
         <item>2 گھنٹے</item>
@@ -331,13 +331,13 @@
     <string name="update_notification_title">نماز موڈ اپ ڈیٹ</string>
     <string name="update_notification_message">ورژن %1$s اب دستیاب ہے۔</string>
     <string name="update">ابھی اپ ڈیٹ کریں</string>
+    <string name="silent_schedule_success">آج کا شیڈول کامیابی سے سیٹ ہو گیا۔</string>
 
     <!-- Catch & else blocks -->
     <string name="failed_writing">براہ کرم یقینی بنائیں کہ آپ کے پاس کافی اسٹوریج جگہ ہے۔</string>
     <string name="permission_denied_writing">نماز کے اوقات کی فائل کو محفوظ کرتے وقت ایک غیر متوقع خرابی پیش آگئی ہے۔ براہ کرم ایپ کو دوبارہ شروع کریں اور اپ ڈیٹس چیک کریں۔</string>
 
     <!-- For debugging only -->
-    <string name="silent_schedule_success">آج کا شیڈول کامیابی سے سیٹ ہو گیا۔</string>
     <string name="monthly_update">اس مہینے کے نماز کے اوقات کو اپ ڈیٹ کیا جا رہا ہے: %1$s۔</string>
     <string name="monthly_update_default_method">اس مہینے کے نماز کے اوقات (%1$s) ڈیفالٹ طریقے سے اپ ڈیٹ کیے جا رہے ہیں۔</string>
 

@@ -61,9 +61,10 @@ class SilentModeWorker(appContext: Context, workerParams: WorkerParameters) : Co
                     return@withContext Result.success()
                 } else {
                     val silentModeSetSuccess = if (mode) {
-                        if (sharedHelper.getAudioSwitchState() && sharedHelper.getSwitchState() && prayerName != "Joumoua") {
-                            if (BuildConfig.DEBUG) Log.i(tag, "Audio switch and main switch are on, not Joumoua prayer, playing audio...")
-                            audioPlayerHelper.playAudioFromRaw(R.raw.takbir)
+                        if (sharedHelper.getAudioSwitchState() && sharedHelper.getSwitchState()) {
+                            if (BuildConfig.DEBUG) Log.i(tag, "Audio switch and main switch are on, playing audio...")
+                            val audioPlayedSuccessfully = audioPlayerHelper.playAudioFromRaw(R.raw.takbir)
+                            if (BuildConfig.DEBUG) Log.i(tag, "Audio playback result: $audioPlayedSuccessfully")
                         }
                         if (BuildConfig.DEBUG) Log.i(tag, "Activating silent mode for $prayerName.")
                         tools.setSilentMode(true, prayerName)

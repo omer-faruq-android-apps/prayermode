@@ -77,7 +77,7 @@ class UpdateChecker(private val context: Context) {
             if (BuildConfig.DEBUG) Log.d(tag, "Already on latest version")
         }
     }
-    private fun isInstalledFromFdroid(): Boolean {
+    fun isInstalledFromFdroid(): Boolean {
         val knownFdroidInstallers = listOf("org.fdroid.fdroid", "org.fdroid.fdroid.privileged", "com.fdroid", "fdroid")
         return try {
             val packageName = context.packageName

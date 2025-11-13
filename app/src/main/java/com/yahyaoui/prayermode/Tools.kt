@@ -366,7 +366,7 @@ class Tools(private val context: Context) {
                         val ishaCalendar = getPrayerCalendar(ishaTime)
                         if (ishaCalendar != null) {
                             val cleanedIshaTime = "${ishaCalendar.get(Calendar.HOUR_OF_DAY)}:${ishaCalendar.get(Calendar.MINUTE)}"
-                            val durationTarawihInt = getRamadanDurationId(sharedHelper.getIntValue(SharedHelper.DURATION_TARAWIH, 4))
+                            val durationTarawihInt = getTaraweehDurationId(sharedHelper.getIntValue(SharedHelper.DURATION_TARAWIH, 4))
                             if (BuildConfig.DEBUG) Log.i(tag, "Taraweeh $durationTarawihInt min")
 
                             val prayerTimeMillis = ishaCalendar.timeInMillis
@@ -389,7 +389,7 @@ class Tools(private val context: Context) {
                         val fajrCalendar = getPrayerCalendar(fajrTime)
                         if (fajrCalendar != null) {
                             val cleanedFajrTime = "${fajrCalendar.get(Calendar.HOUR_OF_DAY)}:${fajrCalendar.get(Calendar.MINUTE)}"
-                            val durationTahajjudInt = getRamadanDurationId(sharedHelper.getIntValue(SharedHelper.DURATION_TAHAJJUD, 4))
+                            val durationTahajjudInt = getTahajjudDurationId(sharedHelper.getIntValue(SharedHelper.DURATION_TAHAJJUD, 4))
                             val durationValueInt = getDurationId(sharedHelper.getIntValue(SharedHelper.DURATION_VALUE, 3))
 
                             val prayerTimeMillis = fajrCalendar.timeInMillis
@@ -602,7 +602,7 @@ class Tools(private val context: Context) {
             } else {
                 if (BuildConfig.DEBUG) Log.i(tag, "End time for $prayerName has already passed: $endTimeInMillis ms")
             }
-            if (BuildConfig.DEBUG) NotificationHelper.sendNotification(context, R.string.schedule_title, R.string.silent_schedule_success, 430, prayerName)
+            NotificationHelper.sendNotification(context, R.string.schedule_title, R.string.silent_schedule_success, 430, "")
         } catch (e: SecurityException) {
             Log.e(tag, "SecurityException while setting exact alarm for $prayerName: ${e.message}. Permission might have been revoked unexpectedly.")
             if (BuildConfig.DEBUG) NotificationHelper.sendNotification(context, R.string.error, R.string.failed_schedule_silent_mode, 449, "${e.message}")
@@ -972,7 +972,7 @@ class Tools(private val context: Context) {
 
     private fun getBeforeDhuhrDurationId(index: Int): Int {
         return when (index) {
-            0 -> 5
+            0 -> 0
             1 -> 10
             2 -> 15
             3 -> 20
@@ -1004,12 +1004,27 @@ class Tools(private val context: Context) {
         }
     }
 
-    private fun getRamadanDurationId(index: Int): Int {
+    private fun getTaraweehDurationId(index: Int): Int {
         return when (index) {
             0 -> 20
             1 -> 30
             2 -> 40
             3 -> 50
+            4 -> 60
+            5 -> 90
+            6 -> 120
+            7 -> 150
+            8 -> 180
+            else -> 4
+        }
+    }
+
+    private fun getTahajjudDurationId(index: Int): Int {
+        return when (index) {
+            0 -> 0
+            1 -> 15
+            2 -> 30
+            3 -> 45
             4 -> 60
             5 -> 90
             6 -> 120

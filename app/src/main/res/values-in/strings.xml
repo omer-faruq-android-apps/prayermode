@@ -58,7 +58,7 @@
     <!-- Select menu -->
     <string name="select_before_dhuhr_duration">Pilih Durasi Sebelum Adzan</string>
     <string-array name="before_dhuhr_duration">
-        <item>5 menit</item>
+        <item>Mati</item>
         <item>10 menit</item>
         <item>15 menit</item>
         <item>20 menit</item>
@@ -110,10 +110,10 @@
     <string name="tahajjud_duration">Durasi Tahajud</string>
     <string name="select_tahajjud_duration">Pilih Durasi Tahajud</string>
     <string-array name="tahajjud_duration">
-        <item>20 menit</item>
+        <item>Mati</item>
+        <item>15 menit</item>
         <item>30 menit</item>
-        <item>40 menit</item>
-        <item>50 menit</item>
+        <item>45 menit</item>
         <item>1 jam</item>
         <item>1 jam 30 menit</item>
         <item>2 jam</item>
@@ -328,13 +328,13 @@ Anda dapat menyumbang menggunakan [DONATION_LINK].<br/><br/>
     <string name="update_notification_title">Pembaruan Mode Salat</string>
     <string name="update_notification_message">Versi %1$s sekarang tersedia.</string>
     <string name="update">Perbarui Sekarang</string>
+    <string name="silent_schedule_success">Penjadwalan hari ini berhasil.</string>
 
     <!-- Catch & else blocks -->
     <string name="failed_writing">Pastikan ruang penyimpanan mencukupi.</string>
     <string name="permission_denied_writing">Terjadi kesalahan tak terduga saat menyimpan file jadwal shalat. Silakan mulai ulang aplikasi dan periksa pembaruan.</string>
 
     <!-- For debugging only -->
-    <string name="silent_schedule_success">Penjadwalan hari ini berhasil.</string>
     <string name="monthly_update">Memperbarui waktu sholat bulan %1$s.</string>
     <string name="monthly_update_default_method">Memperbarui waktu sholat bulan %1$s menggunakan metode default.</string>
 

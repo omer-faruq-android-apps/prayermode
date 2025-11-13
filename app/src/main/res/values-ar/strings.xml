@@ -262,13 +262,13 @@
     <string name="update_notification_title">تحديث وضع الصلاة</string>
     <string name="update_notification_message">النسخة %1$s متاحة الآن.</string>
     <string name="update">حدّث الآن</string>
+    <string name="silent_schedule_success">تمت الجدولة اليومية بنجاح.</string>
 
     <!-- Catch & else blocks -->
     <string name="failed_writing">يرجى التأكد من وجود مساحة تخزين كافية.</string>
     <string name="permission_denied_writing">حدث خطأ غير متوقع أثناء حفظ ملف أوقات الصلاة، يرجى إعادة تشغيل التطبيق والتحقق من وجود تحديثات.</string>
 
     <!-- For debugging only -->
-    <string name="silent_schedule_success">تمت الجدولة اليومية بنجاح.</string>
     <string name="monthly_update">تحديث أوقات الصلاة لهذا الشهر %1$s.</string>
     <string name="monthly_update_default_method">تحديث أوقات الصلاة لهذا الشهر %1$s باستخدام الطريقة الافتراضية.</string>
 

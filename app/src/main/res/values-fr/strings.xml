@@ -58,7 +58,7 @@
     <!-- Select menu -->
     <string name="select_before_dhuhr_duration">Choix de la durée avant al adhan</string>
     <string-array name="before_dhuhr_duration">
-        <item>5 minutes</item>
+        <item>Désactivée</item>
         <item>10 minutes</item>
         <item>15 minutes</item>
         <item>20 minutes</item>
@@ -110,10 +110,10 @@
     <string name="tahajjud_duration">Durée Tahajjoud</string>
     <string name="select_tahajjud_duration">Choix de la durée du Tahajjoud</string>
     <string-array name="tahajjud_duration">
-        <item>20 minutes</item>
+        <item>Désactivée</item>
+        <item>15 minutes</item>
         <item>30 minutes</item>
-        <item>40 minutes</item>
-        <item>50 minutes</item>
+        <item>45 minutes</item>
         <item>1 heure</item>
         <item>1 heure 30 minutes</item>
         <item>2 heures</item>
@@ -334,13 +334,13 @@ Vous pouvez faire un don en utilisant [DONATION_LINK].<br/><br/>
     <string name="update_notification_title">MàJ du Mode Prière</string>
     <string name="update_notification_message">La version %1$s est maintenant disponible.</string>
     <string name="update">Mettre à jour</string>
+    <string name="silent_schedule_success">Programmation quotidienne réussie.</string>
 
     <!-- Catch & blocks -->
     <string name="failed_writing">Veuillez vous assurer que vous disposez de suffisamment d\'espace de stockage.</string>
     <string name="permission_denied_writing">Une erreur inattendue s\'est produite lors de l\'enregistrement du fichier des heures de prière, veuillez redémarrer l\'application et vérifier les mises à jour.</string>
 
     <!-- For debugging only -->
-    <string name="silent_schedule_success">Programmation quotidienne réussie.</string>
     <string name="monthly_update">MàJ des horaires de prière pour ce mois %1$s.</string>
     <string name="monthly_update_default_method">MàJ des horaires de prière pour ce mois %1$s en utilisant la méthode par défaut.</string>
 

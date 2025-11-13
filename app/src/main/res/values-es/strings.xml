@@ -58,7 +58,7 @@
     <!-- Select menu -->
     <string name="select_before_dhuhr_duration">Selecciona la duración antes del adhan</string>
     <string-array name="before_dhuhr_duration">
-        <item>5 minutos</item>
+        <item>Apagado</item>
         <item>10 minutos</item>
         <item>15 minutos</item>
         <item>20 minutos</item>
@@ -110,10 +110,10 @@
     <string name="tahajjud_duration">Duración de Tahajjud</string>  <!-- No translation -->
     <string name="select_tahajjud_duration">Selecciona la duración de Tahajjud</string>
     <string-array name="tahajjud_duration">
-        <item>20 minutos</item>
+        <item>Apagado</item>
+        <item>15 minutos</item>
         <item>30 minutos</item>
-        <item>40 minutos</item>
-        <item>50 minutos</item>
+        <item>45 minutos</item>
         <item>1 hora</item>
         <item>1 hora 30 minutos</item>
         <item>2 horas</item>
@@ -332,13 +332,13 @@ Gracias por confiar en nuestra aplicación.<br/><br/>
     <string name="update_notification_title">Actualización de Modo Oración</string>
     <string name="update_notification_message">La versión %1$s ya está disponible.</string>
     <string name="update">Actualizar ahora</string>
+    <string name="silent_schedule_success">Programación exitosa hoy.</string>
 
     <!-- Catch & else blocks -->
     <string name="failed_writing">Por favor, asegúrate de tener suficiente espacio de almacenamiento.</string>
     <string name="permission_denied_writing">Ocurrió un error inesperado al guardar el archivo de horarios de oración, por favor reinicia la aplicación y busca actualizaciones.</string>
 
     <!-- For debugging only -->
-    <string name="silent_schedule_success">Successful today scheduling.</string>
     <string name="monthly_update">Updating prayer times for %1$s.</string>
     <string name="monthly_update_default_method">Updating prayer times for %1$s using default method.</string>
 

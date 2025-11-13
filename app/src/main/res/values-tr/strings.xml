@@ -58,7 +58,7 @@
     <!-- Select menu -->
     <string name="select_before_dhuhr_duration">Öğle öncesi süre seçin</string>
     <string-array name="before_dhuhr_duration">
-        <item>5 dakika</item>
+        <item>Kapalı</item>
         <item>10 dakika</item>
         <item>15 dakika</item>
         <item>20 dakika</item>
@@ -110,10 +110,10 @@
     <string name="tahajjud_duration">Teheccüd Süresi</string>
     <string name="select_tahajjud_duration">Teheccüd süresi seçin</string>
     <string-array name="tahajjud_duration">
-        <item>20 dakika</item>
+        <item>Kapalı</item>
+        <item>15 dakika</item>
         <item>30 dakika</item>
-        <item>40 dakika</item>
-        <item>50 dakika</item>
+        <item>45 dakika</item>
         <item>1 saat</item>
         <item>1 saat 30 dakika</item>
         <item>2 saat</item>
@@ -328,13 +328,13 @@ Bağışlar, sadece takdirinizi göstermenin ve uygulamanın herkes için ücret
     <string name="update_notification_title">Namaz Modu Güncellemesi</string>
     <string name="update_notification_message">%1$s sürümü artık mevcut.</string>
     <string name="update">Şimdi Güncelle</string>
+    <string name="silent_schedule_success">Bugünkü programlama başarılı.</string>
 
     <!-- Catch & else blocks -->
     <string name="failed_writing">Lütfen yeterli depolama alanınız olduğundan emin olun.</string>
     <string name="permission_denied_writing">Namaz vakitleri dosyası kaydedilirken beklenmeyen bir hata oluştu. Lütfen uygulamayı yeniden başlatın ve güncellemeleri kontrol edin.</string>
 
     <!-- For debugging only -->
-    <string name="silent_schedule_success">Bugünkü programlama başarılı.</string>
     <string name="monthly_update">Bu ay için namaz vakitleri güncelleniyor: %1$s.</string>
     <string name="monthly_update_default_method">Bu ay için namaz vakitleri varsayılan yöntemle güncelleniyor: %1$s.</string>
 

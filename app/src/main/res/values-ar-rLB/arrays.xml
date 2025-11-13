@@ -11,7 +11,7 @@
     </string-array>
 
     <string-array name="before_dhuhr_duration">
-        <item>5 دقائق</item>
+        <item>إيقاف</item>
         <item>10 دقائق</item>
         <item>15 دقيقة</item>
         <item>20 دقيقة</item>
@@ -51,10 +51,10 @@
     </string-array>
 
     <string-array name="tahajjud_duration">
-        <item>20 دقيقة</item>
+        <item>إيقاف</item>
+        <item>15 دقيقة</item>
         <item>30 دقيقة</item>
-        <item>40 دقيقة</item>
-        <item>50 دقيقة</item>
+        <item>45 دقيقة</item>
         <item>ساعة واحدة</item>
         <item>ساعة ونصف</item>
         <item>ساعتان</item>

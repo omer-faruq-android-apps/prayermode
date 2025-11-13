@@ -58,7 +58,7 @@
     <!-- Select menu -->
     <string name="select_before_dhuhr_duration">Pilih tempoh sebelum Azan</string>
     <string-array name="before_dhuhr_duration">
-        <item>5 minit</item>
+        <item>Tutup</item>
         <item>10 minit</item>
         <item>15 minit</item>
         <item>20 minit</item>
@@ -110,10 +110,10 @@
     <string name="tahajjud_duration">Tempoh solat Tahajud</string>
     <string name="select_tahajjud_duration">Pilih tempoh Tahajud</string>
     <string-array name="tahajjud_duration">
-        <item>20 minit</item>
+        <item>Tutup</item>
+        <item>15 minit</item>
         <item>30 minit</item>
-        <item>40 minit</item>
-        <item>50 minit</item>
+        <item>45 minit</item>
         <item>1 jam</item>
         <item>1 jam 30 minit</item>
         <item>2 jam</item>
@@ -328,13 +328,13 @@ Anda boleh menderma menggunakan [DONATION_LINK].<br/><br/>
     <string name="update_notification_title">Kemas Kini Mod Solat</string>
     <string name="update_notification_message">Versi %1$s kini tersedia.</string>
     <string name="update">Kemas Kini Sekarang</string>
+    <string name="silent_schedule_success">Penjadualan hari ini berjaya.</string>
 
     <!-- Catch & else blocks -->
     <string name="failed_writing">Sila pastikan ruang storan mencukupi.</string>
     <string name="permission_denied_writing">Ralat tidak dijangka berlaku semasa menyimpan fail waktu solat. Sila mulakan semula aplikasi dan semak kemas kini.</string>
 
     <!-- For debugging only -->
-    <string name="silent_schedule_success">Penjadualan hari ini berjaya.</string>
     <string name="monthly_update">Mengemas kini waktu solat untuk bulan %1$s.</string>
     <string name="monthly_update_default_method">Mengemas kini waktu solat untuk bulan %1$s menggunakan kaedah lalai.</string>
 

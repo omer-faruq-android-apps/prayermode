@@ -58,7 +58,7 @@
     <!-- Select menu -->
     <string name="select_before_dhuhr_duration">Select before adhan duration</string>
     <string-array name="before_dhuhr_duration">
-        <item>5 minutes</item>
+        <item>Off</item>
         <item>10 minutes</item>
         <item>15 minutes</item>
         <item>20 minutes</item>
@@ -110,10 +110,10 @@
     <string name="tahajjud_duration">Tahajjud duration</string>  <!-- No translation -->
     <string name="select_tahajjud_duration">Select Tahajjud duration</string>
     <string-array name="tahajjud_duration">
-        <item>20 minutes</item>
+        <item>Off</item>
+        <item>15 minutes</item>
         <item>30 minutes</item>
-        <item>40 minutes</item>
-        <item>50 minutes</item>
+        <item>45 minutes</item>
         <item>1 hour</item>
         <item>1 hour 30 minutes</item>
         <item>2 hours</item>
@@ -332,13 +332,13 @@ Thank you for trusting our application.<br/><br/>
     <string name="update_notification_title">Prayer mode update</string>
     <string name="update_notification_message">Version %1$s is now available.</string>
     <string name="update">Update now</string>
+    <string name="silent_schedule_success">Successful today scheduling.</string>
 
     <!-- Catch & else blocks -->
     <string name="failed_writing">Please ensure you have sufficient storage space.</string>
     <string name="permission_denied_writing">An unexpected error occurred saving prayer times file, please restart the app and check for updates.</string>
 
     <!-- For debugging only -->
-    <string name="silent_schedule_success">Successful today scheduling.</string>
     <string name="monthly_update">Updating prayer times for %1$s.</string>
     <string name="monthly_update_default_method">Updating prayer times for %1$s using default method.</string>
 
