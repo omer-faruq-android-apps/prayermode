@@ -110,15 +110,4 @@ class SharedHelper(private val context: Context) {
     fun getBoolean(key: String, defaultValue: Boolean): Boolean {
         return sharedPreferences.getBoolean(key, defaultValue)
     }
-
-    fun saveString(key: String, value: String) {
-        sharedPreferences.edit { putString(key, value) }
-        if (BuildConfig.DEBUG) Log.d(tag, "Saving string value: $value with key: $key")
-    }
-
-    fun getString(key: String, defaultValue: String): String {
-        val value = sharedPreferences.getString(key, defaultValue) ?: defaultValue
-        if (BuildConfig.DEBUG) Log.d(tag, "Retrieving string value: $value with key: $key")
-        return value
-    }
 }
