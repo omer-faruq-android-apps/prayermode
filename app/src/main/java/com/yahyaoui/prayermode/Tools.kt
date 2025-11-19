@@ -1072,4 +1072,9 @@ class Tools(private val context: Context) {
         val dateFormat = SimpleDateFormat("EEEE", Locale.US)
         return dateFormat.format(calendar.time)
     }
+
+    fun isInCall(): Boolean {
+        val audioManager = context.getSystemService(Context.AUDIO_SERVICE) as AudioManager
+        return audioManager.mode == AudioManager.MODE_IN_CALL || audioManager.mode == AudioManager.MODE_IN_COMMUNICATION
+    }
 }

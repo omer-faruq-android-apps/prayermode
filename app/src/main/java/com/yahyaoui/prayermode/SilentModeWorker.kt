@@ -78,8 +78,8 @@ class SilentModeWorker(appContext: Context, workerParams: WorkerParameters) : Co
                     return@withContext Result.success()
                 } else {
                     val silentModeSetSuccess = if (mode) {
-                        if (sharedHelper.getAudioSwitchState() && sharedHelper.getSwitchState() && shouldPlayAudio) {
-                            if (BuildConfig.DEBUG) Log.i(tag, "Audio switch and main switch are on, Before Dhuhr or Tahajjud duration is 0, playing audio...")
+                        if (sharedHelper.getAudioSwitchState() && sharedHelper.getSwitchState() && shouldPlayAudio && !tools.isInCall()) {
+                            if (BuildConfig.DEBUG) Log.i(tag, "Main & Audio switches are on, Before Dhuhr or Tahajjud duration is 0, not in Call, playing audio...")
                             val audioPlayedSuccessfully = audioPlayerHelper.playAudioFromRaw(R.raw.takbir)
                             if (BuildConfig.DEBUG) Log.i(tag, "Audio playback result: $audioPlayedSuccessfully")
                         }
