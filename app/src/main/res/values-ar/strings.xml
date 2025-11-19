@@ -264,6 +264,17 @@
     <string name="update">حدّث الآن</string>
     <string name="silent_schedule_success">تم جدولة أوقات الصلاة بنجاح.</string>
 
+    <string name="welcome_title">مرحباً بكم في تطبيق وضع الصلاة</string>
+    <string name="welcome_message">
+        صُمم هذا التطبيق لمساعدة المستخدمين على التركيز على ما هو أهم - الصلاة -\n\n
+        كيف يساعدكم:\n\n
+        \u2022 يكتم صوت الهاتف تلقائياً أثناء أوقات الصلاة.\n
+        \u2022 يشجع على المواظبة والالتزام بمواقيت الصلاة.\n
+        \u2022 يجنب إزعاج من حولكم من المُصلين.\n\n
+        لا تدعوا المكالمات والتنبيهات تشغلكم عن الخشوع في الصلاة والاتّصال بالله.\n
+    </string>
+    <string name="next">التالي</string>
+
     <!-- Catch & else blocks -->
     <string name="failed_writing">يرجى التأكد من وجود مساحة تخزين كافية.</string>
     <string name="permission_denied_writing">حدث خطأ غير متوقع أثناء حفظ ملف أوقات الصلاة، يرجى إعادة تشغيل التطبيق والتحقق من وجود تحديثات.</string>

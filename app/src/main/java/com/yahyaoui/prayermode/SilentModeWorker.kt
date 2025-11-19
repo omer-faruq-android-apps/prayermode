@@ -21,7 +21,24 @@ class SilentModeWorker(appContext: Context, workerParams: WorkerParameters) : Co
     override suspend fun doWork(): Result {
         val mode = inputData.getBoolean("mode", false)
         val prayerName = inputData.getString("prayerName") ?: "unknown"
-        if (BuildConfig.DEBUG) Log.d(tag, "Executing worker for $prayerName: mode=$mode")
+        val isBackup = inputData.getBoolean("isBackup", false)
+        if (BuildConfig.DEBUG) {
+            if (isBackup) Log.w(tag, "BACKUP worker executing for $prayerName: mode=$mode")
+            else Log.d(tag, "Executing worker for $prayerName: mode=$mode")
+        }
+        val shouldPlayAudio = when (prayerName) {
+            "Joumoua" -> {
+                val beforeDhuhrInt = sharedHelper.getIntValue(SharedHelper.DURATION_BEFORE_DHUHR, 0)
+                if (BuildConfig.DEBUG) Log.i(tag, "Jumua: beforeDhuhr index=$beforeDhuhrInt")
+                beforeDhuhrInt == 0
+            }
+            "Tahajjud" -> {
+                val tahajjudInt = sharedHelper.getIntValue(SharedHelper.DURATION_TAHAJJUD, 0)
+                if (BuildConfig.DEBUG) Log.i(tag, "Tahajjud: tahajjud index=$tahajjudInt")
+                tahajjudInt == 0
+            }
+            else -> true
+        }
 
         return try {
             withContext(Dispatchers.IO) {
@@ -61,14 +78,23 @@ class SilentModeWorker(appContext: Context, workerParams: WorkerParameters) : Co
                     return@withContext Result.success()
                 } else {
                     val silentModeSetSuccess = if (mode) {
-                        if (sharedHelper.getAudioSwitchState() && sharedHelper.getSwitchState()) {
-                            if (BuildConfig.DEBUG) Log.i(tag, "Audio switch and main switch are on, playing audio...")
+                        if (sharedHelper.getAudioSwitchState() && sharedHelper.getSwitchState() && shouldPlayAudio) {
+                            if (BuildConfig.DEBUG) Log.i(tag, "Audio switch and main switch are on, Before Dhuhr or Tahajjud duration is 0, playing audio...")
                             val audioPlayedSuccessfully = audioPlayerHelper.playAudioFromRaw(R.raw.takbir)
                             if (BuildConfig.DEBUG) Log.i(tag, "Audio playback result: $audioPlayedSuccessfully")
                         }
                         if (BuildConfig.DEBUG) Log.i(tag, "Activating silent mode for $prayerName.")
                         tools.setSilentMode(true, prayerName)
                     } else {
+                        if (isBackup) {
+                            val isDndActive = sharedHelper.getBoolean(SharedHelper.IS_APP_CONTROLLED_DND_ACTIVE, false)
+                            if (isDndActive) {
+                                if (BuildConfig.DEBUG) Log.w(tag, "BACKUP triggered: DND still active for $prayerName - forcing deactivation")
+                            } else {
+                                if (BuildConfig.DEBUG) Log.i(tag, "Backup worker ran but DND already off - all good")
+                                return@withContext Result.success()
+                            }
+                        }
                         if (BuildConfig.DEBUG) Log.i(tag, "Deactivating silent mode for $prayerName.")
                         tools.setSilentMode(false, prayerName)
                     }

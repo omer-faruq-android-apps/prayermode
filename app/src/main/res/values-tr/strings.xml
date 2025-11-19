@@ -330,6 +330,18 @@ Bağışlar, sadece takdirinizi göstermenin ve uygulamanın herkes için ücret
     <string name="update">Şimdi Güncelle</string>
     <string name="silent_schedule_success">Namaz vakitleri başarıyla planlandı.</string>
 
+    <string name="welcome_title">Namaz Moduna Hoş Geldiniz</string>
+    <string name="welcome_message">
+    Bu uygulama, en önemli ibadetinize—namazınıza—odaklanmanız için tasarlanmıştır\n\n
+    Nasıl yardımcı olur:\n\n
+    \u2022 Her namaz vaktinde telefonunuzu otomatik olarak sessize alır.\n
+    \u2022 Düzenli ve vaktinde namaz kılmanızı teşvik eder.\n
+    \u2022 Çevrenizdeki müminlerin ibadet huzurunu korur.\n\n
+    Çağrıların ve bildirimlerin, Allah ile bağlantı kurmanıza engel olmasına izin vermeyin.
+    </string>
+    <string name="next">İleri</string>
+
+
     <!-- Catch & else blocks -->
     <string name="failed_writing">Lütfen yeterli depolama alanınız olduğundan emin olun.</string>
     <string name="permission_denied_writing">Namaz vakitleri dosyası kaydedilirken beklenmeyen bir hata oluştu. Lütfen uygulamayı yeniden başlatın ve güncellemeleri kontrol edin.</string>

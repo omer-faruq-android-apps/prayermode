@@ -334,6 +334,17 @@ Gracias por confiar en nuestra aplicación.<br/><br/>
     <string name="update">Actualizar ahora</string>
     <string name="silent_schedule_success">Programación de horarios de oración exitosa.</string>
 
+    <string name="welcome_title">Bienvenido al Modo Oración</string>
+    <string name="welcome_message">
+    Esta aplicación está diseñada para ayudarte a concentrarte en lo más importante—tu Salat—\n\n
+    Así es como te ayuda:\n\n
+    \u2022 Silencia automáticamente las distracciones del teléfono durante cada hora de oración.\n
+    \u2022 Te anima a ser constante y orar a tiempo.\n
+    \u2022 Preserva la concentración de quienes oran a tu alrededor.\n\n
+    No permitas que las llamadas y notificaciones te impidan conectar con Alá.
+    </string>
+    <string name="next">Siguiente</string>
+
     <!-- Catch & else blocks -->
     <string name="failed_writing">Por favor, asegúrate de tener suficiente espacio de almacenamiento.</string>
     <string name="permission_denied_writing">Ocurrió un error inesperado al guardar el archivo de horarios de oración, por favor reinicia la aplicación y busca actualizaciones.</string>

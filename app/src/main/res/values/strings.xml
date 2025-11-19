@@ -334,6 +334,17 @@ Thank you for trusting our application.<br/><br/>
     <string name="update">Update now</string>
     <string name="silent_schedule_success">Successful prayer times scheduling.</string>
 
+    <string name="welcome_title">Welcome to Prayer mode</string>
+    <string name="welcome_message">
+    This app is designed to help you focus on what matters most—your Salah—\n\n
+    Here\'s how it helps:\n\n
+    \u2022 Automatically silences phone distractions during every prayer time.\n
+    \u2022 Encourages you to build consistency and pray on time.\n
+    \u2022 Avoids distracting those praying around you.\n\n
+    Don\'t let calls and notifications stop you from connecting with Allah.\n
+    </string>
+    <string name="next">Next</string>
+
     <!-- Catch & else blocks -->
     <string name="failed_writing">Please ensure you have sufficient storage space.</string>
     <string name="permission_denied_writing">An unexpected error occurred saving prayer times file, please restart the app and check for updates.</string>

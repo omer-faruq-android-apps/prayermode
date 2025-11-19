@@ -330,6 +330,17 @@ Anda boleh menderma menggunakan [DONATION_LINK].<br/><br/>
     <string name="update">Kemas Kini Sekarang</string>
     <string name="silent_schedule_success">Penjadualan waktu solat berjaya.</string>
 
+    <string name="welcome_title">Selamat Datang ke Mod Solat</string>
+    <string name="welcome_message">
+    Aplikasi ini direka untuk membantu anda fokus pada perkara paling penting—solat anda—\n\n
+    Beginilah caranya:\n\n
+    \u2022 Secara automatik mendiamkan gangguan telefon semasa setiap waktu solat.\n
+    \u2022 Menggalakkan anda untuk istiqamah dan solat tepat pada waktunya.\n
+    \u2022 Menjaga kekhusyukan orang yang bersolat di sekeliling anda.\n\n
+    Jangan biarkan panggilan dan notifikasi mengganggu hubungan anda dengan Allah.
+    </string>
+    <string name="next">Seterusnya</string>
+
     <!-- Catch & else blocks -->
     <string name="failed_writing">Sila pastikan ruang storan mencukupi.</string>
     <string name="permission_denied_writing">Ralat tidak dijangka berlaku semasa menyimpan fail waktu solat. Sila mulakan semula aplikasi dan semak kemas kini.</string>

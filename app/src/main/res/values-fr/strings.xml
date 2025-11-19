@@ -336,6 +336,17 @@ Vous pouvez faire un don en utilisant [DONATION_LINK].<br/><br/>
     <string name="update">Mettre à jour</string>
     <string name="silent_schedule_success">Programmation des heures de prière réussie.</string>
 
+    <string name="welcome_title">Bienvenue dans Mode Prière</string>
+    <string name="welcome_message">
+    Cette application est conçue pour vous aider à vous concentrer sur l\'essentiel—votre Salât—\n\n
+    Voici comment elle vous aide:\n\n
+    \u2022 Met automatiquement en silencieux les distractions du téléphone pendant chaque heure de prière.\n
+    \u2022 Vous encourage à être constant et à prier à l\'heure.\n
+    \u2022 Préserve la concentration de ceux qui prient autour de vous.\n\n
+    Ne laissez pas les appels et notifications vous détourner de votre connexion avec Allah.
+    </string>
+    <string name="next">Suivant</string>
+
     <!-- Catch & blocks -->
     <string name="failed_writing">Veuillez vous assurer que vous disposez de suffisamment d\'espace de stockage.</string>
     <string name="permission_denied_writing">Une erreur inattendue s\'est produite lors de l\'enregistrement du fichier des heures de prière, veuillez redémarrer l\'application et vérifier les mises à jour.</string>

@@ -31,6 +31,12 @@ class BootReceiver : BroadcastReceiver() {
             val applicationContext = context.applicationContext
             val permissionsHelper = PermissionsHelper(applicationContext)
             val sharedHelper = SharedHelper(applicationContext)
+            val wasAppControlledDnd = sharedHelper.getBoolean(SharedHelper.IS_APP_CONTROLLED_DND_ACTIVE, false)
+
+            if (wasAppControlledDnd) {
+                if (BuildConfig.DEBUG) Log.w("BootReceiver", "App-controlled DND was active before reboot - cleaning up")
+                Tools(context).exitSilentMode()
+            }
 
             val isAppReadyToSchedule = sharedHelper.getSwitchState() &&
                     permissionsHelper.checkLocationPermission() &&

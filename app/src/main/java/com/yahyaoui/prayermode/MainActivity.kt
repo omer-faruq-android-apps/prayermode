@@ -38,7 +38,7 @@ import androidx.core.view.updatePadding
 
 private const val IS_APP_RESTARTED_KEY = "isAppRestarted"
 
-class MainActivity : AppCompatActivity(), TermsAndConditionsListener {
+class MainActivity : AppCompatActivity(), TermsAndConditionsListener, WelcomeDialog.WelcomeDialogListener {
 
     override fun attachBaseContext(newBase: Context) {
         val locale = LocaleHelper.getPersistedLocale()
@@ -110,9 +110,9 @@ class MainActivity : AppCompatActivity(), TermsAndConditionsListener {
     }
     private val durationBeforeDhuhrLauncher = registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result ->
         if (result.resultCode == RESULT_OK) {
-            val selectedDurationBeforeDhuhrIndex = result.data?.getIntExtra("SELECTED_INDEX", 5) ?: 5
+            val selectedDurationBeforeDhuhrIndex = result.data?.getIntExtra("SELECTED_INDEX", 0) ?: 0
             sharedHelper.saveIntValue(SharedHelper.DURATION_BEFORE_DHUHR, selectedDurationBeforeDhuhrIndex)
-            tvBeforeDhuhr.text = sharedHelper.getStringFromArray(R.array.before_dhuhr_duration, SharedHelper.DURATION_BEFORE_DHUHR, 5)
+            tvBeforeDhuhr.text = sharedHelper.getStringFromArray(R.array.before_dhuhr_duration, SharedHelper.DURATION_BEFORE_DHUHR, 0)
         }
     }
     private val durationAfterDhuhrLauncher = registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result ->
@@ -131,9 +131,9 @@ class MainActivity : AppCompatActivity(), TermsAndConditionsListener {
     }
     private val durationTahajjudLauncher = registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result ->
         if (result.resultCode == RESULT_OK) {
-            val selectedDurationTahajjudIndex = result.data?.getIntExtra("SELECTED_INDEX", 4) ?: 4
+            val selectedDurationTahajjudIndex = result.data?.getIntExtra("SELECTED_INDEX", 0) ?: 0
             sharedHelper.saveIntValue(SharedHelper.DURATION_TAHAJJUD, selectedDurationTahajjudIndex)
-            tvTahajjud.text = sharedHelper.getStringFromArray(R.array.tahajjud_duration, SharedHelper.DURATION_TAHAJJUD, 4)
+            tvTahajjud.text = sharedHelper.getStringFromArray(R.array.tahajjud_duration, SharedHelper.DURATION_TAHAJJUD, 0)
         }
     }
     private val eidTimeLauncher = registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result ->
@@ -186,7 +186,7 @@ class MainActivity : AppCompatActivity(), TermsAndConditionsListener {
         titlePadding()
         layoutDirection()
 
-        if (!sharedHelper.getTermsAccepted()) showTermsAndConditionsDialog() else requestLocationPermission()
+        if (!sharedHelper.getTermsAccepted()) showWelcomeDialog() else requestLocationPermission()
         if (savedInstanceState != null) isAppRestarted = savedInstanceState.getBoolean(IS_APP_RESTARTED_KEY, true)
         if (intent.getBooleanExtra("TOGGLE_SWITCH_TWICE", false)) {
             sharedHelper.saveSwitchState(false)
@@ -199,10 +199,10 @@ class MainActivity : AppCompatActivity(), TermsAndConditionsListener {
 
         tvCalculationMethod.text = sharedHelper.getStringFromArray(R.array.calculation_methods, SharedHelper.SELECTED_METHOD_RES_ID, 0)
         tvSilentDuration.text = sharedHelper.getStringFromArray(R.array.silent_durations, SharedHelper.DURATION_VALUE, 3)
-        tvBeforeDhuhr.text = sharedHelper.getStringFromArray(R.array.before_dhuhr_duration, SharedHelper.DURATION_BEFORE_DHUHR, 5)
+        tvBeforeDhuhr.text = sharedHelper.getStringFromArray(R.array.before_dhuhr_duration, SharedHelper.DURATION_BEFORE_DHUHR, 0)
         tvAfterDhuhr.text = sharedHelper.getStringFromArray(R.array.after_dhuhr_duration, SharedHelper.DURATION_AFTER_DHUHR, 3)
         tvTarawih.text = sharedHelper.getStringFromArray(R.array.tarawih_duration, SharedHelper.DURATION_TARAWIH, 4)
-        tvTahajjud.text = sharedHelper.getStringFromArray(R.array.tahajjud_duration, SharedHelper.DURATION_TAHAJJUD, 4)
+        tvTahajjud.text = sharedHelper.getStringFromArray(R.array.tahajjud_duration, SharedHelper.DURATION_TAHAJJUD, 0)
         tvEidTime.text = sharedHelper.getStringFromArray(R.array.eid_time, SharedHelper.SELECTED_TIME_EID, 0)
         tvEidDuration.text = sharedHelper.getStringFromArray(R.array.eid_duration, SharedHelper.DURATION_EID, 1)
 
@@ -227,10 +227,10 @@ class MainActivity : AppCompatActivity(), TermsAndConditionsListener {
 
         handleContainerClick(calculationMethodsContainer, R.string.select_calculation_method, R.array.calculation_methods, SharedHelper.SELECTED_METHOD_RES_ID, 0, calculationMethodLauncher)
         handleContainerClick(durationContainer, R.string.select_silent_duration, R.array.silent_durations, SharedHelper.DURATION_VALUE, 3, silentDurationLauncher)
-        handleContainerClick(beforeDhuhrContainer, R.string.select_before_dhuhr_duration, R.array.before_dhuhr_duration, SharedHelper.DURATION_BEFORE_DHUHR, 5, durationBeforeDhuhrLauncher)
+        handleContainerClick(beforeDhuhrContainer, R.string.select_before_dhuhr_duration, R.array.before_dhuhr_duration, SharedHelper.DURATION_BEFORE_DHUHR, 0, durationBeforeDhuhrLauncher)
         handleContainerClick(afterDhuhrContainer, R.string.select_after_dhuhr_duration, R.array.after_dhuhr_duration, SharedHelper.DURATION_AFTER_DHUHR, 3, durationAfterDhuhrLauncher)
         handleContainerClick(tarawihContainer, R.string.select_tarawih_duration, R.array.tarawih_duration, SharedHelper.DURATION_TARAWIH, 4, durationTarawihLauncher)
-        handleContainerClick(tahajjudContainer, R.string.select_tahajjud_duration, R.array.tahajjud_duration, SharedHelper.DURATION_TAHAJJUD, 4, durationTahajjudLauncher)
+        handleContainerClick(tahajjudContainer, R.string.select_tahajjud_duration, R.array.tahajjud_duration, SharedHelper.DURATION_TAHAJJUD, 0, durationTahajjudLauncher)
         handleContainerClick(eidTimeContainer, R.string.select_eid_time, R.array.eid_time, SharedHelper.SELECTED_TIME_EID, 0, eidTimeLauncher)
         handleContainerClick(eidDurationContainer, R.string.select_eid_duration, R.array.eid_duration, SharedHelper.DURATION_EID, 1, eidDurationLauncher)
 
@@ -319,10 +319,10 @@ class MainActivity : AppCompatActivity(), TermsAndConditionsListener {
 
         tvCalculationMethod.text = sharedHelper.getStringFromArray(R.array.calculation_methods, SharedHelper.SELECTED_METHOD_RES_ID, 0)
         tvSilentDuration.text = sharedHelper.getStringFromArray(R.array.silent_durations, SharedHelper.DURATION_VALUE, 3)
-        tvBeforeDhuhr.text = sharedHelper.getStringFromArray(R.array.before_dhuhr_duration, SharedHelper.DURATION_BEFORE_DHUHR, 5)
+        tvBeforeDhuhr.text = sharedHelper.getStringFromArray(R.array.before_dhuhr_duration, SharedHelper.DURATION_BEFORE_DHUHR, 0)
         tvAfterDhuhr.text = sharedHelper.getStringFromArray(R.array.after_dhuhr_duration, SharedHelper.DURATION_AFTER_DHUHR, 3)
         tvTarawih.text = sharedHelper.getStringFromArray(R.array.tarawih_duration, SharedHelper.DURATION_TARAWIH, 4)
-        tvTahajjud.text = sharedHelper.getStringFromArray(R.array.tahajjud_duration, SharedHelper.DURATION_TAHAJJUD, 4)
+        tvTahajjud.text = sharedHelper.getStringFromArray(R.array.tahajjud_duration, SharedHelper.DURATION_TAHAJJUD, 0)
         tvEidTime.text = sharedHelper.getStringFromArray(R.array.eid_time, SharedHelper.SELECTED_TIME_EID, 0)
         tvEidDuration.text = sharedHelper.getStringFromArray(R.array.eid_duration, SharedHelper.DURATION_EID, 1)
         audioSwitch.isChecked = sharedHelper.getAudioSwitchState()
@@ -339,6 +339,16 @@ class MainActivity : AppCompatActivity(), TermsAndConditionsListener {
     override fun onDestroy() {
         super.onDestroy()
         if (BuildConfig.DEBUG) Log.d(tag, "onDestroy accessed")
+    }
+
+    private fun showWelcomeDialog() {
+        val dialog = WelcomeDialog()
+        dialog.show(supportFragmentManager, "WelcomeDialog")
+    }
+
+    override fun onNextClicked() {
+        if (BuildConfig.DEBUG) Log.d(tag, "Welcome dialog next clicked. Showing terms.")
+        showTermsAndConditionsDialog()
     }
 
     private fun showTermsAndConditionsDialog() {

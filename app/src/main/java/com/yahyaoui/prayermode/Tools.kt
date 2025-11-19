@@ -335,7 +335,7 @@ class Tools(private val context: Context) {
                         val dhuhrCalendar = getPrayerCalendar(dhuhrTime)
                         if (dhuhrCalendar != null){
                             val cleanedDhuhrTime = "${dhuhrCalendar.get(Calendar.HOUR_OF_DAY)}:${dhuhrCalendar.get(Calendar.MINUTE)}"
-                            val durationBeforeInt = getBeforeDhuhrDurationId(sharedHelper.getIntValue(SharedHelper.DURATION_BEFORE_DHUHR, 5))
+                            val durationBeforeInt = getBeforeDhuhrDurationId(sharedHelper.getIntValue(SharedHelper.DURATION_BEFORE_DHUHR, 0))
                             val durationAfterInt = getDhuhrDurationId(sharedHelper.getIntValue(SharedHelper.DURATION_AFTER_DHUHR, 3))
                             if (BuildConfig.DEBUG) Log.i(tag, "Friday: $durationBeforeInt min before, $durationAfterInt min after")
 
@@ -389,7 +389,7 @@ class Tools(private val context: Context) {
                         val fajrCalendar = getPrayerCalendar(fajrTime)
                         if (fajrCalendar != null) {
                             val cleanedFajrTime = "${fajrCalendar.get(Calendar.HOUR_OF_DAY)}:${fajrCalendar.get(Calendar.MINUTE)}"
-                            val durationTahajjudInt = getTahajjudDurationId(sharedHelper.getIntValue(SharedHelper.DURATION_TAHAJJUD, 4))
+                            val durationTahajjudInt = getTahajjudDurationId(sharedHelper.getIntValue(SharedHelper.DURATION_TAHAJJUD, 0))
                             val durationValueInt = getDurationId(sharedHelper.getIntValue(SharedHelper.DURATION_VALUE, 3))
 
                             val prayerTimeMillis = fajrCalendar.timeInMillis
@@ -599,6 +599,22 @@ class Tools(private val context: Context) {
                 alarmManager.setExactAndAllowWhileIdle(AlarmManager.RTC_WAKEUP, endTimeInMillis, endPendingIntent)
                 if (BuildConfig.DEBUG) Log.i(tag, "Silent mode END scheduled for $prayerName at $endTimeInMillis ms")
                 pendingIntentMap[prayerName + "_end"] = endPendingIntent
+
+                val backupBuffer = 5
+                val backupEndTimeMillis = endTimeInMillis + TimeUnit.MINUTES.toMillis(backupBuffer.toLong())
+                val backupEndIntent = Intent(context, SilentModeReceiver::class.java).apply {
+                    action = "END_SILENT_MODE"
+                    putExtra("mode", false)
+                    putExtra("prayerName", prayerName)
+                    putExtra("isBackup", true)
+                }
+                val backupEndPendingIntent = PendingIntent.getBroadcast(
+                    context, (prayerName.hashCode() * 10) + 3, backupEndIntent,
+                    PendingIntent.FLAG_IMMUTABLE or PendingIntent.FLAG_UPDATE_CURRENT
+                )
+                alarmManager.setExactAndAllowWhileIdle(AlarmManager.RTC_WAKEUP, backupEndTimeMillis, backupEndPendingIntent)
+                if (BuildConfig.DEBUG) Log.i(tag, "BACKUP END alarm scheduled for $prayerName at $backupEndTimeMillis ms (+$backupBuffer min)")
+                pendingIntentMap[prayerName + "_backup"] = backupEndPendingIntent
             } else {
                 if (BuildConfig.DEBUG) Log.i(tag, "End time for $prayerName has already passed: $endTimeInMillis ms")
             }
@@ -970,7 +986,7 @@ class Tools(private val context: Context) {
         }
     }
 
-    private fun getBeforeDhuhrDurationId(index: Int): Int {
+    fun getBeforeDhuhrDurationId(index: Int): Int {
         return when (index) {
             0 -> 0
             1 -> 10
@@ -984,7 +1000,7 @@ class Tools(private val context: Context) {
             9 -> 50
             10 -> 55
             11 -> 60
-            else -> 5
+            else -> 0
         }
     }
 
@@ -1019,7 +1035,7 @@ class Tools(private val context: Context) {
         }
     }
 
-    private fun getTahajjudDurationId(index: Int): Int {
+    fun getTahajjudDurationId(index: Int): Int {
         return when (index) {
             0 -> 0
             1 -> 15
@@ -1030,7 +1046,7 @@ class Tools(private val context: Context) {
             6 -> 120
             7 -> 150
             8 -> 180
-            else -> 4
+            else -> 0
         }
     }
 

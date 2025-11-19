@@ -330,6 +330,17 @@ Anda dapat menyumbang menggunakan [DONATION_LINK].<br/><br/>
     <string name="update">Perbarui Sekarang</string>
     <string name="silent_schedule_success">Penjadwalan waktu sholat berhasil.</string>
 
+    <string name="welcome_title">Selamat Datang di Mode Salat</string>
+    <string name="welcome_message">
+    Aplikasi ini dirancang untuk membantu Anda fokus pada yang terpenting—salat Anda—\n\n
+    Begini cara kerjanya:\n\n
+    \u2022 Secara otomatis menyetel senyap gangguan telepon selama waktu salat.\n
+    \u2022 Mendorong Anda untuk konsisten dan salat tepat waktu.\n
+    \u2022 Menjaga kekhusyukan orang yang salat di sekitar Anda.\n\n
+    Jangan biarkan panggilan dan notifikasi mengganggu hubungan Anda dengan Allah.
+    </string>
+    <string name="next">Lanjut</string>
+
     <!-- Catch & else blocks -->
     <string name="failed_writing">Pastikan ruang penyimpanan mencukupi.</string>
     <string name="permission_denied_writing">Terjadi kesalahan tak terduga saat menyimpan file jadwal shalat. Silakan mulai ulang aplikasi dan periksa pembaruan.</string>
