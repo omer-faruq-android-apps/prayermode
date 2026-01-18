@@ -4,9 +4,10 @@
     <string name="On">Hidup</string>
     <string name="select_option">Pilih Pilihan</string>
     <string name="AudioText">Dengar takbir sebelum mengaktifkan mod senyap</string>
+    <string name="NotificationText">Paparkan pemberitahuan semasa operasi</string>
 
-    <!-- Daily Schedule Card view -->
-    <string name="daily_schedule">Jadual Solat Harian</string>
+    <!-- General Settings Card view -->
+    <string name="general_settings">Tetapan Umum</string>
 
     <string name="calculation_method">Kaedah Pengiraan</string>
     <string name="select_calculation_method">Pilih Kaedah Pengiraan</string>
@@ -36,10 +37,51 @@
         <item>Syiah Ithna Ashari, Institut Leva, Qom</item>
     </string-array>
 
+    <string name="silent_mode_type">Jenis mod senyap</string>
+    <string name="select_silent_mode_type">Pilih jenis mod senyap</string>
+    <string-array name="silent_mode_types">
+        <item>Senyap (tanpa getaran)</item>
+        <item>Senyap (dengan getaran)</item>
+    </string-array>
+
     <string name="daily_silent_duration_after_adhan">Tempoh Senyap Selepas Azan</string>
     <string name="daily_silent_duration">Tempoh Senyap Harian</string>
     <string name="select_silent_duration">Pilih Tempoh Senyap</string>
     <string-array name="silent_durations">
+        <item>15 minit</item>
+        <item>20 minit</item>
+        <item>25 minit</item>
+        <item>30 minit</item>
+        <item>35 minit</item>
+        <item>40 minit</item>
+        <item>45 minit</item>
+    </string-array>
+
+    <!-- Prayer Time Settings -->
+    <string name="fajr_prayer_settings">Tetapan Solat Subuh</string>
+    <string name="sunrise_settings">Tetapan Matahari Terbit</string>
+    <string name="dhuhr_prayer_settings">Tetapan Solat Zohor</string>
+    <string name="asr_prayer_settings">Tetapan Solat Asar</string>
+    <string name="maghrib_prayer_settings">Tetapan Solat Maghrib</string>
+    <string name="isha_prayer_settings">Tetapan Solat Isyak</string>
+
+    <string name="before_prayer_duration">Tempoh senyap sebelum azan</string>
+    <string name="after_prayer_duration">Tempoh senyap selepas azan</string>
+    <string name="select_before_prayer_duration">Pilih tempoh sebelum azan</string>
+    <string name="select_after_prayer_duration">Pilih tempoh selepas azan</string>
+
+    <string-array name="before_prayer_durations">
+        <item>Mati</item>
+        <item>5 minit</item>
+        <item>10 minit</item>
+        <item>15 minit</item>
+        <item>20 minit</item>
+        <item>25 minit</item>
+        <item>30 minit</item>
+    </string-array>
+
+    <string-array name="after_prayer_durations">
+        <item>Mati</item>
         <item>15 minit</item>
         <item>20 minit</item>
         <item>25 minit</item>
@@ -196,7 +238,11 @@ Terima kasih kerana mempercayai permohonan kami.<br/><br/>
     <string name="dnd_description">Digunakan untuk mengaktifkan Mod Jangan Ganggu secara automatik semasa waktu solat.</string>
 
     <string name="alarm">Penggera &amp; Peringatan</string>
-    <string name="alarm_description">Digunakan untuk menjadualkan Mod Jangan Ganggu untuk waktu solat.</string>
+    <string name="alarm_description">Digunakan untuk menjadualkan mod Jangan Ganggu untuk waktu solat.</string>
+
+    <string name="times">Waktu</string>
+    <string name="times_title">Waktu Solat Hari Ini</string>
+    <string name="today_date">Tarikh</string>
 
     <string name="help">Bantuan</string>
     <string name="bulb">Sebelum Mula Menggunakan Aplikasi</string>
@@ -359,4 +405,5 @@ Anda boleh menderma menggunakan [DONATION_LINK].<br/><br/>
     <string name="error">Error</string>
     <string name="error_getting_hijri_date">Error getting hijri date %1$s</string>
     <string name="failed_schedule_silent_mode">Failed to schedule silent mode for %1$s</string>
+    <string name="no_data_available">Tiada data tersedia</string>
 </resources>

@@ -4,9 +4,10 @@
     <string name="On">Açık</string>
     <string name="select_option">Bir seçenek belirleyin</string>
     <string name="AudioText">Sessiz modu etkinleştirmeden önce tekbiri dinle</string>
+    <string name="NotificationText">İşlemler sırasında bildirimleri göster</string>
 
-    <!-- Daily Schedule Card view -->
-    <string name="daily_schedule">Günlük Namaz Vakitleri</string>
+    <!-- General Settings Card view -->
+    <string name="general_settings">Genel Ayarlar</string>
 
     <string name="calculation_method">Hesaplama Yöntemi</string>
     <string name="select_calculation_method">Hesaplama Yöntemi Seçin</string>
@@ -36,10 +37,51 @@
         <item>Şia İsna Aşeri, Leva Enstitüsü, Kum</item>
     </string-array>
 
+    <string name="silent_mode_type">Sessiz mod türü</string>
+    <string name="select_silent_mode_type">Sessiz mod türü seçin</string>
+    <string-array name="silent_mode_types">
+        <item>Sessiz (titreşimsiz)</item>
+        <item>Sessiz (titreşimli)</item>
+    </string-array>
+
     <string name="daily_silent_duration_after_adhan">Ezan Sonrası Günlük Sessizlik Süresi</string>
     <string name="daily_silent_duration">Günlük Sessizlik Süresi</string>
     <string name="select_silent_duration">Sessizlik süresi seçin</string>
     <string-array name="silent_durations">
+        <item>15 dakika</item>
+        <item>20 dakika</item>
+        <item>25 dakika</item>
+        <item>30 dakika</item>
+        <item>35 dakika</item>
+        <item>40 dakika</item>
+        <item>45 dakika</item>
+    </string-array>
+
+    <!-- Prayer Time Settings -->
+    <string name="fajr_prayer_settings">Sabah Namazı Ayarları</string>
+    <string name="sunrise_settings">Güneş Doğuşu Ayarları</string>
+    <string name="dhuhr_prayer_settings">Öğle Namazı Ayarları</string>
+    <string name="asr_prayer_settings">İkindi Namazı Ayarları</string>
+    <string name="maghrib_prayer_settings">Akşam Namazı Ayarları</string>
+    <string name="isha_prayer_settings">Yatsı Namazı Ayarları</string>
+
+    <string name="before_prayer_duration">Ezan öncesi sessizlik süresi</string>
+    <string name="after_prayer_duration">Ezan sonrası sessizlik süresi</string>
+    <string name="select_before_prayer_duration">Ezan öncesi süre seçin</string>
+    <string name="select_after_prayer_duration">Ezan sonrası süre seçin</string>
+
+    <string-array name="before_prayer_durations">
+        <item>Kapalı</item>
+        <item>5 dakika</item>
+        <item>10 dakika</item>
+        <item>15 dakika</item>
+        <item>20 dakika</item>
+        <item>25 dakika</item>
+        <item>30 dakika</item>
+    </string-array>
+
+    <string-array name="after_prayer_durations">
+        <item>Kapalı</item>
         <item>15 dakika</item>
         <item>20 dakika</item>
         <item>25 dakika</item>
@@ -197,6 +239,10 @@ Uygulamamıza güvendiğiniz için teşekkür ederiz.<br/><br/>
 
     <string name="alarm">Alarm &amp; Hatırlatıcılar</string>
     <string name="alarm_description">Namaz vakitleri için Rahatsız Etmeyin modunu planlamak için kullanılır.</string>
+
+    <string name="times">Vakitler</string>
+    <string name="times_title">Bugünün Namaz Vakitleri</string>
+    <string name="today_date">Tarih</string>
 
     <string name="help">Yardım</string>
     <string name="bulb">Uygulamayı kullanmaya başlamadan önce</string>
@@ -360,4 +406,5 @@ Bağışlar, sadece takdirinizi göstermenin ve uygulamanın herkes için ücret
     <string name="error">Error</string>
     <string name="error_getting_hijri_date">Error getting hijri date %1$s</string>
     <string name="failed_schedule_silent_mode">Failed to schedule silent mode for %1$s</string>
+    <string name="no_data_available">Veri mevcut değil</string>
 </resources>

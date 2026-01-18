@@ -11,6 +11,11 @@ object NotificationHelper {
     private const val CHANNEL_ID = "prayer_channel"
 
     fun sendNotification(context: Context, titleResId: Int, messageResId: Int, notificationId: Int, vararg formatArgs: Any) {
+        val sharedHelper = SharedHelper(context)
+        if (!sharedHelper.getNotificationSwitchState()) {
+            return
+        }
+        
         val notificationManager = context.getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {

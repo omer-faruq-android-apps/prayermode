@@ -4,9 +4,10 @@
     <string name="On">চালু</string>
     <string name="select_option">একটি অপশন নির্বাচন করুন</string>
     <string name="AudioText">সাইলেন্ট মোড সক্রিয় করার আগে তাকবির শুনুন</string>
+    <string name="NotificationText">অপারেশনের সময় বিজ্ঞপ্তি দেখান</string>
 
-    <!-- Daily Schedule Card view -->
-    <string name="daily_schedule">দৈনিক নামাজের সময়সূচী</string>
+    <!-- General Settings Card view -->
+    <string name="general_settings">সাধারণ সেটিংস</string>
 
     <string name="calculation_method">গণনা পদ্ধতি</string>
     <string name="select_calculation_method">গণনা পদ্ধতি নির্বাচন করুন</string>
@@ -36,10 +37,51 @@
         <item>শিয়া ইথনা-আশারি, লেভা ইনস্টিটিউট, কুম</item>
     </string-array>
 
+    <string name="silent_mode_type">নীরব মোডের ধরন</string>
+    <string name="select_silent_mode_type">নীরব মোডের ধরন নির্বাচন করুন</string>
+    <string-array name="silent_mode_types">
+        <item>নীরব (কম্পন ছাড়া)</item>
+        <item>নীরব (কম্পন সহ)</item>
+    </string-array>
+
     <string name="daily_silent_duration_after_adhan">আজানের পর দৈনিক নীরব সময়</string>
     <string name="daily_silent_duration">দৈনিক নীরব সময়</string>
     <string name="select_silent_duration">দৈনিক সময় নির্বাচন করুন</string>
     <string-array name="silent_durations">
+        <item>১৫ মিনিট</item>
+        <item>২০ মিনিট</item>
+        <item>২৫ মিনিট</item>
+        <item>৩০ মিনিট</item>
+        <item>৩৫ মিনিট</item>
+        <item>৪০ মিনিট</item>
+        <item>৪৫ মিনিট</item>
+    </string-array>
+
+    <!-- Prayer Time Settings -->
+    <string name="fajr_prayer_settings">ফজরের নামাজের সেটিংস</string>
+    <string name="sunrise_settings">সূর্যোদয়ের সেটিংস</string>
+    <string name="dhuhr_prayer_settings">জোহরের নামাজের সেটিংস</string>
+    <string name="asr_prayer_settings">আসরের নামাজের সেটিংস</string>
+    <string name="maghrib_prayer_settings">মাগরিবের নামাজের সেটিংস</string>
+    <string name="isha_prayer_settings">এশার নামাজের সেটিংস</string>
+
+    <string name="before_prayer_duration">আজানের আগে নীরব সময়</string>
+    <string name="after_prayer_duration">আজানের পরে নীরব সময়</string>
+    <string name="select_before_prayer_duration">আজানের আগে সময় নির্বাচন করুন</string>
+    <string name="select_after_prayer_duration">আজানের পরে সময় নির্বাচন করুন</string>
+
+    <string-array name="before_prayer_durations">
+        <item>বন্ধ</item>
+        <item>৫ মিনিট</item>
+        <item>১০ মিনিট</item>
+        <item>১৫ মিনিট</item>
+        <item>২০ মিনিট</item>
+        <item>২৫ মিনিট</item>
+        <item>৩০ মিনিট</item>
+    </string-array>
+
+    <string-array name="after_prayer_durations">
+        <item>বন্ধ</item>
         <item>১৫ মিনিট</item>
         <item>২০ মিনিট</item>
         <item>২৫ মিনিট</item>
@@ -200,7 +242,11 @@
     <string name="dnd_description">নামাজের সময়ে স্বয়ংক্রিয়ভাবে ডু নট ডিসটার্ব মোড সক্রিয় করতে ব্যবহৃত হয়।</string>
 
     <string name="alarm">অ্যালার্ম ও রিমাইন্ডার</string>
-    <string name="alarm_description">নামাজের সময়ের জন্য ডু নট ডিসটার্ব মোড সময়সূচী করতে ব্যবহৃত হয়।</string>
+    <string name="alarm_description">নামাজের সময়ের জন্য ডু নট ডিসটার্ব মোড নির্ধারণ করতে ব্যবহৃত হয়।</string>
+
+    <string name="times">সময়</string>
+    <string name="times_title">আজকের নামাজের সময়</string>
+    <string name="today_date">তারিখ</string>
 
     <string name="help">সাহায্য</string>
     <string name="bulb">অ্যাপ ব্যবহার শুরু করার আগে</string>
@@ -360,6 +406,7 @@
     <string name="invalid_time_format">%1$s অবৈধ সময় ফরম্যাট</string>
     <string name="unexpected_error">নামাজ ক্যালেন্ডার পাওয়ার সময় অপ্রত্যাশিত ত্রুটি %1$s</string>
 
+    <string name="no_data_available">কোনো ডেটা উপলব্ধ নেই</string>
     <string name="error">ত্রুটি</string>
     <string name="error_getting_hijri_date">%1$s হিজরি তারিখ পাওয়ার ত্রুটি</string>
     <string name="failed_schedule_silent_mode">%1$s-এর জন্য সাইলেন্ট মোড সময়সূচী করতে ব্যর্থ</string>

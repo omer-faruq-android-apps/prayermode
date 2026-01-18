@@ -24,6 +24,21 @@ class SharedHelper(private val context: Context) {
         const val KEY_TERMS_ACCEPTED = "terms_accepted"
         const val IS_APP_CONTROLLED_DND_ACTIVE = "is_app_controlled_dnd_active"
         const val AUDIO_SWITCH_STATE_KEY = "audio_switch_state"
+        const val NOTIFICATION_SWITCH_STATE_KEY = "notification_switch_state"
+        
+        const val DURATION_BEFORE_FAJR = "DurationBeforeFajr"
+        const val DURATION_AFTER_FAJR = "DurationAfterFajr"
+        const val DURATION_BEFORE_SUNRISE = "DurationBeforeSunrise"
+        const val DURATION_AFTER_SUNRISE = "DurationAfterSunrise"
+        const val DURATION_BEFORE_DHUHR_DAILY = "DurationBeforeDhuhrDaily"
+        const val DURATION_AFTER_DHUHR_DAILY = "DurationAfterDhuhrDaily"
+        const val DURATION_BEFORE_ASR = "DurationBeforeAsr"
+        const val DURATION_AFTER_ASR = "DurationAfterAsr"
+        const val DURATION_BEFORE_MAGHRIB = "DurationBeforeMaghrib"
+        const val DURATION_AFTER_MAGHRIB = "DurationAfterMaghrib"
+        const val DURATION_BEFORE_ISHA = "DurationBeforeIsha"
+        const val DURATION_AFTER_ISHA = "DurationAfterIsha"
+        const val SILENT_MODE_TYPE = "SilentModeType"
 
     }
 
@@ -41,6 +56,14 @@ class SharedHelper(private val context: Context) {
 
     fun getAudioSwitchState(): Boolean {
         return sharedPreferences.getBoolean(AUDIO_SWITCH_STATE_KEY, false)
+    }
+
+    fun saveNotificationSwitchState(state: Boolean) {
+        sharedPreferences.edit { putBoolean(NOTIFICATION_SWITCH_STATE_KEY, state) }
+    }
+
+    fun getNotificationSwitchState(): Boolean {
+        return sharedPreferences.getBoolean(NOTIFICATION_SWITCH_STATE_KEY, true)
     }
 
     fun saveIntValue(key: String, value: Int) {

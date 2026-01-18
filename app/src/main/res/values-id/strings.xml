@@ -4,11 +4,12 @@
     <string name="On">Aktif</string>
     <string name="select_option">Pilih Opsi</string>
     <string name="AudioText">Dengarkan takbir sebelum mengaktifkan mode diam</string>
+    <string name="NotificationText">Tampilkan notifikasi selama operasi</string>
 
-    <!-- Daily Schedule Card view -->
-    <string name="daily_schedule">Jadwal Sholat Harian</string>
+    <!-- General Settings Card view -->
+    <string name="general_settings">Pengaturan Umum</string>
 
-    <string name="calculation_method">Metode Perhitungan</string>
+    <string name="calculation_method">Metode perhitungan</string>
     <string name="select_calculation_method">Pilih Metode Perhitungan</string>
     <string-array name="calculation_methods">
         <item>Universitas Umm Al-Qura, Mekah</item>
@@ -36,10 +37,51 @@
         <item>Syiah Itsna Asyari, Institut Leva, Qom</item>
     </string-array>
 
-    <string name="daily_silent_duration_after_adhan">Mode Tenang Setelah Adzan</string>
+    <string name="silent_mode_type">Jenis mode senyap</string>
+    <string name="select_silent_mode_type">Pilih jenis mode senyap</string>
+    <string-array name="silent_mode_types">
+        <item>Senyap (tanpa getar)</item>
+        <item>Senyap (dengan getar)</item>
+    </string-array>
+
+    <string name="daily_silent_duration_after_adhan">Durasi tenang harian setelah adzan</string>
     <string name="daily_silent_duration">Durasi Tenang Harian</string>
     <string name="select_silent_duration">Pilih Durasi Tenang</string>
     <string-array name="silent_durations">
+        <item>15 menit</item>
+        <item>20 menit</item>
+        <item>25 menit</item>
+        <item>30 menit</item>
+        <item>35 menit</item>
+        <item>40 menit</item>
+        <item>45 menit</item>
+    </string-array>
+
+    <!-- Prayer Time Settings -->
+    <string name="fajr_prayer_settings">Pengaturan Sholat Subuh</string>
+    <string name="sunrise_settings">Pengaturan Matahari Terbit</string>
+    <string name="dhuhr_prayer_settings">Pengaturan Sholat Dzuhur</string>
+    <string name="asr_prayer_settings">Pengaturan Sholat Ashar</string>
+    <string name="maghrib_prayer_settings">Pengaturan Sholat Maghrib</string>
+    <string name="isha_prayer_settings">Pengaturan Sholat Isya</string>
+
+    <string name="before_prayer_duration">Durasi tenang sebelum adzan</string>
+    <string name="after_prayer_duration">Durasi tenang setelah adzan</string>
+    <string name="select_before_prayer_duration">Pilih durasi sebelum adzan</string>
+    <string name="select_after_prayer_duration">Pilih durasi setelah adzan</string>
+
+    <string-array name="before_prayer_durations">
+        <item>Nonaktif</item>
+        <item>5 menit</item>
+        <item>10 menit</item>
+        <item>15 menit</item>
+        <item>20 menit</item>
+        <item>25 menit</item>
+        <item>30 menit</item>
+    </string-array>
+
+    <string-array name="after_prayer_durations">
+        <item>Nonaktif</item>
         <item>15 menit</item>
         <item>20 menit</item>
         <item>25 menit</item>
@@ -199,7 +241,11 @@ Terima kasih atas kepercayaan Anda pada aplikasi kami.<br/><br/>
     <string name="alarm">Alarm &amp; Pengingat</string>
     <string name="alarm_description">Digunakan untuk menjadwalkan Mode Jangan Ganggu untuk waktu sholat.</string>
 
-    <string name="help">Membantu</string>
+    <string name="times">Waktu</string>
+    <string name="times_title">Waktu Sholat Hari Ini</string>
+    <string name="today_date">Tanggal</string>
+
+    <string name="help">Bantuan</string>
     <string name="bulb">Sebelum Menggunakan Aplikasi</string>
     <string name="bulb_content">Panduan Cepat</string>
     <string name="bulb_description">Untuk pertama kali menggunakan aplikasi ini, silakan ikuti panduan di bawah untuk mengatur pengaturan.</string>
@@ -273,6 +319,7 @@ Anda dapat menyumbang menggunakan [DONATION_LINK].<br/><br/>
     <string name="notification_recommended_message">Peringatan dan pengingat mode salat bisa terlewat tanpa notifikasi</string>
 
     <string name="try_again">Coba lagi</string>
+    <string name="no_data_available">Tidak ada data tersedia</string>
     <string name="exit">Keluar</string>
     <string name="enable">Aktifkan</string>
     <string name="skip">Lewati</string>

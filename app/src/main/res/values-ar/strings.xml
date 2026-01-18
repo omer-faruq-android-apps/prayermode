@@ -4,9 +4,10 @@
     <string name="On">تشغيل</string>
     <string name="select_option">حدد خيارًا</string>
     <string name="AudioText">استمع إلى التكبير قبل تفعيل الوضع الصامت</string>
+    <string name="NotificationText">إظهار الإشعارات أثناء العمليات</string>
 
-    <!-- Daily Schedule Cardview -->
-    <string name="daily_schedule">جدول الصلاة اليومي</string>
+    <!-- General Settings Card view -->
+    <string name="general_settings">الإعدادات العامة</string>
 
     <string name="calculation_method">طريقة الحساب</string>
     <string name="select_calculation_method">اختيار طريقة الحساب</string>
@@ -36,9 +37,50 @@
         <item>معهد الشيعة الإثني عشرية، مؤسسة ليفا، قم</item>
     </string-array>
 
+    <string name="silent_mode_type">نوع الوضع الصامت</string>
+    <string name="select_silent_mode_type">اختيار نوع الوضع الصامت</string>
+    <string-array name="silent_mode_types">
+        <item>صامت (بدون اهتزاز)</item>
+        <item>صامت (مع اهتزاز)</item>
+    </string-array>
+
     <string name="daily_silent_duration_after_adhan">مدة الصمت اليومية بعد الأذان</string>
     <string name="daily_silent_duration">مدة الصمت اليومية</string>
     <string name="select_silent_duration">اختيار مدة الصمت اليومية</string>
+
+    <!-- Prayer Time Settings -->
+    <string name="fajr_prayer_settings">إعدادات صلاة الفجر</string>
+    <string name="sunrise_settings">إعدادات الشروق</string>
+    <string name="dhuhr_prayer_settings">إعدادات صلاة الظهر</string>
+    <string name="asr_prayer_settings">إعدادات صلاة العصر</string>
+    <string name="maghrib_prayer_settings">إعدادات صلاة المغرب</string>
+    <string name="isha_prayer_settings">إعدادات صلاة العشاء</string>
+
+    <string name="before_prayer_duration">مدة الصمت قبل الأذان</string>
+    <string name="after_prayer_duration">مدة الصمت بعد الأذان</string>
+    <string name="select_before_prayer_duration">اختيار المدة قبل الأذان</string>
+    <string name="select_after_prayer_duration">اختيار المدة بعد الأذان</string>
+
+    <string-array name="before_prayer_durations">
+        <item>إيقاف</item>
+        <item>5 دقائق</item>
+        <item>10 دقائق</item>
+        <item>15 دقيقة</item>
+        <item>20 دقيقة</item>
+        <item>25 دقيقة</item>
+        <item>30 دقيقة</item>
+    </string-array>
+
+    <string-array name="after_prayer_durations">
+        <item>إيقاف</item>
+        <item>15 دقيقة</item>
+        <item>20 دقيقة</item>
+        <item>25 دقيقة</item>
+        <item>30 دقيقة</item>
+        <item>35 دقيقة</item>
+        <item>40 دقيقة</item>
+        <item>45 دقيقة</item>
+    </string-array>
 
     <!-- Joumouaa Cardview -->
     <string name="joumoua">الجمعة</string>
@@ -129,7 +171,11 @@
     <string name="dnd_description">يُستخدم لتفعيل وضع عدم الإزعاج تلقائيًا أثناء أوقات الصلاة.</string>
 
     <string name="alarm">المنبه والتذكيرات</string>
-    <string name="alarm_description">يُستخدم لجدولة وضع عدم الإزعاج لأوقات الصلاة.</string>
+    <string name="alarm_description">يستخدم لجدولة وضع عدم الإزعاج لأوقات الصلاة.</string>
+
+    <string name="times">الأوقات</string>
+    <string name="times_title">أوقات الصلاة اليوم</string>
+    <string name="today_date">التاريخ</string>
 
     <string name="help">مساعدة</string>
     <string name="bulb">قبل الشروع في استخدام التطبيق</string>
@@ -290,7 +336,8 @@
     <string name="invalid_time_format">Invalid time format %1$s</string>
     <string name="unexpected_error">Unexpected error while getting prayer calendar %1$s</string>
 
-    <string name="error">Error</string>
+    <string name="error">خطأ</string>
     <string name="error_getting_hijri_date">Error getting hijri date %1$s</string>
     <string name="failed_schedule_silent_mode">Failed to schedule silent mode for %1$s</string>
+    <string name="no_data_available">لا توجد بيانات متاحة</string>
  </resources>

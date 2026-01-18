@@ -78,16 +78,24 @@ class LocationService : Service(), CoroutineScope {
     override fun onBind(intent: Intent?): IBinder? = null
 
     private fun startForegroundService() {
+        val sharedHelper = SharedHelper(this)
         val notificationIntent = Intent(this, MainActivity::class.java)
         val pendingIntent = PendingIntent.getActivity(this, 0, notificationIntent, PendingIntent.FLAG_IMMUTABLE)
-        val notification = NotificationCompat.Builder(this, channelId)
+        
+        val builder = NotificationCompat.Builder(this, channelId)
             .setContentTitle(getString(R.string.location_title))
             .setContentText(getString(R.string.getting_location_update))
             .setSmallIcon(R.drawable.ic_prayer_mat_vector)
             .setContentIntent(pendingIntent)
             .setForegroundServiceBehavior(NotificationCompat.FOREGROUND_SERVICE_IMMEDIATE)
-            .build()
-        startForeground(1, notification)
+        
+        if (!sharedHelper.getNotificationSwitchState()) {
+            builder.setSilent(true)
+                .setPriority(NotificationCompat.PRIORITY_MIN)
+                .setVisibility(NotificationCompat.VISIBILITY_SECRET)
+        }
+        
+        startForeground(1, builder.build())
     }
 
     private fun createNotificationChannel() {

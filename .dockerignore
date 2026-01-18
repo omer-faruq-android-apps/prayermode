@@ -1,0 +1,56 @@
+# Build outputs
+*.apk
+*.aab
+*.ap_
+*.dex
+*.class
+
+# Gradle files
+.gradle/
+build/
+*/build/
+app/build/
+local.properties
+
+# IDE files
+.idea/
+*.iml
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Git
+.git/
+.gitignore
+.gitattributes
+
+# Documentation
+*.md
+README.md
+LICENSE
+CONTRIBUTING.md
+
+# Metadata
+metadata/
+
+# Docker files (no need to copy into container)
+Dockerfile
+.dockerignore
+docker-compose.yml
+
+# Keystore (security)
+*.jks
+*.keystore
+keystore.properties
+
+# Other
+help.html
+privacy.html
+terms.html
+release-notes.html
+icon.png

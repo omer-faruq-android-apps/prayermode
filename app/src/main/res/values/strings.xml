@@ -4,9 +4,10 @@
     <string name="On">On</string>
     <string name="select_option">Select an option</string> <!-- No translation -->
     <string name="AudioText">Listen to takbir before activating silent mode</string>
+    <string name="NotificationText">Show notifications during operations</string>
 
-    <!-- Daily Schedule Card view -->
-    <string name="daily_schedule">Daily Prayer Schedule</string>
+    <!-- General Settings Card view -->
+    <string name="general_settings">General Settings</string>
 
     <string name="calculation_method">Calculation method</string>  <!-- No translation -->
     <string name="select_calculation_method">Select the calculation method</string>
@@ -36,10 +37,51 @@
         <item>Shia Ithna-Ashari, Leva Institute, Qum</item>
     </string-array>
 
+    <string name="silent_mode_type">Silent mode type</string>
+    <string name="select_silent_mode_type">Select silent mode type</string>
+    <string-array name="silent_mode_types">
+        <item>Silent (no vibration)</item>
+        <item>Silent with vibration</item>
+    </string-array>
+
     <string name="daily_silent_duration_after_adhan">Daily silent duration after adhan</string>
     <string name="daily_silent_duration">Daily silent duration</string>  <!-- No translation -->
     <string name="select_silent_duration">Select the daily duration</string>
     <string-array name="silent_durations">
+        <item>15 minutes</item>
+        <item>20 minutes</item>
+        <item>25 minutes</item>
+        <item>30 minutes</item>
+        <item>35 minutes</item>
+        <item>40 minutes</item>
+        <item>45 minutes</item>
+    </string-array>
+
+    <!-- Prayer Time Settings -->
+    <string name="fajr_prayer_settings">Fajr Prayer Settings</string>
+    <string name="sunrise_settings">Sunrise Settings</string>
+    <string name="dhuhr_prayer_settings">Dhuhr Prayer Settings</string>
+    <string name="asr_prayer_settings">Asr Prayer Settings</string>
+    <string name="maghrib_prayer_settings">Maghrib Prayer Settings</string>
+    <string name="isha_prayer_settings">Isha Prayer Settings</string>
+
+    <string name="before_prayer_duration">Silent duration before adhan</string>
+    <string name="after_prayer_duration">Silent duration after adhan</string>
+    <string name="select_before_prayer_duration">Select before adhan duration</string>
+    <string name="select_after_prayer_duration">Select after adhan duration</string>
+
+    <string-array name="before_prayer_durations">
+        <item>Off</item>
+        <item>5 minutes</item>
+        <item>10 minutes</item>
+        <item>15 minutes</item>
+        <item>20 minutes</item>
+        <item>25 minutes</item>
+        <item>30 minutes</item>
+    </string-array>
+
+    <string-array name="after_prayer_durations">
+        <item>Off</item>
         <item>15 minutes</item>
         <item>20 minutes</item>
         <item>25 minutes</item>
@@ -202,6 +244,10 @@ Thank you for trusting our application.<br/><br/>
     <string name="alarm">Alarm &amp; Reminders</string>
     <string name="alarm_description">Used to schedule DND mode for prayer times.</string>
 
+    <string name="times">Times</string>
+    <string name="times_title">Today\'s Prayer Times</string>
+    <string name="today_date">Date</string>
+
     <string name="help">Help</string>
     <string name="bulb">Before you start using the app</string>
     <string name="bulb_content">Quick Start Guide</string>
@@ -360,6 +406,7 @@ Thank you for trusting our application.<br/><br/>
     <string name="invalid_time_format">Invalid time format %1$s</string>
     <string name="unexpected_error">Unexpected error while getting prayer calendar %1$s</string>
 
+    <string name="no_data_available">No data available</string>
     <string name="error">Error</string>
     <string name="error_getting_hijri_date">Error getting hijri date %1$s</string>
     <string name="failed_schedule_silent_mode">Failed to schedule silent mode for %1$s</string>

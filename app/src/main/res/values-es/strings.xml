@@ -4,9 +4,10 @@
     <string name="On">Encendido</string>
     <string name="select_option">Selecciona una opción</string> <!-- No translation -->
     <string name="AudioText">Escuchar el takbir antes de activar el modo silencio</string>
+    <string name="NotificationText">Mostrar notificaciones durante las operaciones</string>
 
-    <!-- Daily Schedule Card view -->
-    <string name="daily_schedule">Horario Diario de Oraciones</string>
+    <!-- General Settings Card view -->
+    <string name="general_settings">Configuración general</string>
 
     <string name="calculation_method">Método de cálculo</string>  <!-- No translation -->
     <string name="select_calculation_method">Selecciona el método de cálculo</string>
@@ -36,10 +37,51 @@
         <item>Shia Ithna-Ashari, Instituto Leva, Qum</item>
     </string-array>
 
+    <string name="silent_mode_type">Tipo de modo silencioso</string>
+    <string name="select_silent_mode_type">Seleccionar tipo de modo silencioso</string>
+    <string-array name="silent_mode_types">
+        <item>Silencioso (sin vibración)</item>
+        <item>Silencioso (con vibración)</item>
+    </string-array>
+
     <string name="daily_silent_duration_after_adhan">Duración del silencio diario después del adhan</string>
     <string name="daily_silent_duration">Duración del silencio diario</string>  <!-- No translation -->
     <string name="select_silent_duration">Selecciona la duración diaria</string>
     <string-array name="silent_durations">
+        <item>15 minutos</item>
+        <item>20 minutos</item>
+        <item>25 minutos</item>
+        <item>30 minutos</item>
+        <item>35 minutos</item>
+        <item>40 minutos</item>
+        <item>45 minutos</item>
+    </string-array>
+
+    <!-- Prayer Time Settings -->
+    <string name="fajr_prayer_settings">Configuración de la oración del Fajr</string>
+    <string name="sunrise_settings">Configuración del amanecer</string>
+    <string name="dhuhr_prayer_settings">Configuración de la oración del Dhuhr</string>
+    <string name="asr_prayer_settings">Configuración de la oración del Asr</string>
+    <string name="maghrib_prayer_settings">Configuración de la oración del Maghrib</string>
+    <string name="isha_prayer_settings">Configuración de la oración del Isha</string>
+
+    <string name="before_prayer_duration">Duración del silencio antes del adhan</string>
+    <string name="after_prayer_duration">Duración del silencio después del adhan</string>
+    <string name="select_before_prayer_duration">Seleccionar duración antes del adhan</string>
+    <string name="select_after_prayer_duration">Seleccionar duración después del adhan</string>
+
+    <string-array name="before_prayer_durations">
+        <item>Desactivado</item>
+        <item>5 minutos</item>
+        <item>10 minutos</item>
+        <item>15 minutos</item>
+        <item>20 minutos</item>
+        <item>25 minutos</item>
+        <item>30 minutos</item>
+    </string-array>
+
+    <string-array name="after_prayer_durations">
+        <item>Desactivado</item>
         <item>15 minutos</item>
         <item>20 minutos</item>
         <item>25 minutos</item>
@@ -200,7 +242,11 @@ Gracias por confiar en nuestra aplicación.<br/><br/>
     <string name="dnd_description">Se utiliza para activar automáticamente el modo No Molestar durante los horarios de oración.</string>
 
     <string name="alarm">Alarma y Recordatorios</string>
-    <string name="alarm_description">Se utiliza para programar el modo No Molestar para los horarios de oración.</string>
+    <string name="alarm_description">Se utiliza para programar el modo No molestar para los horarios de oración.</string>
+
+    <string name="times">Horarios</string>
+    <string name="times_title">Horarios de oración de hoy</string>
+    <string name="today_date">Fecha</string>
 
     <string name="help">Ayuda</string>
     <string name="bulb">Antes de comenzar a usar la aplicación</string>
@@ -360,6 +406,7 @@ Gracias por confiar en nuestra aplicación.<br/><br/>
     <string name="invalid_time_format">Invalid time format %1$s</string>
     <string name="unexpected_error">Unexpected error while getting prayer calendar %1$s</string>
 
+    <string name="no_data_available">No hay datos disponibles</string>
     <string name="error">Error</string>
     <string name="error_getting_hijri_date">Error getting hijri date %1$s</string>
     <string name="failed_schedule_silent_mode">Failed to schedule silent mode for %1$s</string>

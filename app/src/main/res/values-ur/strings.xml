@@ -4,9 +4,10 @@
     <string name="On">چالو</string>
     <string name="select_option">ایک اختیار منتخب کریں</string>
     <string name="AudioText">خاموش موڈ آن کرنے سے پہلے تکبیر سنیں</string>
+    <string name="NotificationText">آپریشنز کے دوران اطلاعات دکھائیں</string>
 
-    <!-- Daily Schedule Card view -->
-    <string name="daily_schedule">روزانہ کے نماز کا شیڈول</string>
+    <!-- General Settings Card view -->
+    <string name="general_settings">عمومی ترتیبات</string>
 
     <string name="calculation_method">حساب کا طریقہ</string>
     <string name="select_calculation_method">حساب کا طریقہ منتخب کریں</string>
@@ -36,10 +37,51 @@
         <item>شیعہ اثناء عشری، لیوا انسٹی ٹیوٹ، قم</item>
     </string-array>
 
+    <string name="silent_mode_type">خاموش موڈ کی قسم</string>
+    <string name="select_silent_mode_type">خاموش موڈ کی قسم منتخب کریں</string>
+    <string-array name="silent_mode_types">
+        <item>خاموش (تھرتھراہٹ کے بغیر)</item>
+        <item>خاموش (تھرتھراہٹ کے ساتھ)</item>
+    </string-array>
+
     <string name="daily_silent_duration_after_adhan">اذان کے بعد خاموشی کا دورانیہ</string>
     <string name="daily_silent_duration">روزانہ خاموشی کا دورانیہ</string>
     <string name="select_silent_duration">دورانیہ منتخب کریں</string>
     <string-array name="silent_durations">
+        <item>15 منٹ</item>
+        <item>20 منٹ</item>
+        <item>25 منٹ</item>
+        <item>30 منٹ</item>
+        <item>35 منٹ</item>
+        <item>40 منٹ</item>
+        <item>45 منٹ</item>
+    </string-array>
+
+    <!-- Prayer Time Settings -->
+    <string name="fajr_prayer_settings">فجر کی نماز کی ترتیبات</string>
+    <string name="sunrise_settings">طلوع آفتاب کی ترتیبات</string>
+    <string name="dhuhr_prayer_settings">ظہر کی نماز کی ترتیبات</string>
+    <string name="asr_prayer_settings">عصر کی نماز کی ترتیبات</string>
+    <string name="maghrib_prayer_settings">مغرب کی نماز کی ترتیبات</string>
+    <string name="isha_prayer_settings">عشاء کی نماز کی ترتیبات</string>
+
+    <string name="before_prayer_duration">اذان سے پہلے خاموشی کا دورانیہ</string>
+    <string name="after_prayer_duration">اذان کے بعد خاموشی کا دورانیہ</string>
+    <string name="select_before_prayer_duration">اذان سے پہلے دورانیہ منتخب کریں</string>
+    <string name="select_after_prayer_duration">اذان کے بعد دورانیہ منتخب کریں</string>
+
+    <string-array name="before_prayer_durations">
+        <item>بند</item>
+        <item>5 منٹ</item>
+        <item>10 منٹ</item>
+        <item>15 منٹ</item>
+        <item>20 منٹ</item>
+        <item>25 منٹ</item>
+        <item>30 منٹ</item>
+    </string-array>
+
+    <string-array name="after_prayer_durations">
+        <item>بند</item>
         <item>15 منٹ</item>
         <item>20 منٹ</item>
         <item>25 منٹ</item>
@@ -197,7 +239,11 @@
     <string name="dnd_description">نماز کے اوقات میں خودبخود ڈو ناٹ ڈسٹرب موڈ چالو کرنے کے لیے۔</string>
 
     <string name="alarm">الارم اور یاد دہانیاں</string>
-    <string name="alarm_description">نماز کے اوقات کے لیے ڈو ناٹ ڈسٹرب موڈ شیڈول کرنے کے لیے۔</string>
+    <string name="alarm_description">نماز کے اوقات کے لیے ڈسٹرب نہ کریں موڈ شیڈول کرنے کے لیے استعمال کیا جاتا ہے۔</string>
+
+    <string name="times">اوقات</string>
+    <string name="times_title">آج کے نماز کے اوقات</string>
+    <string name="today_date">تاریخ</string>
 
     <string name="help">مدد</string>
     <string name="bulb">ایپ استعمال کرنے سے پہلے</string>
@@ -362,4 +408,6 @@
     <string name="error">Error</string>
     <string name="error_getting_hijri_date">Error getting hijri date %1$s</string>
     <string name="failed_schedule_silent_mode">Failed to schedule silent mode for %1$s</string>
+
+    <string name="no_data_available">کوئی ڈیٹا دستیاب نہیں</string>
 </resources>

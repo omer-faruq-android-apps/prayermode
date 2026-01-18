@@ -53,6 +53,11 @@
             android:exported="false"
             android:label="@string/select_option"/>
 
+        <activity
+            android:name=".TimesActivity"
+            android:exported="false"
+            android:label="@string/times_title"/>
+
         <service
             android:name=".LocationService"
             android:foregroundServiceType="location"

@@ -322,7 +322,7 @@ class Tools(private val context: Context) {
                     Log.d(tag, "Current prayerTimes JSON: $prayerTimes")
                     Log.i(tag, "Prayer times for date $gregorianDate - Hijri $hijriDay-$hijriMonth-$hijriYear retrieved successfully")
                 }
-                val timesList = listOf("Fajr", "Dhuhr", "Asr", "Maghrib", "Isha")
+                val timesList = listOf("Fajr", "Sunrise", "Dhuhr", "Asr", "Maghrib", "Isha")
                 val currentWeekday = getCurrentWeekday()
                 val dhuhrTime = prayerTimes.optString("Dhuhr")
                 val fajrTime = prayerTimes.optString("Fajr")
@@ -487,17 +487,50 @@ class Tools(private val context: Context) {
                             val cleanedTime = "${prayerCalendar.get(Calendar.HOUR_OF_DAY)}:${prayerCalendar.get(Calendar.MINUTE)}"
                             if (BuildConfig.DEBUG) Log.d(tag, "Processing $key at $cleanedTime")
 
-                            val prayerTimeMillis = prayerCalendar.timeInMillis
-                            val durationValueInt = getDurationId(sharedHelper.getIntValue(SharedHelper.DURATION_VALUE, 3))
-                            if (BuildConfig.DEBUG) Log.i(tag, "Saved duration is $durationValueInt minutes")
+                            val (durationBeforeInt, durationAfterInt) = when (key) {
+                                "Fajr" -> Pair(
+                                    getBeforePrayerDurationId(sharedHelper.getIntValue(SharedHelper.DURATION_BEFORE_FAJR, 2)),
+                                    getAfterPrayerDurationId(sharedHelper.getIntValue(SharedHelper.DURATION_AFTER_FAJR, 4))
+                                )
+                                "Sunrise" -> Pair(
+                                    getBeforePrayerDurationId(sharedHelper.getIntValue(SharedHelper.DURATION_BEFORE_SUNRISE, 0)),
+                                    getAfterPrayerDurationId(sharedHelper.getIntValue(SharedHelper.DURATION_AFTER_SUNRISE, 0))
+                                )
+                                "Dhuhr" -> Pair(
+                                    getBeforePrayerDurationId(sharedHelper.getIntValue(SharedHelper.DURATION_BEFORE_DHUHR_DAILY, 2)),
+                                    getAfterPrayerDurationId(sharedHelper.getIntValue(SharedHelper.DURATION_AFTER_DHUHR_DAILY, 4))
+                                )
+                                "Asr" -> Pair(
+                                    getBeforePrayerDurationId(sharedHelper.getIntValue(SharedHelper.DURATION_BEFORE_ASR, 2)),
+                                    getAfterPrayerDurationId(sharedHelper.getIntValue(SharedHelper.DURATION_AFTER_ASR, 4))
+                                )
+                                "Maghrib" -> Pair(
+                                    getBeforePrayerDurationId(sharedHelper.getIntValue(SharedHelper.DURATION_BEFORE_MAGHRIB, 2)),
+                                    getAfterPrayerDurationId(sharedHelper.getIntValue(SharedHelper.DURATION_AFTER_MAGHRIB, 4))
+                                )
+                                "Isha" -> Pair(
+                                    getBeforePrayerDurationId(sharedHelper.getIntValue(SharedHelper.DURATION_BEFORE_ISHA, 2)),
+                                    getAfterPrayerDurationId(sharedHelper.getIntValue(SharedHelper.DURATION_AFTER_ISHA, 4))
+                                )
+                                else -> Pair(10, 30)
+                            }
+                            
+                            if (durationBeforeInt == 0 && durationAfterInt == 0) {
+                                if (BuildConfig.DEBUG) Log.i(tag, "Skipping $key - both before and after durations are 0")
+                                return@forEach
+                            }
 
-                            val endTimeMillis = prayerTimeMillis + TimeUnit.MINUTES.toMillis(durationValueInt.toLong())
+                            if (BuildConfig.DEBUG) Log.i(tag, "$key: $durationBeforeInt min before, $durationAfterInt min after")
+
+                            val prayerTimeMillis = prayerCalendar.timeInMillis
                             val currentMillis = currentTime.timeInMillis
-                            val silentModeRange = prayerTimeMillis..endTimeMillis
+                            val startTimeMillis = prayerTimeMillis - TimeUnit.MINUTES.toMillis(durationBeforeInt.toLong())
+                            val endTimeMillis = prayerTimeMillis + TimeUnit.MINUTES.toMillis(durationAfterInt.toLong())
+                            val silentModeRange = startTimeMillis..endTimeMillis
 
                             if (currentMillis in silentModeRange || prayerCalendar.after(currentTime)) {
                                 if (!pendingIntentMap.containsKey(cleanedTime)) {
-                                    scheduleSilentMode(cleanedTime, 0, durationValueInt, key)
+                                    scheduleSilentMode(cleanedTime, durationBeforeInt, durationAfterInt, key)
                                     if (key == "Fajr") {
                                         val fajrCalendar = getPrayerCalendar(fajrTime)
                                         if (fajrCalendar != null) {
@@ -505,7 +538,7 @@ class Tools(private val context: Context) {
                                             NotificationHelper.sendNotification(context, R.string.schedule_title, R.string.today_fajr_time_is, 151, displayedFajrTime)
                                         }
                                     }
-                                    if (BuildConfig.DEBUG) Log.i(tag, "Scheduling silent mode $key for $durationValueInt minutes")
+                                    if (BuildConfig.DEBUG) Log.i(tag, "Scheduling silent mode $key: before=$durationBeforeInt, after=$durationAfterInt minutes")
                                 } else {
                                     if (BuildConfig.DEBUG) Log.i(tag, "Silent mode already scheduled for $key at $cleanedTime")
                                 }
@@ -666,9 +699,20 @@ class Tools(private val context: Context) {
                     sharedHelper.saveIntValue("system_volume", audioManager.getStreamVolume(AudioManager.STREAM_SYSTEM))
                     if (BuildConfig.DEBUG) Log.i(tag, "Current volumes saved before DND activation.")
 
-                    audioManager.ringerMode = AudioManager.RINGER_MODE_SILENT
+                    val silentModeType = sharedHelper.getIntValue(SharedHelper.SILENT_MODE_TYPE, 0)
+                    
+                    if (silentModeType == 0) {
+                        // Silent without vibration
+                        audioManager.ringerMode = AudioManager.RINGER_MODE_SILENT
+                        if (BuildConfig.DEBUG) Log.i(tag, "Setting RINGER_MODE_SILENT (no vibration)")
+                    } else {
+                        // Silent with vibration
+                        audioManager.ringerMode = AudioManager.RINGER_MODE_VIBRATE
+                        if (BuildConfig.DEBUG) Log.i(tag, "Setting RINGER_MODE_VIBRATE (with vibration)")
+                    }
+                    
                     notificationManager.setInterruptionFilter(NotificationManager.INTERRUPTION_FILTER_ALARMS)
-                    if (BuildConfig.DEBUG) Log.i(tag, "Setting DND/Silent, voice call volume is active.")
+                    if (BuildConfig.DEBUG) Log.i(tag, "Setting DND/Silent (mode: $silentModeType), voice call volume is active.")
 
                     audioManager.setStreamVolume(AudioManager.STREAM_MUSIC, 0, 0)
                     audioManager.setStreamVolume(AudioManager.STREAM_NOTIFICATION, 0, 0)
@@ -1076,5 +1120,32 @@ class Tools(private val context: Context) {
     fun isInCall(): Boolean {
         val audioManager = context.getSystemService(Context.AUDIO_SERVICE) as AudioManager
         return audioManager.mode == AudioManager.MODE_IN_CALL || audioManager.mode == AudioManager.MODE_IN_COMMUNICATION
+    }
+
+    private fun getBeforePrayerDurationId(index: Int): Int {
+        return when (index) {
+            0 -> 0
+            1 -> 5
+            2 -> 10
+            3 -> 15
+            4 -> 20
+            5 -> 25
+            6 -> 30
+            else -> 10
+        }
+    }
+
+    private fun getAfterPrayerDurationId(index: Int): Int {
+        return when (index) {
+            0 -> 0
+            1 -> 15
+            2 -> 20
+            3 -> 25
+            4 -> 30
+            5 -> 35
+            6 -> 40
+            7 -> 45
+            else -> 30
+        }
     }
 }

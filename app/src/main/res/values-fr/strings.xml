@@ -4,9 +4,10 @@
     <string name="On">Activé</string>
     <string name="select_option">Selectionner une option</string>
     <string name="AudioText">Ecouter le takbir avant d\'activer le mode silencieux</string>
+    <string name="NotificationText">Afficher les notifications pendant les opérations</string>
 
-    <!-- Daily Schedule Cardview -->
-    <string name="daily_schedule">Programmation Quotidienne</string>
+    <!-- General Settings Card view -->
+    <string name="general_settings">Paramètres généraux</string>
 
     <string name="calculation_method">Méthode de calcul</string>
     <string name="select_calculation_method">Choix de la méthode de calcul</string>
@@ -36,10 +37,51 @@
         <item>Shia Ithna-Ashari, Institut Leva, Qum</item>
     </string-array>
 
-    <string name="daily_silent_duration_after_adhan">Durée du mode silencieux après al adhan</string>
+    <string name="silent_mode_type">Type de mode silencieux</string>
+    <string name="select_silent_mode_type">Sélectionner le type de mode silencieux</string>
+    <string-array name="silent_mode_types">
+        <item>Silencieux (sans vibration)</item>
+        <item>Silencieux (avec vibration)</item>
+    </string-array>
+
+    <string name="daily_silent_duration_after_adhan">Durée du silence quotidien après l\'adhan</string>
     <string name="daily_silent_duration">Durée quotidienne mode silencieux</string>
     <string name="select_silent_duration">Choix de la durée quotidienne du mode silencieux</string>
     <string-array name="silent_durations">
+        <item>15 minutes</item>
+        <item>20 minutes</item>
+        <item>25 minutes</item>
+        <item>30 minutes</item>
+        <item>35 minutes</item>
+        <item>40 minutes</item>
+        <item>45 minutes</item>
+    </string-array>
+
+    <!-- Prayer Time Settings -->
+    <string name="fajr_prayer_settings">Paramètres de la prière du Fajr</string>
+    <string name="sunrise_settings">Paramètres du lever du soleil</string>
+    <string name="dhuhr_prayer_settings">Paramètres de la prière du Dhuhr</string>
+    <string name="asr_prayer_settings">Paramètres de la prière du Asr</string>
+    <string name="maghrib_prayer_settings">Paramètres de la prière du Maghrib</string>
+    <string name="isha_prayer_settings">Paramètres de la prière du Isha</string>
+
+    <string name="before_prayer_duration">Durée du silence avant l\'adhan</string>
+    <string name="after_prayer_duration">Durée du silence après l\'adhan</string>
+    <string name="select_before_prayer_duration">Choisir la durée avant l\'adhan</string>
+    <string name="select_after_prayer_duration">Choisir la durée après l\'adhan</string>
+
+    <string-array name="before_prayer_durations">
+        <item>Désactivé</item>
+        <item>5 minutes</item>
+        <item>10 minutes</item>
+        <item>15 minutes</item>
+        <item>20 minutes</item>
+        <item>25 minutes</item>
+        <item>30 minutes</item>
+    </string-array>
+
+    <string-array name="after_prayer_durations">
+        <item>Désactivé</item>
         <item>15 minutes</item>
         <item>20 minutes</item>
         <item>25 minutes</item>
@@ -203,6 +245,10 @@ Nous vous remercions pour la confiance que vous accordez à notre application.<b
     <string name="alarm">Alarme &amp; Rappels</string>
     <string name="alarm_description">Utilisé pour planifier le mode Ne pas déranger pour les heures de prière.</string>
 
+    <string name="times">Horaires</string>
+    <string name="times_title">Horaires de prière d\'aujourd\'hui</string>
+    <string name="today_date">Date</string>
+
     <string name="help">Aide</string>
     <string name="bulb">Avant de commencer à utiliser l\'appli</string>
     <string name="bulb_content">Guide de démarrage rapide</string>
@@ -365,4 +411,5 @@ Vous pouvez faire un don en utilisant [DONATION_LINK].<br/><br/>
     <string name="error">Error</string>
     <string name="error_getting_hijri_date">Error getting hijri date %1$s</string>
     <string name="failed_schedule_silent_mode">Failed to schedule silent mode for %1$s</string>
+    <string name="no_data_available">Aucune donnée disponible</string>
 </resources>
